@@ -1,0 +1,59 @@
+{
+  "AppFolder": {
+    "title": {
+      "zhcn": "示例",
+      "enus": "Example Icons"
+    },
+    "icons": [
+      {
+        "guid": "71b52a04-1dfd-47ae-8952-7d536f6d44c1",
+        "title": {
+          "zhcn": "发电机",
+          "enus": "generator"
+        },
+        "size": {
+          "width": 1,
+          "height": 1,
+          "locked": true
+        },
+        "angle": 0,
+        "color": {
+          "edge": "CurrentColor",
+          "fill": "transparent"
+        },
+        "position": {
+          "x": 300,
+          "y": 300
+        },
+        "icon": [
+          {
+            "tag": "ellipse",
+            "props": {
+              "cx": 20,
+              "cy": 20,
+              "rx": 20,
+              "ry": 20,
+              "fill": "inherit",
+              "stroke": "inherit",
+              "pointerEvents": "all"
+            }
+          },
+          {
+            "tag": "path",
+            "props": {
+              "d": "M 12 20 Q 13.6 14 16 14 Q 18.4 14 20 20 Q 21.2 26 24 26 Q 26.4 26 28 20",
+              "fill": "none",
+              "stroke": "inherit",
+              "stroke-miterlimit": 10,
+              "pointer-events": "all"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "AppTitle": {
+    "title": "Test Icons",
+    "icons": ["AppFolder", "ApprovalsApp", "AppTitle"]
+  }
+}

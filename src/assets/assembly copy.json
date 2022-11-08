@@ -1,0 +1,22 @@
+{
+  "AppFolder": {
+    "title": {
+      "zhcn": "示例",
+      "enus": "Example Icons"
+    },
+    "icons": [
+      {
+        "guid": "71b52a04-1dfd-47ae-8952-7d536f6d44c1",
+        "title": {
+          "zhcn": "发电机",
+          "enus": "generator"
+        },
+        "icon": {}
+      }
+    ]
+  },
+  "AppTitle": {
+    "title": "Test Icons",
+    "icons": ["AppFolder", "ApprovalsApp", "AppTitle"]
+  }
+}
