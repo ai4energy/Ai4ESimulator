@@ -12,7 +12,11 @@
       </n-collapse>
     </n-layout-sider>
     <n-layout-content :native-scrollbar="false">
-      <notebook @showing="propEditor = true"></notebook>
+      <simulation-block :node-list="iconList"></simulation-block>
+      <n-button-group>
+        <n-button v-on:click="testApi.healthTest()">Test</n-button>
+        <n-button v-on:click="propEditor = true">Show</n-button>
+      </n-button-group>
     </n-layout-content>
     <asm-prop-editor
       :open="propEditor"
@@ -22,13 +26,22 @@
 </template>
 
 <script setup lang="ts">
+import testApi from "@/apis/test";
 import { reactive, ref } from "vue";
+import SimulationBlock from "@/components/SimulationBlock.vue";
 import type { IPanelItem } from "@/components/components";
-import Notebook from "@/components/WorkspaceNotebook.vue";
 import AssemPanel from "@/components/AssemPanel.vue";
 import AsmPropEditor from "@/components/AsmPropEditor.vue";
-import { NLayout, NLayoutSider, NCollapse, NLayoutContent } from "naive-ui";
+import {
+  NButton,
+  NButtonGroup,
+  NLayout,
+  NLayoutSider,
+  NCollapse,
+  NLayoutContent,
+} from "naive-ui";
 import { AppFolder } from "@/assets/assembly.json";
+const iconList = reactive(AppFolder.icons);
 const panelItems: IPanelItem[] = reactive([AppFolder as IPanelItem]);
 /** note for css
  * height calculation
