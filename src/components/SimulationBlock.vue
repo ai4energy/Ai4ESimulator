@@ -1,45 +1,6 @@
 <template>
   <n-card title="模型区">
-    <div ref="container" class="sim-container">
-      <div ref="outside" class="sim-outside" @mousewheel.ctrl="svgScale">
-        <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          ref="svgcanvas"
-          class="svg-canvas"
-        >
-          <g ref="svgrid">
-            <line
-              v-for="n in 605 / 5"
-              :key="n"
-              x1="00"
-              x2="800"
-              :y1="5 * n - 5"
-              :y2="5 * n - 5"
-              stroke="rgba(84, 84, 84, 0.48)"
-              stroke-width="1"
-            />
-            <line
-              v-for="n in 800 / 5"
-              :key="n"
-              :x1="5 * n - 5"
-              :x2="5 * n - 5"
-              y1="0"
-              y2="600"
-              stroke="rgba(84, 84, 84, 0.48)"
-              stroke-width="1"
-            />
-          </g>
-          <g ref="svgactea">
-            <node-out-layer
-              v-for="(node, id) in $props.nodeList"
-              :key="id"
-              :node="node"
-            ></node-out-layer>
-          </g>
-        </svg>
-      </div>
-    </div>
+    <div id="container" ref="container" class="sim-container"></div>
     <n-collapse>
       <n-collapse-item title="仿真选项" name="1">
         <div>待定</div>
@@ -52,47 +13,179 @@
 import { NCard, NCollapse, NCollapseItem } from "naive-ui";
 import { ref, onMounted, type Ref } from "vue";
 import type { ISvgIcon } from "@/utils/svg";
-import NodeOutLayer from "./NodeOutlayer.vue";
+import { Graph } from "@antv/x6";
+// import { Scroller } from "@antv/x6-plugin-scroller";
+import { Keyboard } from "@antv/x6-plugin-keyboard";
+import { Selection } from "@antv/x6-plugin-selection";
+import { Clipboard } from "@antv/x6-plugin-clipboard";
+import { History } from "@antv/x6-plugin-history";
+import { Dnd } from "@antv/x6-plugin-dnd";
+import { Transform } from "@antv/x6-plugin-transform";
 defineProps<{ nodeList: Array<ISvgIcon> }>();
 
 const container: Ref<HTMLDivElement | undefined> = ref();
-const outside: Ref<HTMLDivElement | undefined> = ref();
-const svgcanvas: Ref<SVGElement | undefined> = ref();
-const svgrid: Ref<SVGGElement | undefined> = ref(); // current not used
-const svgactea: Ref<SVGGElement | undefined> = ref();
-
+let graph: Graph | null = null;
+let dnd: Dnd | null = null;
+const data = {
+  // 节点
+  nodes: [
+    {
+      id: "node1", // String，可选，节点的唯一标识
+      x: 40, // Number，必选，节点位置的 x 值
+      y: 40, // Number，必选，节点位置的 y 值
+      width: 80, // Number，可选，节点大小的 width 值
+      height: 40, // Number，可选，节点大小的 height 值
+      label: "hello", // String，节点标签
+    },
+    {
+      id: "node2", // String，节点的唯一标识
+      x: 160, // Number，必选，节点位置的 x 值
+      y: 180, // Number，必选，节点位置的 y 值
+      width: 80, // Number，可选，节点大小的 width 值
+      height: 40, // Number，可选，节点大小的 height 值
+      label: "world", // String，节点标签
+    },
+  ],
+  // 边
+  edges: [
+    {
+      source: "node1", // String，必须，起始节点 id
+      target: "node2", // String，必须，目标节点 id
+    },
+  ],
+};
 onMounted(() => {
-  if (container.value) {
-    let width: number = container.value?.clientWidth;
-    container.value.style.height = 0.618 * width + "px";
-    if (outside.value) {
-      outside.value.style["minHeight"] = 0.618 * width + "px";
-      outside.value.style["minWidth"] = width + "px";
+  let width: number = container.value?.clientWidth ?? 800;
+  graph = new Graph({
+    container: container.value,
+    width: width,
+    height: (width * 9) / 16,
+    panning: {
+      enabled: true,
+      modifiers: "alt",
+    },
+    mousewheel: {
+      enabled: true,
+      modifiers: ["ctrl", "meta"],
+    },
+    grid: {
+      visible: true,
+      type: "doubleMesh",
+      args: [
+        {
+          color: "#545454a6", // 主网格线颜色
+          thickness: 1, // 主网格线宽度
+        },
+        {
+          color: "#5454547a", // 次网格线颜色
+          thickness: 1, // 次网格线宽度
+          factor: 4, // 主次网格线间隔
+        },
+      ],
+    },
+  });
+  // graph.use(
+  //   new Scroller({
+  //     enabled: true
+  //   })
+  // );
+  graph.use(
+    new Clipboard({
+      enabled: true,
+    })
+  );
+  graph.use(
+    new Transform({
+      rotating: {
+        enabled: true,
+        grid: 15,
+      },
+      resizing: {
+        enabled: true,
+        minWidth: 1,
+        maxWidth: 200,
+        minHeight: 1,
+        maxHeight: 200,
+        orthogonal: false,
+        restrict: false,
+        preserveAspectRatio: false,
+      },
+    })
+  );
+  graph.use(
+    new Selection({
+      enabled: true,
+      multiple: true,
+      rubberband: true,
+      movable: true,
+      showNodeSelectionBox: true,
+    })
+  );
+  graph.use(
+    new Keyboard({
+      enabled: true,
+      global: true,
+    })
+  );
+  graph.use(
+    new History({
+      enabled: true,
+    })
+  );
+  dnd = new Dnd({
+    target: graph,
+  });
+
+  graph.bindKey("ctrl+c", () => {
+    if (graph) {
+      const cells = graph.getSelectedCells();
+      cells.length && graph.copy(cells);
+      return false;
     }
-  }
+  });
+
+  graph.bindKey("ctrl+v", () => {
+    if (graph) {
+      if (!graph.isClipboardEmpty()) {
+        const cells = graph.paste({ offset: 32 });
+        graph.cleanSelection();
+        graph.select(cells);
+      }
+      return false;
+    }
+  });
+
+  graph.bindKey("delete", () => {
+    if (graph) {
+      const cells = graph.getSelectedCells();
+      cells.length && graph.removeCells(cells);
+      return false;
+    }
+  });
+  graph.bindKey("ctrl+y", () => {
+    if (graph) {
+      graph.canRedo() && graph.redo();
+      return false;
+    }
+  });
+  graph.bindKey("ctrl+z", () => {
+    if (graph) {
+      graph.canUndo() && graph.undo();
+      return false;
+    }
+  });
+  graph.fromJSON(data);
 });
 
 visualViewport?.addEventListener("resize", () => {
-  if (container.value) {
-    let width: number = container.value.clientWidth;
-    container.value.style.height = 0.618 * width + "px";
-    if (outside.value) {
-      outside.value.style["minHeight"] = 0.618 * width + "px";
-      outside.value.style["minWidth"] = width + "px";
-    }
+  // const ele = document.getElementsByClassName(
+  //   "sim-container"
+  // )[0] as HTMLDivElement;
+  if (container.value?.parentElement) {
+    let width: number = container.value.parentElement.clientWidth - 48;
+    graph?.resize(width, (width * 9) / 16);
   }
 });
-
-const svgScale = (e: WheelEvent) => {
-  e.preventDefault();
-  let zoomVal = Number(svgcanvas.value?.style.getPropertyValue("zoom"));
-  zoomVal = zoomVal != 0 ? zoomVal : 1;
-  zoomVal -= e.deltaY / 2000;
-  if (zoomVal < 1 || zoomVal > 10) return;
-  svgcanvas.value?.style.setProperty("zoom", "" + zoomVal);
-  outside.value?.style.setProperty("height", zoomVal * 600 + "px");
-  outside.value?.style.setProperty("width", zoomVal * 800 + "px");
-};
 </script>
 
 <style scoped>
@@ -102,21 +195,6 @@ const svgScale = (e: WheelEvent) => {
   overflow: scroll;
   touch-action: none;
 }
-
-.sim-outside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px;
-}
-
-.svg-canvas {
-  min-width: 800px;
-  min-height: 600px;
-  display: block;
-  background-image: none;
-}
-
 .sim-container::-webkit-scrollbar {
   width: 10px;
   height: 10px;

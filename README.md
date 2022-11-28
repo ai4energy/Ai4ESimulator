@@ -1,4 +1,4 @@
-# AI4E Simulator
+# frontend
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -47,8 +47,8 @@ npm run lint
 
 ## Generate new UUID
 
-Using current Powershell Script:
+Using current Powershell Terminal:
 
 ```sh
-[guid]::NewGuid()
+new-guid
 ```

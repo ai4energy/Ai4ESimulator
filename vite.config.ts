@@ -7,9 +7,16 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   plugins: [vue()],
   resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-    },
+    alias: [
+      {
+        find: "@",
+        replacement: fileURLToPath(new URL("./src", import.meta.url)),
+      },
+      {
+        find: "@antv/x6",
+        replacement: "@antv/x6/lib",
+      },
+    ],
   },
   json: {
     namedExports: true,
