@@ -4,9 +4,9 @@ window.$msg = useMessage();
 </script>
 <template>
   <n-layout>
-    <n-layout-header bordered> <h1>AiE4 Simulator</h1> </n-layout-header>
+    <n-layout-header bordered> <h1>AiE4Simulator</h1> </n-layout-header>
     <RouterView />
-    <n-layout-footer bordered> AiE4 Simulator &copy; 2022 </n-layout-footer>
+    <n-layout-footer bordered> Ai4ESimulator &copy; 2022 </n-layout-footer>
   </n-layout>
 </template>
 
