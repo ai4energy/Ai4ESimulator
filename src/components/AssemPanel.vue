@@ -1,18 +1,20 @@
 <template>
   <n-collapse-item :title="title" :name="index">
     <n-space>
-      <div v-for="(icon, index) in icons" :key="index">{{ icon.title }}</div>
+      <IconProvider :icon-set-id="props.iconSetId" :icon-size="6" />
     </n-space>
   </n-collapse-item>
 </template>
 
 <script setup lang="ts">
-import { NIcon, NCollapseItem, NSpace } from "naive-ui";
-import type { ISvgIcon } from "@/utils/svg";
+import { NCollapseItem, NSpace } from "naive-ui";
+import IconProvider from "./IconProvider.vue";
 
-defineProps<{
+interface IAssemPanelProp {
   title: string;
   index: number;
-  icons: ISvgIcon[];
-}>();
+  iconSetId: string;
+}
+
+const props = defineProps<IAssemPanelProp>();
 </script>

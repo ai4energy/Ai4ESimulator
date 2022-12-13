@@ -1,6 +1,7 @@
 <template>
   <n-card title="模型区">
     <div id="container" ref="container" class="sim-container"></div>
+    <TeleportContainer />
     <n-collapse>
       <n-collapse-item title="仿真选项" name="1">
         <div>待定</div>
@@ -12,7 +13,6 @@
 <script setup lang="ts">
 import { NCard, NCollapse, NCollapseItem } from "naive-ui";
 import { ref, onMounted, type Ref } from "vue";
-import type { ISvgIcon } from "@/utils/svg";
 import { Graph } from "@antv/x6";
 // import { Scroller } from "@antv/x6-plugin-scroller";
 import { Keyboard } from "@antv/x6-plugin-keyboard";
@@ -21,8 +21,12 @@ import { Clipboard } from "@antv/x6-plugin-clipboard";
 import { History } from "@antv/x6-plugin-history";
 import { Dnd } from "@antv/x6-plugin-dnd";
 import { Transform } from "@antv/x6-plugin-transform";
-defineProps<{ nodeList: Array<ISvgIcon> }>();
-
+import { register, getTeleport } from "@antv/x6-vue-shape";
+import IconWraper from "./IconWraper.vue";
+import { iconList } from "@/assets/assembly.json";
+import { useIconStore } from "@/stores";
+const TeleportContainer = getTeleport();
+const iconStore = useIconStore();
 const container: Ref<HTMLDivElement | undefined> = ref();
 let graph: Graph | null = null;
 let dnd: Dnd | null = null;
@@ -176,6 +180,32 @@ onMounted(() => {
   });
   graph.fromJSON(data);
 });
+
+const startDrag = (e: MouseEvent) => {
+  const target = e.currentTarget as SVGAElement;
+  const id = target.getAttribute("id");
+  if (!id || !graph || !dnd) return;
+  const icon = iconList.find((e) => e.properties.guid == id);
+  if (!icon) return;
+  iconStore.addNode(icon);
+  register({
+    shape: icon.properties.name,
+    width: 100,
+    height: 100,
+    component: IconWraper,
+    data: {
+      name: icon.properties.name,
+      id: icon.properties.guid,
+      size: 100,
+    },
+  });
+  const node = graph.createNode({
+    shape: icon.properties.name,
+    x: 100,
+    y: 100,
+  });
+  dnd.start(node, e);
+};
 
 visualViewport?.addEventListener("resize", () => {
   // const ele = document.getElementsByClassName(
