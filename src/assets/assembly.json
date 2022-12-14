@@ -1,59 +1,52 @@
 {
-  "AppFolder": {
-    "title": {
+  "iconCategory": [
+    {
       "zhcn": "示例",
-      "enus": "Example Icons"
-    },
-    "icons": [
-      {
-        "guid": "71b52a04-1dfd-47ae-8952-7d536f6d44c1",
-        "title": {
-          "zhcn": "发电机",
-          "enus": "generator"
-        },
-        "size": {
-          "width": 1,
-          "height": 1,
-          "locked": true
-        },
-        "angle": 0,
-        "color": {
-          "edge": "CurrentColor",
-          "fill": "transparent"
-        },
-        "position": {
-          "x": 300,
-          "y": 300
-        },
-        "icon": [
+      "enus": "Example Icons",
+      "guid": "1f063fbc-2671-4640-957f-14b4623e9791"
+    }
+  ],
+  "baseInfo": {
+    "generatorSource": "svgps.app",
+    "IcoMoonType": "selection"
+  },
+  "iconList": [
+    {
+      "icon": {
+        "paths": [
+          "M630.2 0l-118.2 204.8L393.7 0H0l512 886.8L1024 0z",
+          "M630.2 0l-118.2 204.8L393.7 0H204.8l307.2 532.1L819.2 0z"
+        ],
+        "attrs": [
+          { "xmlnsV": "https://vecta.io/nano", "fill": "#41b883" },
+          { "xmlnsV": "https://vecta.io/nano", "fill": "#34495e" }
+        ],
+        "width": 1024
+      },
+      "properties": {
+        "name": "2239fc09-04dc-4e37-950b-00bbd50c66d2",
+        "label": "logo",
+        "category": "1f063fbc-2671-4640-957f-14b4623e9791",
+        "size": 100,
+        "attrs": [
           {
-            "tag": "ellipse",
-            "props": {
-              "cx": 20,
-              "cy": 20,
-              "rx": 20,
-              "ry": 20,
-              "fill": "inherit",
-              "stroke": "inherit",
-              "pointerEvents": "all"
-            }
+            "name": "voltge",
+            "type": "number",
+            "value": 220,
+            "unit": "V",
+            "require": true,
+            "holder": "请输入额定电压"
           },
           {
-            "tag": "path",
-            "props": {
-              "d": "M 12 20 Q 13.6 14 16 14 Q 18.4 14 20 20 Q 21.2 26 24 26 Q 26.4 26 28 20",
-              "fill": "none",
-              "stroke": "inherit",
-              "stroke-miterlimit": 10,
-              "pointer-events": "all"
-            }
+            "name": "active power",
+            "type": "number",
+            "value": 100,
+            "unit": "MW",
+            "require": true,
+            "holder": "请输入额定功率"
           }
         ]
       }
-    ]
-  },
-  "AppTitle": {
-    "title": "Test Icons",
-    "icons": ["AppFolder", "ApprovalsApp", "AppTitle"]
-  }
+    }
+  ]
 }
