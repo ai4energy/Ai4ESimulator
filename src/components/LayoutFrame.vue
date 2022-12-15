@@ -1,6 +1,6 @@
 <template>
   <n-layout>
-    <n-layout-header bordered> <h1>AiE4Simulator</h1> </n-layout-header>
+    <n-layout-header bordered> <h1>Ai4ESimulator</h1> </n-layout-header>
     <RouterView />
     <n-layout-footer bordered> Ai4ESimulator &copy; 2022 </n-layout-footer>
   </n-layout>

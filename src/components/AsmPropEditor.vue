@@ -26,9 +26,9 @@
           </n-input-number>
           <n-input
             v-if="attr.type == 'string'"
-            v-model:value="asmProps[attr.type]"
+            v-model:value="asmProps[attr.name]"
             :placeholder="attr.holder"
-            :default-value="attr.type"
+            :default-value="attr.value"
           ></n-input>
         </n-form-item>
         {{ asmProps }}

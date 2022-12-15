@@ -30,6 +30,14 @@
         "size": 100,
         "attrs": [
           {
+            "name": "name",
+            "type": "string",
+            "value": "xxx",
+            "unit": "",
+            "require": true,
+            "holder": "请输入组件名称"
+          },
+          {
             "name": "voltge",
             "type": "number",
             "value": 220,
