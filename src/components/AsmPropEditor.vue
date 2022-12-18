@@ -20,15 +20,15 @@
             v-if="attr.type == 'number'"
             v-model:value="asmProps[attr.name]"
             :placeholder="attr.holder"
-            :default-value="attr.value"
+            :default-value="(attr.value as number)"
           >
             <template #suffix> {{ attr.unit }} </template>
           </n-input-number>
           <n-input
-            v-if="attr.type == 'string'"
+            v-else-if="attr.type == 'string'"
             v-model:value="asmProps[attr.name]"
             :placeholder="attr.holder"
-            :default-value="attr.value"
+            :default-value="(attr.value as string)"
           ></n-input>
         </n-form-item>
         {{ asmProps }}
@@ -60,7 +60,7 @@ import {
 interface IAttr {
   name: string;
   type: string;
-  value: number;
+  value: number | string;
   unit?: string;
   require: boolean;
   holder?: string;

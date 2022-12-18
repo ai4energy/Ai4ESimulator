@@ -16,10 +16,10 @@ import { iconList, baseInfo } from "@/assets/assembly.json";
 interface IAttr {
   name: string;
   type: string;
-  value: number;
-  unit: string;
+  value: number | string;
+  unit?: string;
   require: boolean;
-  holder: string;
+  holder?: string;
 }
 interface IProps {
   name: string;
