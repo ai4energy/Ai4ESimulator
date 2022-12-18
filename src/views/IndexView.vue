@@ -68,6 +68,7 @@ import { register, getTeleport } from "@antv/x6-vue-shape";
 import IconWraper from "@/components/IconWraper.vue";
 import IconProvider from "@/components/IconProvider.vue";
 import { iconList } from "@/assets/assembly.json";
+import { Edge } from "@antv/x6";
 interface IAttr {
   name: string;
   type: string;
@@ -92,33 +93,12 @@ const container: Ref<HTMLDivElement | undefined> = ref();
 let graph: Graph | null = null;
 let dnd: Dnd | null = null;
 const selectedNodeAttrs: Ref<Array<IAttr>> = ref([]);
-const data = {
-  // 节点
-  nodes: [
-    {
-      id: "node1", // String，可选，节点的唯一标识
-      x: 40, // Number，必选，节点位置的 x 值
-      y: 40, // Number，必选，节点位置的 y 值
-      width: 80, // Number，可选，节点大小的 width 值
-      height: 40, // Number，可选，节点大小的 height 值
-      label: "hello", // String，节点标签
-    },
-    {
-      id: "node2", // String，节点的唯一标识
-      x: 160, // Number，必选，节点位置的 x 值
-      y: 180, // Number，必选，节点位置的 y 值
-      width: 80, // Number，可选，节点大小的 width 值
-      height: 40, // Number，可选，节点大小的 height 值
-      label: "world", // String，节点标签
-    },
-  ],
-  // 边
-  edges: [
-    {
-      source: "node1", // String，必须，起始节点 id
-      target: "node2", // String，必须，目标节点 id
-    },
-  ],
+const portattr = {
+  circle: {
+    magnet: true,
+    stroke: "#545454a6",
+    r: 5,
+  },
 };
 const updateNode = (temp: { [key: string]: any }) => {
   propEditor.value = false;
@@ -143,6 +123,21 @@ onMounted(() => {
     mousewheel: {
       enabled: true,
       modifiers: ["ctrl", "meta"],
+    },
+    connecting: {
+      router: "orth",
+      connector: "rounded",
+      createEdge() {
+        return this.createEdge({
+          shape: "edge",
+          attrs: {
+            line: {
+              stroke: "#8f8f8f",
+              strokeWidth: 1,
+            },
+          },
+        });
+      },
     },
     grid: {
       visible: true,
@@ -195,6 +190,7 @@ onMounted(() => {
       rubberband: true,
       movable: true,
       showNodeSelectionBox: true,
+      showEdgeSelectionBox: true,
     })
   );
   graph.use(
@@ -247,7 +243,53 @@ onMounted(() => {
     if (graph) graph.canUndo() && graph.undo();
     return false;
   });
-  graph.fromJSON(data);
+  Graph.registerPortLayout("self", (portsPositionArgs, elemBBox) => {
+    return portsPositionArgs.map((val) => {
+      switch (val["pos"] as string) {
+        case "left":
+          return {
+            position: {
+              x: 0,
+              y: elemBBox.height / 2,
+            },
+            angle: 0,
+          };
+        case "right":
+          return {
+            position: {
+              x: elemBBox.width,
+              y: elemBBox.height / 2,
+            },
+            angle: 0,
+          };
+        case "top":
+          return {
+            position: {
+              x: elemBBox.width / 2,
+              y: 0,
+            },
+            angle: 0,
+          };
+        case "buttom":
+          return {
+            position: {
+              x: elemBBox.width / 2,
+              y: elemBBox.height,
+            },
+            angle: 0,
+          };
+
+        default:
+          return {
+            position: {
+              x: 0,
+              y: elemBBox.height / 2,
+            },
+            angle: 0,
+          };
+      }
+    });
+  });
   register({
     shape: "inner shape",
     width: 100,
@@ -258,6 +300,14 @@ onMounted(() => {
       label: "",
       category: "",
       size: 0,
+    },
+    ports: {
+      groups: {
+        self: {
+          position: "self",
+          attrs: portattr,
+        },
+      },
     },
   });
   graph.on("node:dblclick", ({ node }: { node: Node }) => {
@@ -277,6 +327,14 @@ const startDrag = (e: MouseEvent) => {
     x: 100,
     y: 100,
     data: icon.properties,
+    ports: {
+      items: [
+        { group: "self", args: { pos: "top" } },
+        { group: "self", args: { pos: "right" } },
+        { group: "self", args: { pos: "buttom" } },
+        { group: "self", args: { pos: "left" } },
+      ],
+    },
   });
   dnd.start(node, e);
 };
