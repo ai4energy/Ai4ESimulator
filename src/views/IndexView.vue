@@ -68,7 +68,6 @@ import { register, getTeleport } from "@antv/x6-vue-shape";
 import IconWraper from "@/components/IconWraper.vue";
 import IconProvider from "@/components/IconProvider.vue";
 import { iconList } from "@/assets/assembly.json";
-import { Edge } from "@antv/x6";
 interface IAttr {
   name: string;
   type: string;
@@ -108,7 +107,6 @@ const updateNode = (temp: { [key: string]: any }) => {
     if (temp[prop.name]) prop.value = temp[prop.name];
   }
   node?.setData(data);
-  console.log(node?.getData());
 };
 onMounted(() => {
   let width: number = container.value?.clientWidth ?? 800;
@@ -243,51 +241,48 @@ onMounted(() => {
     if (graph) graph.canUndo() && graph.undo();
     return false;
   });
-  Graph.registerPortLayout("self", (portsPositionArgs, elemBBox) => {
-    return portsPositionArgs.map((val) => {
-      switch (val["pos"] as string) {
-        case "left":
-          return {
-            position: {
-              x: 0,
-              y: elemBBox.height / 2,
-            },
-            angle: 0,
-          };
-        case "right":
-          return {
-            position: {
-              x: elemBBox.width,
-              y: elemBBox.height / 2,
-            },
-            angle: 0,
-          };
-        case "top":
-          return {
-            position: {
-              x: elemBBox.width / 2,
-              y: 0,
-            },
-            angle: 0,
-          };
-        case "buttom":
-          return {
-            position: {
-              x: elemBBox.width / 2,
-              y: elemBBox.height,
-            },
-            angle: 0,
-          };
-
-        default:
-          return {
-            position: {
-              x: 0,
-              y: elemBBox.height / 2,
-            },
-            angle: 0,
-          };
-      }
+  Graph.registerPortLayout("stop", (portsPositionArgs, elemBBox) => {
+    return portsPositionArgs.map((_, idx) => {
+      return {
+        position: {
+          x: ((idx + 1) / (portsPositionArgs.length + 1)) * elemBBox.width,
+          y: 0,
+        },
+        angle: 0,
+      };
+    });
+  });
+  Graph.registerPortLayout("sbottom", (portsPositionArgs, elemBBox) => {
+    return portsPositionArgs.map((_, idx) => {
+      return {
+        position: {
+          x: ((idx + 1) * elemBBox.width) / (portsPositionArgs.length + 1),
+          y: elemBBox.height,
+        },
+        angle: 0,
+      };
+    });
+  });
+  Graph.registerPortLayout("sleft", (portsPositionArgs, elemBBox) => {
+    return portsPositionArgs.map((_, idx) => {
+      return {
+        position: {
+          x: 0,
+          y: ((idx + 1) * elemBBox.height) / (portsPositionArgs.length + 1),
+        },
+        angle: 0,
+      };
+    });
+  });
+  Graph.registerPortLayout("sright", (portsPositionArgs, elemBBox) => {
+    return portsPositionArgs.map((_, idx) => {
+      return {
+        position: {
+          x: elemBBox.width,
+          y: ((idx + 1) * elemBBox.height) / (portsPositionArgs.length + 1),
+        },
+        angle: 0,
+      };
     });
   });
   register({
@@ -303,8 +298,20 @@ onMounted(() => {
     },
     ports: {
       groups: {
-        self: {
-          position: "self",
+        stop: {
+          position: "stop",
+          attrs: portattr,
+        },
+        sbottom: {
+          position: "sbottom",
+          attrs: portattr,
+        },
+        sleft: {
+          position: "sleft",
+          attrs: portattr,
+        },
+        sright: {
+          position: "sright",
           attrs: portattr,
         },
       },
@@ -324,17 +331,24 @@ const startDrag = (e: MouseEvent) => {
   if (!icon) return;
   const node = graph.createNode({
     shape: "inner shape",
-    x: 100,
-    y: 100,
+    width: icon.properties.width,
+    height: icon.properties.height,
     data: icon.properties,
-    ports: {
-      items: [
-        { group: "self", args: { pos: "top" } },
-        { group: "self", args: { pos: "right" } },
-        { group: "self", args: { pos: "buttom" } },
-        { group: "self", args: { pos: "left" } },
-      ],
-    },
+    ports: icon.properties.ports.map((e) => {
+      return {
+        group: e.gp,
+        args: {},
+        attrs: {
+          text: {
+            text: e.lb,
+            fill: e.clr,
+          },
+        },
+        label: {
+          position: e.gp.substring(1),
+        },
+      };
+    }),
   });
   dnd.start(node, e);
 };
