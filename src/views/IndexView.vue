@@ -337,7 +337,6 @@ const startDrag = (e: MouseEvent) => {
     ports: icon.properties.ports.map((e) => {
       return {
         group: e.gp,
-        args: {},
         attrs: {
           text: {
             text: e.lb,
