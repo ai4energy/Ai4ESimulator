@@ -27,7 +27,16 @@
         "name": "2239fc09-04dc-4e37-950b-00bbd50c66d2",
         "label": "logo",
         "category": "1f063fbc-2671-4640-957f-14b4623e9791",
-        "size": 100,
+        "width": 100,
+        "height": 100,
+        "ports": [
+          { "gp": "stop", "lb": "T port 1", "clr": "#919191" },
+          { "gp": "stop", "lb": "T port 2", "clr": "#919191" },
+          { "gp": "sright", "lb": "R port 1", "clr": "#919191" },
+          { "gp": "sright", "lb": "R port 2", "clr": "#919191" },
+          { "gp": "sright", "lb": "R port 3", "clr": "#919191" },
+          { "gp": "sleft", "lb": "L port", "clr": "#919191" }
+        ],
         "attrs": [
           {
             "name": "name",
