@@ -1,37 +1,55 @@
 <template>
-  <Icomoon
-    v-for="item in iconUnderSelected"
-    :id="item"
-    :iconSet="{ icons: iconList, ...baseInfo }"
-    :name="item"
-    :key="item"
-    :size="'' + iconSize + 'em'"
-    class="side-icon"
-  />
+  <svg-render :eleList="icon" />
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
-import { Icomoon } from "vue-icomoon";
-import { iconList, baseInfo } from "@/assets/assembly.json";
+import { h, onMounted, type VNode } from "vue";
 interface IIconProbviderProp {
-  iconSetId: string;
+  icon: Array<ISvgJson>;
+  iconId: string;
   iconSize: number;
   callback: (e: MouseEvent) => any;
 }
-const props = defineProps<IIconProbviderProp>();
-const iconUnderSelected = iconList
-  .filter((e) => e.properties.category == props.iconSetId)
-  .map((e) => e.properties.name);
+interface ISvgJson {
+  name: string;
+  attrs?: { [key: string]: any };
+  children?: Array<ISvgJson>;
+}
+const propsO = defineProps<IIconProbviderProp>();
+
+const SvgRender = (props: { eleList: Array<ISvgJson> }) => {
+  const renderResult: Array<VNode> = props.eleList.map((ele) => {
+    if (ele.name == "svg") {
+      if (ele.attrs) {
+        ele.attrs["id"] = propsO.iconId;
+        ele.attrs["class"] = "side-icon";
+        ele.attrs["width"] = propsO.iconSize + "em";
+        ele.attrs["height"] = propsO.iconSize + "em";
+      } else {
+        ele.attrs = {
+          id: propsO.iconId,
+          class: "side-icon",
+          width: propsO.iconSize + "em",
+          height: propsO.iconSize + "em",
+        };
+      }
+    }
+    if (ele.children)
+      return h(ele.name, ele.attrs, SvgRender({ eleList: ele.children }));
+    else return h(ele.name, ele.attrs);
+  });
+  return renderResult;
+};
+
 onMounted(() => {
   const eles = document.getElementsByClassName("side-icon");
   for (let i = 0; i != eles.length; i++) {
-    (eles[i] as SVGElement).addEventListener("mousedown", props.callback);
+    (eles[i] as SVGElement).addEventListener("mousedown", propsO.callback);
   }
 });
 </script>
 
-<style scoped>
+<style>
 .side-icon {
   cursor: move;
 }

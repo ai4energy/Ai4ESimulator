@@ -9,7 +9,12 @@
           :name="index"
         >
           <IconProvider
-            :icon-set-id="item.guid"
+            v-for="(icon, index) in iconList.filter(
+              (e) => e.properties.category == item.guid
+            )"
+            :key="index"
+            :icon-id="icon.properties.name"
+            :icon="[icon.icon]"
             :icon-size="4"
             :callback="startDrag"
           />
