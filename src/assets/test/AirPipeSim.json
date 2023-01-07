@@ -1,0 +1,293 @@
+{
+    "AirPipeSim": {
+        "PressureSource": {
+            "label": "logo",
+            "name": "b00d58b0-8e61-11ed-3673-c3f10864bcd9",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "PressureSource",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Pressure",
+                    "holder": "请输入压力",
+                    "unit": "Pa",
+                    "value": "1.013e5",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature",
+                    "holder": "请输入温度",
+                    "unit": "K",
+                    "value": "293.15",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "t1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+        },
+        "FlowSource": {
+            "label": "logo",
+            "name": "b00d58b0-8e61-11ed-2998-a746a2218dfb",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "FlowSource",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Mass Flow Rate",
+                    "holder": "请输入质量流量",
+                    "unit": "kg/s",
+                    "value": "0.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature",
+                    "holder": "请输入温度",
+                    "unit": "K",
+                    "value": "293.15",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "t1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+        },
+        "SimplePipe": {
+            "label": "logo",
+            "name": "b00d58b0-8e61-11ed-1e1f-fd908727eb27",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "SimplePipe",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Resistance Factor",
+                    "holder": "请输入阻力系数",
+                    "unit": "kg^-1⋅m^-1",
+                    "value": "1000",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature",
+                    "holder": "请输入温度",
+                    "unit": "K",
+                    "value": "293.15",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "r1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "l1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+        },
+        "AirStorageTank": {
+            "label": "logo",
+            "name": "b00d58b0-8e61-11ed-3e4a-0309c5a33240",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "AirStorageTank",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Volum",
+                    "holder": "请输入储气罐体积",
+                    "unit": "m^3",
+                    "value": "20",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature",
+                    "holder": "请输入环境温度",
+                    "unit": "K",
+                    "value": "293.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Initial Pressure",
+                    "holder": "请输入初始压力",
+                    "unit": "Pa",
+                    "value": "1e5",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "r1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "l1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+        },
+        "TransitionPipe": {
+            "label": "logo",
+            "name": "b00d58b0-8e61-11ed-1b06-2529befd9c88",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "TransitionPipe",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "λ1",
+                    "holder": "该系数取1即可",
+                    "unit": "",
+                    "value": "1.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "λ2",
+                    "holder": "该系数取1即可",
+                    "unit": "",
+                    "value": "1.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "λ3",
+                    "holder": "该系数取1即可",
+                    "unit": "",
+                    "value": "1.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "n",
+                    "holder": "管道分成的节点数",
+                    "unit": "",
+                    "value": "10",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Friction Factor f",
+                    "holder": "管道的摩擦阻力系数",
+                    "unit": "",
+                    "value": "0.016",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Diameter D",
+                    "holder": "管道的直径",
+                    "unit": "m",
+                    "value": "1.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Length L",
+                    "holder": "管道的长度",
+                    "unit": "m",
+                    "value": "100",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Inlet Pressure Pa",
+                    "holder": "管道的入口初始压力",
+                    "unit": "Pa",
+                    "value": "5.6e5",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Outlet Pressure Pa",
+                    "holder": "管道的出口初始压力",
+                    "unit": "Pa",
+                    "value": "5.6e5",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "r1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "l1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+        }
+    },
+    "uids": {
+        "components": {
+            "PressureSource": "b00d58b0-8e61-11ed-3673-c3f10864bcd9",
+            "FlowSource": "b00d58b0-8e61-11ed-2998-a746a2218dfb",
+            "SimplePipe": "b00d58b0-8e61-11ed-1e1f-fd908727eb27",
+            "AirStorageTank": "b00d58b0-8e61-11ed-3e4a-0309c5a33240",
+            "TransitionPipe": "b00d58b0-8e61-11ed-1b06-2529befd9c88"
+        },
+        "lib": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+    }
+}
