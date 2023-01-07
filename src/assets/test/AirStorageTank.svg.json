@@ -1,0 +1,10 @@
+{"icon":{"name":"?xml","attrs":{"version":"1.0","encoding":"utf-8",?},
+"children":[{"name":"svg","attrs":{"version":"1.1","viewBox":"0 0 300 300","xmlns":"http://www.w3.org/2000/svg",
+" " xmlns:xlink":"http://www.w3.org/1999/xlink","width":"300","height":"300",},
+"children":[{"name":"rect","attrs":{"width":"300.0","height":"300.0","stroke":"black","stroke-width":"5.0","fill":"white","fill-opacity":"0","innerHTML":"/rect},
+"children":[{"name":"polyline","attrs":{"points":"0 135.0 15.0 150.0 0 165.0","stroke":"black","stroke-width":"3.0","fill-opacity":"0","innerHTML":"/polyline},
+"children":[{"name":"text","attrs":{"x":"275.0","y":"155.0","stroke":"black","text-anchor":"end","innerHTML":""},},
+{"name":"polyline","attrs":{"points":"285.0 135.0 300.0 150.0 285.0 165.0","stroke":"black","stroke-width":"3.0","fill-opacity":"0","innerHTML":"/polyline},
+"children":[{"name":"text","attrs":{"x":"25.0","y":"155.0","stroke":"black","text-anchor":"start","innerHTML":""},},
+]},
+}
