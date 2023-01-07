@@ -1,0 +1,136 @@
+{
+    "generatorSource": "svgps.app",
+    "IcoMoonType": "selection",
+    "icons": [
+        {
+            "icon": {
+                "paths": [
+                    "M0 0L0 1024 1024 1024 1024 0 0 0",
+                    "M0 460.8L51.2 512 0 563.2",
+                    "M972.8 460.8L1024 512 972.8 563.2"
+                ],
+                "attrs": [
+                    {
+                        "strokeWidth": 17.066666666666666,
+                        "fill": "white",
+                        "fillOpacity": "0"
+                    },
+                    {
+                        "strokeWidth": 10.24,
+                        "fillOpacity": "0"
+                    },
+                    {
+                        "strokeWidth": 10.24,
+                        "fillOpacity": "0"
+                    }
+                ],
+                "width": 1024
+            },
+            "properties": {
+                "name": "airstoragetank"
+            }
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M0 0L0 782.4 782.4 782.4 782.4 0 0 0",
+                    "M332.5 0L391.2 58.7 449.9 0"
+                ],
+                "attrs": [
+                    {
+                        "strokeWidth": 19.559902200489,
+                        "fill": "white",
+                        "fillOpacity": "0"
+                    },
+                    {
+                        "strokeWidth": 11.7359413202934,
+                        "fillOpacity": "0"
+                    }
+                ],
+                "width": 1024
+            },
+            "properties": {
+                "name": "flowsource"
+            }
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M0 0L0 782.4 782.4 782.4 782.4 0 0 0",
+                    "M332.5 0L391.2 58.7 449.9 0"
+                ],
+                "attrs": [
+                    {
+                        "strokeWidth": 19.559902200489,
+                        "fill": "white",
+                        "fillOpacity": "0"
+                    },
+                    {
+                        "strokeWidth": 11.7359413202934,
+                        "fillOpacity": "0"
+                    }
+                ],
+                "width": 1024
+            },
+            "properties": {
+                "name": "pressuresource"
+            }
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M0 0L0 341.3 1024 341.3 1024 0 0 0",
+                    "M0 119.5L51.2 170.7 0 221.9",
+                    "M972.8 119.5L1024 170.7 972.8 221.9"
+                ],
+                "attrs": [
+                    {
+                        "strokeWidth": 17.066666666666666,
+                        "fill": "white",
+                        "fillOpacity": "0"
+                    },
+                    {
+                        "strokeWidth": 10.24,
+                        "fillOpacity": "0"
+                    },
+                    {
+                        "strokeWidth": 10.24,
+                        "fillOpacity": "0"
+                    }
+                ],
+                "width": 1024
+            },
+            "properties": {
+                "name": "simplepipe"
+            }
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M0 0L0 256 1024 256 1024 0 0 0",
+                    "M0 89.6L38.4 128 0 166.4",
+                    "M985.6 89.6L1024 128 985.6 166.4"
+                ],
+                "attrs": [
+                    {
+                        "strokeWidth": 12.8,
+                        "fill": "white",
+                        "fillOpacity": "0"
+                    },
+                    {
+                        "strokeWidth": 7.68,
+                        "fillOpacity": "0"
+                    },
+                    {
+                        "strokeWidth": 7.68,
+                        "fillOpacity": "0"
+                    }
+                ],
+                "width": 1024
+            },
+            "properties": {
+                "name": "transitionpipe"
+            }
+        }
+    ]
+}
