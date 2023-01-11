@@ -1,0 +1,333 @@
+{
+    "uids": {
+        "components": {
+            "SimplePipe": "f0fa9e20-8e69-11ed-094c-31f3df8eb39d",
+            "CentrifugalPump": "f0f287d0-8e69-11ed-28e5-bb4286fb30b8",
+            "Source_P": "f0fa9e20-8e69-11ed-3940-87797df8162d",
+            "ElbowPipe": "f0fa9e20-8e69-11ed-34b5-b7cc682a2de0",
+            "Sink_P": "f0fa9e20-8e69-11ed-1473-d3926ee78ef8"
+        },
+        "lib": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+    },
+    "IncompressiblePipe": {
+        "SimplePipe": {
+            "label": "logo",
+            "name": "f0fa9e20-8e69-11ed-094c-31f3df8eb39d",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "SimplePipe",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Length L",
+                    "holder": "请输入管道长度",
+                    "unit": "m",
+                    "value": "30",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Diameter D",
+                    "holder": "请输入管径",
+                    "unit": "m",
+                    "value": "0.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Friction Factor f",
+                    "holder": "请输入管道的摩擦阻力系数",
+                    "unit": "",
+                    "value": "0.023",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Density ρ",
+                    "holder": "请输入流体密度",
+                    "unit": "kg/m^3",
+                    "value": "1.0e3",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Height zin",
+                    "holder": "请输入管道入口高度",
+                    "unit": "m",
+                    "value": "25.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Height zout",
+                    "holder": "请输入管道出口高度",
+                    "unit": "m",
+                    "value": "0.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Local Resistance Loss Coefficient K_inside",
+                    "holder": "请输入管内的局部阻力损失系数",
+                    "unit": "",
+                    "value": "10.8",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+        },
+        "CentrifugalPump": {
+            "label": "logo",
+            "name": "f0f287d0-8e69-11ed-28e5-bb4286fb30b8",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "CentrifugalPump",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Diameter D",
+                    "holder": "请输入管径",
+                    "unit": "m",
+                    "value": "0.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Rotary Speed ω",
+                    "holder": "请输入离心泵转速",
+                    "unit": "r/min",
+                    "value": "5000",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Parameter c_0",
+                    "holder": "请输入H-Q特性曲线参数c_0",
+                    "unit": "",
+                    "value": "4.4e-4",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Parameter c_1",
+                    "holder": "请输入H-Q特性曲线参数c_1",
+                    "unit": "",
+                    "value": "5.622",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Density ρ",
+                    "holder": "请输入流体密度",
+                    "unit": "kg/m^3",
+                    "value": "1.0e3",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+        },
+        "Source_P": {
+            "label": "logo",
+            "name": "f0fa9e20-8e69-11ed-3940-87797df8162d",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Source_P",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Diameter D",
+                    "holder": "请输入管径",
+                    "unit": "m",
+                    "value": "0.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Height z",
+                    "holder": "请输入高度",
+                    "unit": "m",
+                    "value": "25.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Density ρ",
+                    "holder": "请输入流体密度",
+                    "unit": "kg/m^3",
+                    "value": "1.0e3",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Pressure Pa",
+                    "holder": "请输入压力，默认值101325Pa",
+                    "unit": "Pa",
+                    "value": "101325",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Local Resistance Loss Coefficient K_inlet",
+                    "holder": "请输入入口局部阻力损失系数，默认值0.5",
+                    "unit": "",
+                    "value": "0.5",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+        },
+        "ElbowPipe": {
+            "label": "logo",
+            "name": "f0fa9e20-8e69-11ed-34b5-b7cc682a2de0",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "ElbowPipe",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Diameter D",
+                    "holder": "请输入管径",
+                    "unit": "m",
+                    "value": "0.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Local Resistance Loss Coefficient K",
+                    "holder": "请输入弯管的局部阻力损失系数",
+                    "unit": "",
+                    "value": "0.9",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Density ρ",
+                    "holder": "请输入流体密度",
+                    "unit": "kg/m^3",
+                    "value": "1.0e3",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Height zin",
+                    "holder": "请输入弯管入口高度",
+                    "unit": "m",
+                    "value": "15.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Height zout",
+                    "holder": "请输入弯管出口高度",
+                    "unit": "m",
+                    "value": "15.0",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+        },
+        "Sink_P": {
+            "label": "logo",
+            "name": "f0fa9e20-8e69-11ed-1473-d3926ee78ef8",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Sink_P",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Pressure Pa",
+                    "holder": "请输入储罐压力，默认值101325Pa",
+                    "unit": "Pa",
+                    "value": "101325",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+        }
+    }
+}

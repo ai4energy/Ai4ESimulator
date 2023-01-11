@@ -1,0 +1,383 @@
+{
+    "uids": {
+        "components": {
+            "ArbitraryProcess": "fa9a0580-8e71-11ed-13d2-f9c7da3131a5",
+            "IsoenthalpyProcess": "faa21bd0-8e71-11ed-33e0-7d7ff8c169bf",
+            "DThermalStates": "faa1a6a0-8e71-11ed-0632-710758fb59ef",
+            "IsentropicProcess": "faa1a6a0-8e71-11ed-3b36-b7660b7cb8fa",
+            "IsothermalProcess": "faa21bd0-8e71-11ed-2add-b75b086334d3",
+            "IsobaricProcess": "faa21bd0-8e71-11ed-2148-7bf548347b89",
+            "IsochoricProcess": "faa21bd0-8e71-11ed-38b5-655171e42880",
+            "ThermalStates": "faa21bd0-8e71-11ed-2c39-7f08d54819f8"
+        },
+        "lib": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+    },
+    "ThermodynamicCycle": {
+        "ArbitraryProcess": {
+            "label": "logo",
+            "name": "fa9a0580-8e71-11ed-13d2-f9c7da3131a5",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "ArbitraryProcess",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "inter_state",
+                    "holder": "给出一种已知状态",
+                    "unit": "",
+                    "value": "'P'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "process",
+                    "holder": "给出另一种状态",
+                    "unit": "",
+                    "value": "'T'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fluid",
+                    "holder": "请输入流体种类",
+                    "unit": "",
+                    "value": "'Water'",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+        },
+        "IsoenthalpyProcess": {
+            "label": "logo",
+            "name": "faa21bd0-8e71-11ed-33e0-7d7ff8c169bf",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "IsoenthalpyProcess",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "inter_state",
+                    "holder": "给出除焓以外另一种已知状态",
+                    "unit": "",
+                    "value": "'P'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fluid",
+                    "holder": "请输入流体种类",
+                    "unit": "",
+                    "value": "'Water'",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+        },
+        "DThermalStates": {
+            "label": "logo",
+            "name": "faa1a6a0-8e71-11ed-0632-710758fb59ef",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "DThermalStates",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "state",
+                    "holder": "给出一种已知状态",
+                    "unit": "",
+                    "value": "'P'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "value",
+                    "holder": "给出已知状态的定值",
+                    "unit": "Pa",
+                    "value": "1.0E6",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Initial Value u0",
+                    "holder": "给出已知状态的初始值",
+                    "unit": "Pa",
+                    "value": "10.0E6",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+        },
+        "IsentropicProcess": {
+            "label": "logo",
+            "name": "faa1a6a0-8e71-11ed-3b36-b7660b7cb8fa",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "IsentropicProcess",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "inter_state",
+                    "holder": "给出除熵以外另一种已知状态",
+                    "unit": "",
+                    "value": "'P'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fluid",
+                    "holder": "请输入流体种类",
+                    "unit": "",
+                    "value": "'Water'",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+        },
+        "IsothermalProcess": {
+            "label": "logo",
+            "name": "faa21bd0-8e71-11ed-2add-b75b086334d3",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "IsothermalProcess",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "inter_state",
+                    "holder": "给出除温度以外另一种已知状态",
+                    "unit": "",
+                    "value": "'Q_0'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fluid",
+                    "holder": "请输入流体种类",
+                    "unit": "",
+                    "value": "'Water'",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+        },
+        "IsobaricProcess": {
+            "label": "logo",
+            "name": "faa21bd0-8e71-11ed-2148-7bf548347b89",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "IsobaricProcess",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "inter_state",
+                    "holder": "给出除压力以外另一种已知状态",
+                    "unit": "",
+                    "value": "'T'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fluid",
+                    "holder": "请输入流体种类",
+                    "unit": "",
+                    "value": "'Water'",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+        },
+        "IsochoricProcess": {
+            "label": "logo",
+            "name": "faa21bd0-8e71-11ed-38b5-655171e42880",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "IsochoricProcess",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "inter_state",
+                    "holder": "给出除体积以外另一种已知状态",
+                    "unit": "",
+                    "value": "'T'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "fluid",
+                    "holder": "请输入流体种类",
+                    "unit": "",
+                    "value": "'Water'",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+        },
+        "ThermalStates": {
+            "label": "logo",
+            "name": "faa21bd0-8e71-11ed-2c39-7f08d54819f8",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "ThermalStates",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "state",
+                    "holder": "给出一种已知状态",
+                    "unit": "",
+                    "value": "'P'",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "value",
+                    "holder": "给出已知状态的值",
+                    "unit": "Pa",
+                    "value": "3.0E6",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+        }
+    }
+}
