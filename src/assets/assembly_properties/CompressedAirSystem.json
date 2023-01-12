@@ -1,0 +1,193 @@
+{
+    "uids": {
+        "components": {
+            "ConstantValve": "e7ef68ee-91ad-11ed-3b9a-2f7f3e8e73a7",
+            "Purifier": "e7ef68ee-91ad-11ed-1555-6d0604182902",
+            "SimplifiedPipe": "e7ef68ee-91ad-11ed-0d2b-0d72fac2e2d6",
+            "StraightPipe": "e7ef68ee-91ad-11ed-1e67-83c389c4c789"
+        },
+        "lib": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+    },
+    "CompressedAirSystem": {
+        "ConstantValve": {
+            "label": "logo",
+            "name": "e7ef68ee-91ad-11ed-3b9a-2f7f3e8e73a7",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "ConstantValve",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Resistance Factor",
+                    "holder": "请输入储气罐体积",
+                    "unit": "kg^-1m^-1",
+                    "value": "100",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+        },
+        "Purifier": {
+            "label": "logo",
+            "name": "e7ef68ee-91ad-11ed-1555-6d0604182902",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Purifier",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "c",
+                    "holder": "请输入净化系数",
+                    "unit": "",
+                    "value": "0.98",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Δp",
+                    "holder": "请输入净化元件的压降",
+                    "unit": "Pa",
+                    "value": "300",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "T",
+                    "holder": "请输入环境温度",
+                    "unit": "K",
+                    "value": "293.15",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+        },
+        "SimplifiedPipe": {
+            "label": "logo",
+            "name": "e7ef68ee-91ad-11ed-0d2b-0d72fac2e2d6",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "SimplifiedPipe",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Resistance Factor",
+                    "holder": "请输入储气罐体积",
+                    "unit": "kg^-1m^-1",
+                    "value": "100",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+        },
+        "StraightPipe": {
+            "label": "logo",
+            "name": "e7ef68ee-91ad-11ed-1e67-83c389c4c789",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "StraightPipe",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "D",
+                    "holder": "请输入管道直径",
+                    "unit": "m",
+                    "value": "1.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "L",
+                    "holder": "请输入管道长度",
+                    "unit": "m",
+                    "value": "1.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "ϵ",
+                    "holder": "请输入管道壁面粗糙度",
+                    "unit": "m",
+                    "value": "0.05e-3",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+        }
+    }
+}

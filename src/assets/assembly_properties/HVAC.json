@@ -1,0 +1,346 @@
+{
+    "uids": {
+        "components": {
+            "SimplePipe": "58f57290-8e72-11ed-2d2e-add604faa8a7",
+            "WaterChiller_SimplifiedPolynomial": "58f57290-8e72-11ed-23c0-9f7eb0261f11",
+            "CoolingTower": "58f57290-8e72-11ed-2068-cd8d76e15568",
+            "FanCoil": "58f57290-8e72-11ed-0595-7d18bcd0df22",
+            "source": "58f57290-8e72-11ed-0c54-5b20b46ceea1",
+            "Pump": "58f57290-8e72-11ed-08bb-6ffb841de33c"
+        },
+        "lib": "58f46120-8e72-11ed-25c1-7955545ab85b"
+    },
+    "HVAC": {
+        "SimplePipe": {
+            "label": "logo",
+            "name": "58f57290-8e72-11ed-2d2e-add604faa8a7",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "SimplePipe",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Friction Factor R",
+                    "holder": "请输入管道的摩擦阻力系数",
+                    "unit": "Pa·s/kg",
+                    "value": "100",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature T",
+                    "holder": "请输入管内流体温度",
+                    "unit": "K",
+                    "value": "300",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+        },
+        "WaterChiller_SimplifiedPolynomial": {
+            "label": "logo",
+            "name": "58f57290-8e72-11ed-23c0-9f7eb0261f11",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "WaterChiller",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Coefficient D",
+                    "holder": "请输入系数",
+                    "unit": "",
+                    "value": "[22.08252111,-0.008374357,0.605004615,-0.544042021,-2.10E-07,7.04E-05,0.000299955,-0.028824777]",
+                    "require": true,
+                    "type": "Vector"
+                },
+                {
+                    "name": "Cooling Capacity Qe0",
+                    "holder": "请输入PLR=1时的制冷量",
+                    "unit": "W",
+                    "value": "3000",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sbottom",
+                    "lb": "B port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+        },
+        "CoolingTower": {
+            "label": "logo",
+            "name": "58f57290-8e72-11ed-2068-cd8d76e15568",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "CoolingTower",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Temperature Tw",
+                    "holder": "请输入环境湿球温度",
+                    "unit": "K",
+                    "value": "299.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature ΔTct",
+                    "holder": "请输入供水温度与湿球温度之间的温差",
+                    "unit": "K",
+                    "value": "5",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+        },
+        "FanCoil": {
+            "label": "logo",
+            "name": "58f57290-8e72-11ed-0595-7d18bcd0df22",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "FanCoil",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Coefficient D",
+                    "holder": "请输入系数",
+                    "unit": "",
+                    "value": "[1, 1.2, 1.2]",
+                    "require": true,
+                    "type": "Vector"
+                },
+                {
+                    "name": "Rated Power Qf0",
+                    "holder": "请输入额定换热功率",
+                    "unit": "W",
+                    "value": "2500",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature Tai0",
+                    "holder": "请输入额定进风温度",
+                    "unit": "K",
+                    "value": "298.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature Twi0",
+                    "holder": "请输入额定进水温度",
+                    "unit": "K",
+                    "value": "280.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature Tai",
+                    "holder": "请输入实际进风温度",
+                    "unit": "K",
+                    "value": "298.15",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Specific Heat cp",
+                    "holder": "请输入水的比热",
+                    "unit": "J/(kg·K)",
+                    "value": "4.18",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+        },
+        "source": {
+            "label": "logo",
+            "name": "58f57290-8e72-11ed-0c54-5b20b46ceea1",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "source",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Mass Flow Rate",
+                    "holder": "请输入质量流量",
+                    "unit": "kg/s",
+                    "value": "100",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Pressure p",
+                    "holder": "请输入压力",
+                    "unit": "Pa",
+                    "value": "100",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Temperature t0",
+                    "holder": "请输入温度",
+                    "unit": "K",
+                    "value": "303.15",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+        },
+        "Pump": {
+            "label": "logo",
+            "name": "58f57290-8e72-11ed-08bb-6ffb841de33c",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Pump",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Coefficient D",
+                    "holder": "请输入系数",
+                    "unit": "",
+                    "value": "[120,-1500,-0.5,0.8,0.8,0.8]",
+                    "require": true,
+                    "type": "Vector"
+                },
+                {
+                    "name": "Rated Speed n0",
+                    "holder": "请输入额定转速",
+                    "unit": "r/min",
+                    "value": "2000",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Density ρ",
+                    "holder": "请输入流体密度",
+                    "unit": "kg/m^3",
+                    "value": "1.0e3",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "Gravitational Acceleration g",
+                    "holder": "请输入重力加速度",
+                    "unit": "m/s²",
+                    "value": "10.0",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+        }
+    }
+}

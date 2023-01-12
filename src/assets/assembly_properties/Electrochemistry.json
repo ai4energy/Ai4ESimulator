@@ -1,0 +1,716 @@
+{
+    "uids": {
+        "components": {
+            "Inductor": "ea401710-91aa-11ed-18b9-db36787706e8",
+            "Constant": "ea401710-91aa-11ed-1ec9-4d5d628834bf",
+            "PEMElectrolyzer": "ea401710-91aa-11ed-14c3-a10bd8422fbe",
+            "electronic_load": "ea401710-91aa-11ed-0113-ff7f61ef630b",
+            "Conductor": "ea401710-91aa-11ed-3580-1ffebc8bbed2",
+            "MPPT_Controller": "ea401710-91aa-11ed-3323-47a1e696fc17",
+            "Voltage_source": "ea401710-91aa-11ed-2d7d-13bf533f7847",
+            "DC2DC": "ea401710-91aa-11ed-1ea3-6bcb9f9615be",
+            "PhotovoltaicCell": "ea401710-91aa-11ed-10eb-bdfa60a47b22",
+            "Resistor": "ea401710-91aa-11ed-0a77-a59ab8be6e8a",
+            "Current_source": "ea401710-91aa-11ed-25d1-fdffb751ace2",
+            "charge_controller": "ea401710-91aa-11ed-085e-21c0619855ba",
+            "Capacitor": "ea401710-91aa-11ed-002a-2fbd56aff6f3",
+            "Ground": "ea401710-91aa-11ed-3021-0ba8aa506dda",
+            "Super_capacity": "ea401710-91aa-11ed-3b59-6510ff5bbd9d"
+        },
+        "lib": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+    },
+    "Electrochemistry": {
+        "Inductor": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-18b9-db36787706e8",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Inductor",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "L",
+                    "holder": "请输入电感值",
+                    "unit": "H",
+                    "value": "1e-5",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "i_start",
+                    "holder": "请输入初始电流",
+                    "unit": "A",
+                    "value": "0.0",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "Constant": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-1ec9-4d5d628834bf",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Constant",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "U",
+                    "holder": "请输入恒压源的电压值",
+                    "unit": "V",
+                    "value": "0.0",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "PEMElectrolyzer": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-14c3-a10bd8422fbe",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "PEMElectrolyzer",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "τ",
+                    "holder": "请输入塔费尔斜率",
+                    "unit": "",
+                    "value": "0.1",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "I_0",
+                    "holder": "请输入交换电流密度",
+                    "unit": "A⋅m^-2",
+                    "value": "0.01",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "n",
+                    "holder": "请输入串联的电解槽数量",
+                    "unit": "",
+                    "value": "1",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "u_0",
+                    "holder": "请输入平衡电势",
+                    "unit": "",
+                    "value": "1.47",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "R_sol",
+                    "holder": "请输入槽内溶液电阻",
+                    "unit": "Ω",
+                    "value": "0.22",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "electronic_load": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-0113-ff7f61ef630b",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "electronic_load",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "Conductor": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-3580-1ffebc8bbed2",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Conductor",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "G",
+                    "holder": "请输入电导值",
+                    "unit": "Ω^-1",
+                    "value": "1",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "MPPT_Controller": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-3323-47a1e696fc17",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "MPPT_Controller",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Sampling_time",
+                    "holder": "请输入采样时间",
+                    "unit": "s",
+                    "value": "0.1",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sleft",
+                    "lb": "L port 2",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 2",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "Voltage_source": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-2d7d-13bf533f7847",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Voltage_source",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "DC2DC": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-1ea3-6bcb9f9615be",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "DC2DC",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "n",
+                    "holder": "请输入能量的转化效率",
+                    "unit": "",
+                    "value": "0.98",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "type",
+                    "holder": "请输入能量转化类型",
+                    "unit": "voltage",
+                    "value": "0.98",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "value",
+                    "holder": "输出值",
+                    "unit": "relate to type",
+                    "value": "1.0",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sleft",
+                    "lb": "L port 2",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 2",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "PhotovoltaicCell": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-10eb-bdfa60a47b22",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "PhotovoltaicCell",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "I_ph",
+                    "holder": "请输入光电流",
+                    "unit": "A",
+                    "value": "6.08",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "I_0",
+                    "holder": "请输入反向饱和电流",
+                    "unit": "A",
+                    "value": "6.88e-13",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "a",
+                    "holder": "请输入修正系数",
+                    "unit": "",
+                    "value": "2.3402",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "R_s",
+                    "holder": "请输入串联电阻值",
+                    "unit": "Ω",
+                    "value": "0.741",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "R_sh",
+                    "holder": "请输入Ohmic resistance",
+                    "unit": "Ω",
+                    "value": "457.17",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "Resistor": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-0a77-a59ab8be6e8a",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Resistor",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "R",
+                    "holder": "请输入电阻值",
+                    "unit": "Ω",
+                    "value": "1",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "Current_source": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-25d1-fdffb751ace2",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Current_source",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "charge_controller": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-085e-21c0619855ba",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "charge_controller",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "time",
+                    "holder": "经过多久后充电",
+                    "unit": "s",
+                    "value": "5.0",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "value",
+                    "holder": "充电电流大小",
+                    "unit": "A",
+                    "value": "1.0",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "Capacitor": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-002a-2fbd56aff6f3",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Capacitor",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "Capacitance",
+                    "holder": "请输入电容值",
+                    "unit": "F",
+                    "value": "0.48e-6",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "v_start",
+                    "holder": "请输入初始电压",
+                    "unit": "V",
+                    "value": "0.0",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "Ground": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-3021-0ba8aa506dda",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Ground",
+                    "require": true,
+                    "type": "string"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "stop",
+                    "lb": "T port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        },
+        "Super_capacity": {
+            "label": "logo",
+            "name": "ea401710-91aa-11ed-3b59-6510ff5bbd9d",
+            "height": 100,
+            "attrs": [
+                {
+                    "name": "name",
+                    "holder": "请输入组件名称",
+                    "unit": "",
+                    "value": "Super_capacity",
+                    "require": true,
+                    "type": "string"
+                },
+                {
+                    "name": "R_0",
+                    "holder": "请输入第一分支的串联电阻",
+                    "unit": "Ω",
+                    "value": "0.0100478",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "C_0",
+                    "holder": "请输入第一分支的电容",
+                    "unit": "H",
+                    "value": "89.03",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "K_v",
+                    "holder": "请输入第一分支的比例系数",
+                    "unit": "",
+                    "value": "29.1062",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "R_2",
+                    "holder": "请输入第二分支的串联电阻",
+                    "unit": "Ω",
+                    "value": "17.4976",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "C_2",
+                    "holder": "请输入第二分支的电容",
+                    "unit": "H",
+                    "value": "13.7162",
+                    "require": true,
+                    "type": "number"
+                },
+                {
+                    "name": "R_EPR",
+                    "holder": "请输入自放电电阻",
+                    "unit": "Ω",
+                    "value": "5000.0",
+                    "require": true,
+                    "type": "number"
+                }
+            ],
+            "ports": [
+                {
+                    "gp": "sleft",
+                    "lb": "L port 1",
+                    "clr": "#919191"
+                },
+                {
+                    "gp": "sright",
+                    "lb": "R port 1",
+                    "clr": "#919191"
+                }
+            ],
+            "width": 100,
+            "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+        }
+    }
+}
