@@ -106,3 +106,6 @@ dist
 
 # Temp copy file
 * copy.*
+
+# VS Code config file
+.vscode
