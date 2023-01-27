@@ -4,6 +4,31 @@
       "zhcn": "示例",
       "enus": "Example Icons",
       "guid": "1f063fbc-2671-4640-957f-14b4623e9791"
+    },
+    {
+      "zhcn": "电化学",
+      "enus": "Electrochemistry",
+      "guid": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+    },
+    {
+      "zhcn": "空气管道",
+      "enus": "AirPipeSim",
+      "guid": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+    },
+    {
+      "zhcn": "压缩空气管道",
+      "enus": "CompressedAirSystem",
+      "guid": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+    },
+    {
+      "zhcn": "不可压缩空气管道",
+      "enus": "IncompressiblePipe",
+      "guid": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+    },
+    {
+      "zhcn": "热力循环",
+      "enus": "CompressedAirSystem",
+      "guid": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
     }
   ],
   "iconList": [
@@ -11,33 +36,78 @@
       "icon": {
         "name": "svg",
         "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
           "xmlns": "http://www.w3.org/2000/svg",
-          "viewBox": "0 0 261.76 226.69",
-          "xmlns:v": "https://vecta.io/nano"
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
         },
         "children": [
           {
-            "name": "path",
+            "name": "rect",
             "attrs": {
-              "d": "M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z",
-              "fill": "#41b883"
-            }
-          },
-          {
-            "name": "path",
-            "attrs": {
-              "d": "M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z",
-              "fill": "#34495e"
-            }
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
           },
           {
             "name": "text",
             "attrs": {
-              "x": "20",
-              "y": "35",
-              "class": "small",
-              "innerHTML": "发电机"
-            }
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电感"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
           }
         ]
       },
@@ -48,12 +118,36 @@
         "width": 100,
         "height": 100,
         "ports": [
-          { "gp": "stop", "lb": "T port 1", "clr": "#919191" },
-          { "gp": "stop", "lb": "T port 2", "clr": "#919191" },
-          { "gp": "sright", "lb": "R port 1", "clr": "#919191" },
-          { "gp": "sright", "lb": "R port 2", "clr": "#919191" },
-          { "gp": "sright", "lb": "R port 3", "clr": "#919191" },
-          { "gp": "sleft", "lb": "L port", "clr": "#919191" }
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "stop",
+            "lb": "T port 2",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 2",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 3",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sleft",
+            "lb": "L port",
+            "clr": "#919191"
+          }
         ],
         "attrs": [
           {
@@ -81,6 +175,5540 @@
             "holder": "请输入额定功率"
           }
         ]
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电感"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-18b9-db36787706e8",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Inductor",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "L",
+            "holder": "请输入电感值",
+            "unit": "H",
+            "value": "1e-5",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "i_start",
+            "holder": "请输入初始电流",
+            "unit": "A",
+            "value": "0.0",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "常数输入"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 15.0 100.0 0 115.0 15.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "u"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-1ec9-4d5d628834bf",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Constant",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "U",
+            "holder": "请输入恒压源的电压值",
+            "unit": "V",
+            "value": "0.0",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电解槽"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-14c3-a10bd8422fbe",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "PEMElectrolyzer",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "τ",
+            "holder": "请输入塔费尔斜率",
+            "unit": "",
+            "value": "0.1",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "I_0",
+            "holder": "请输入交换电流密度",
+            "unit": "A⋅m^-2",
+            "value": "0.01",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "n",
+            "holder": "请输入串联的电解槽数量",
+            "unit": "",
+            "value": "1",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "u_0",
+            "holder": "请输入平衡电势",
+            "unit": "",
+            "value": "1.47",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "R_sol",
+            "holder": "请输入槽内溶液电阻",
+            "unit": "Ω",
+            "value": "0.22",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电子负载"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 0 100.0 15.0 115.0 0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "u"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-0113-ff7f61ef630b",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "electronic_load",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电导"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-3580-1ffebc8bbed2",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Conductor",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "G",
+            "holder": "请输入电导值",
+            "unit": "Ω^-1",
+            "value": "1",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "MPPT控制器"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 51.66666666666667 15.0 66.66666666666667 0 81.66666666666667",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "71.66666666666667",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p1"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "15.0 118.33333333333334 0 133.33333333333334 15.0 148.33333333333334",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "138.33333333333334",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "n1"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "200.0 51.66666666666667 185.0 66.66666666666667 200.0 81.66666666666667",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "71.66666666666667",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "p2"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 118.33333333333334 200.0 133.33333333333334 185.0 148.33333333333334",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "138.33333333333334",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n2"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-3323-47a1e696fc17",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "MPPT_Controller",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Sampling_time",
+            "holder": "请输入采样时间",
+            "unit": "s",
+            "value": "0.1",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sleft",
+            "lb": "L port 2",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 2",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电压源"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "n"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 0 100.0 15.0 115.0 0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "u"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-2d7d-13bf533f7847",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Voltage_source",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "变压器"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 51.66666666666667 15.0 66.66666666666667 0 81.66666666666667",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "71.66666666666667",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p1"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "15.0 118.33333333333334 0 133.33333333333334 15.0 148.33333333333334",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "138.33333333333334",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "n1"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "200.0 51.66666666666667 185.0 66.66666666666667 200.0 81.66666666666667",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "71.66666666666667",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "p2"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 118.33333333333334 200.0 133.33333333333334 185.0 148.33333333333334",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "138.33333333333334",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n2"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-1ea3-6bcb9f9615be",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "DC2DC",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "n",
+            "holder": "请输入能量的转化效率",
+            "unit": "",
+            "value": "0.98",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "holder": "请输入能量转化类型",
+            "unit": "voltage",
+            "value": "0.98",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "holder": "输出值",
+            "unit": "relate to type",
+            "value": "1.0",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sleft",
+            "lb": "L port 2",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 2",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "光伏电池"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-10eb-bdfa60a47b22",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "PhotovoltaicCell",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "I_ph",
+            "holder": "请输入光电流",
+            "unit": "A",
+            "value": "6.08",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "I_0",
+            "holder": "请输入反向饱和电流",
+            "unit": "A",
+            "value": "6.88e-13",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "a",
+            "holder": "请输入修正系数",
+            "unit": "",
+            "value": "2.3402",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "R_s",
+            "holder": "请输入串联电阻值",
+            "unit": "Ω",
+            "value": "0.741",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "R_sh",
+            "holder": "请输入Ohmic resistance",
+            "unit": "Ω",
+            "value": "457.17",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电阻"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-0a77-a59ab8be6e8a",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Resistor",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "R",
+            "holder": "请输入电阻值",
+            "unit": "Ω",
+            "value": "1",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      },
+      "Current_source": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-25d1-fdffb751ace2",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Current_source",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电流源"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "n"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 0 100.0 15.0 115.0 0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "u"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-25d1-fdffb751ace2",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Current_source",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "充放电控制器"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "n"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "p"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-085e-21c0619855ba",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "charge_controller",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "time",
+            "holder": "经过多久后充电",
+            "unit": "s",
+            "value": "5.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "value",
+            "holder": "充电电流大小",
+            "unit": "A",
+            "value": "1.0",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "电容"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-002a-2fbd56aff6f3",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Capacitor",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Capacitance",
+            "holder": "请输入电容值",
+            "unit": "F",
+            "value": "0.48e-6",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "v_start",
+            "holder": "请输入初始电压",
+            "unit": "V",
+            "value": "0.0",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "地线"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 0 100.0 15.0 115.0 0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "u"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-3021-0ba8aa506dda",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Ground",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "超级电容器"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "n"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-3b59-6510ff5bbd9d",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Super_capacity",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "R_0",
+            "holder": "请输入第一分支的串联电阻",
+            "unit": "Ω",
+            "value": "0.0100478",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "C_0",
+            "holder": "请输入第一分支的电容",
+            "unit": "H",
+            "value": "89.03",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "K_v",
+            "holder": "请输入第一分支的比例系数",
+            "unit": "",
+            "value": "29.1062",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "R_2",
+            "holder": "请输入第二分支的串联电阻",
+            "unit": "Ω",
+            "value": "17.4976",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "C_2",
+            "holder": "请输入第二分支的电容",
+            "unit": "H",
+            "value": "13.7162",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "R_EPR",
+            "holder": "请输入自放电电阻",
+            "unit": "Ω",
+            "value": "5000.0",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "压力源"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 15.0 100.0 0 115.0 15.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "u"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "b00d58b0-8e61-11ed-3673-c3f10864bcd9",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "PressureSource",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Pressure",
+            "holder": "请输入压力",
+            "unit": "Pa",
+            "value": "1.013e5",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature",
+            "holder": "请输入温度",
+            "unit": "K",
+            "value": "293.15",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "stop",
+            "lb": "t1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "流量源"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 15.0 100.0 0 115.0 15.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "u"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "b00d58b0-8e61-11ed-2998-a746a2218dfb",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "FlowSource",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Mass Flow Rate",
+            "holder": "请输入质量流量",
+            "unit": "kg/s",
+            "value": "0.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature",
+            "holder": "请输入温度",
+            "unit": "K",
+            "value": "293.15",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "stop",
+            "lb": "t1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "简单管道"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "b00d58b0-8e61-11ed-1e1f-fd908727eb27",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "SimplePipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Resistance Factor",
+            "holder": "请输入阻力系数",
+            "unit": "kg^-1⋅m^-1",
+            "value": "1000",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature",
+            "holder": "请输入温度",
+            "unit": "K",
+            "value": "293.15",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "r1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "l1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "储气罐"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "b00d58b0-8e61-11ed-3e4a-0309c5a33240",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "AirStorageTank",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Volum",
+            "holder": "请输入储气罐体积",
+            "unit": "m^3",
+            "value": "20",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature",
+            "holder": "请输入环境温度",
+            "unit": "K",
+            "value": "293.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Initial Pressure",
+            "holder": "请输入初始压力",
+            "unit": "Pa",
+            "value": "1e5",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "r1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "l1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "过渡管道"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "b00d58b0-8e61-11ed-1b06-2529befd9c88",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "TransitionPipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "λ1",
+            "holder": "该系数取1即可",
+            "unit": "",
+            "value": "1.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "λ2",
+            "holder": "该系数取1即可",
+            "unit": "",
+            "value": "1.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "λ3",
+            "holder": "该系数取1即可",
+            "unit": "",
+            "value": "1.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "n",
+            "holder": "管道分成的节点数",
+            "unit": "",
+            "value": "10",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Friction Factor f",
+            "holder": "管道的摩擦阻力系数",
+            "unit": "",
+            "value": "0.016",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Diameter D",
+            "holder": "管道的直径",
+            "unit": "m",
+            "value": "1.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Length L",
+            "holder": "管道的长度",
+            "unit": "m",
+            "value": "100",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Inlet Pressure Pa",
+            "holder": "管道的入口初始压力",
+            "unit": "Pa",
+            "value": "5.6e5",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Outlet Pressure Pa",
+            "holder": "管道的出口初始压力",
+            "unit": "Pa",
+            "value": "5.6e5",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "r1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "l1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "b00bd210-8e61-11ed-0fe3-63e365023c75"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "阀"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "e7ef68ee-91ad-11ed-3b9a-2f7f3e8e73a7",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "ConstantValve",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Resistance Factor",
+            "holder": "请输入储气罐体积",
+            "unit": "kg^-1m^-1",
+            "value": "100",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "净化元件"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "e7ef68ee-91ad-11ed-1555-6d0604182902",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Purifier",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "c",
+            "holder": "请输入净化系数",
+            "unit": "",
+            "value": "0.98",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Δp",
+            "holder": "请输入净化元件的压降",
+            "unit": "Pa",
+            "value": "300",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "T",
+            "holder": "请输入环境温度",
+            "unit": "K",
+            "value": "293.15",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "简化管道"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "e7ef68ee-91ad-11ed-0d2b-0d72fac2e2d6",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "SimplifiedPipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Resistance Factor",
+            "holder": "请输入储气罐体积",
+            "unit": "kg^-1m^-1",
+            "value": "100",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "直管道"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "e7ef68ee-91ad-11ed-1e67-83c389c4c789",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "StraightPipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "D",
+            "holder": "请输入管道直径",
+            "unit": "m",
+            "value": "1.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "L",
+            "holder": "请输入管道长度",
+            "unit": "m",
+            "value": "1.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "ϵ",
+            "holder": "请输入管道壁面粗糙度",
+            "unit": "m",
+            "value": "0.05e-3",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "简单管道"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "58f57290-8e72-11ed-2d2e-add604faa8a7",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "SimplePipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Friction Factor R",
+            "holder": "请输入管道的摩擦阻力系数",
+            "unit": "Pa·s/kg",
+            "value": "100",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature T",
+            "holder": "请输入管内流体温度",
+            "unit": "K",
+            "value": "300",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "简化冷水机"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in1"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out1"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 0 100.0 15.0 115.0 0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "in2"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 185.0 100.0 200.0 115.0 185.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "180.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "out2"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "58f57290-8e72-11ed-23c0-9f7eb0261f11",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "WaterChiller",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Coefficient D",
+            "holder": "请输入系数",
+            "unit": "",
+            "value": "[22.08252111,-0.008374357,0.605004615,-0.544042021,-2.10E-07,7.04E-05,0.000299955,-0.028824777]",
+            "require": true,
+            "type": "Vector"
+          },
+          {
+            "name": "Cooling Capacity Qe0",
+            "holder": "请输入PLR=1时的制冷量",
+            "unit": "W",
+            "value": "3000",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sbottom",
+            "lb": "B port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "冷却塔"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "58f57290-8e72-11ed-2068-cd8d76e15568",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "CoolingTower",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Temperature Tw",
+            "holder": "请输入环境湿球温度",
+            "unit": "K",
+            "value": "299.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature ΔTct",
+            "holder": "请输入供水温度与湿球温度之间的温差",
+            "unit": "K",
+            "value": "5",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "风机盘管"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "58f57290-8e72-11ed-0595-7d18bcd0df22",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "FanCoil",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Coefficient D",
+            "holder": "请输入系数",
+            "unit": "",
+            "value": "[1, 1.2, 1.2]",
+            "require": true,
+            "type": "Vector"
+          },
+          {
+            "name": "Rated Power Qf0",
+            "holder": "请输入额定换热功率",
+            "unit": "W",
+            "value": "2500",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature Tai0",
+            "holder": "请输入额定进风温度",
+            "unit": "K",
+            "value": "298.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature Twi0",
+            "holder": "请输入额定进水温度",
+            "unit": "K",
+            "value": "280.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature Tai",
+            "holder": "请输入实际进风温度",
+            "unit": "K",
+            "value": "298.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Specific Heat cp",
+            "holder": "请输入水的比热",
+            "unit": "J/(kg·K)",
+            "value": "4.18",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "流量源"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 15.0 100.0 0 115.0 15.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "58f57290-8e72-11ed-0c54-5b20b46ceea1",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "source",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Mass Flow Rate",
+            "holder": "请输入质量流量",
+            "unit": "kg/s",
+            "value": "100",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Pressure p",
+            "holder": "请输入压力",
+            "unit": "Pa",
+            "value": "100",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Temperature t0",
+            "holder": "请输入温度",
+            "unit": "K",
+            "value": "303.15",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "泵"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "58f57290-8e72-11ed-08bb-6ffb841de33c",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Pump",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Coefficient D",
+            "holder": "请输入系数",
+            "unit": "",
+            "value": "[120,-1500,-0.5,0.8,0.8,0.8]",
+            "require": true,
+            "type": "Vector"
+          },
+          {
+            "name": "Rated Speed n0",
+            "holder": "请输入额定转速",
+            "unit": "r/min",
+            "value": "2000",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Density ρ",
+            "holder": "请输入流体密度",
+            "unit": "kg/m^3",
+            "value": "1.0e3",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Gravitational Acceleration g",
+            "holder": "请输入重力加速度",
+            "unit": "m/s²",
+            "value": "10.0",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "58f46120-8e72-11ed-25c1-7955545ab85b"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "简单管道"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "f0fa9e20-8e69-11ed-094c-31f3df8eb39d",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "SimplePipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Length L",
+            "holder": "请输入管道长度",
+            "unit": "m",
+            "value": "30",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Diameter D",
+            "holder": "请输入管径",
+            "unit": "m",
+            "value": "0.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Friction Factor f",
+            "holder": "请输入管道的摩擦阻力系数",
+            "unit": "",
+            "value": "0.023",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Density ρ",
+            "holder": "请输入流体密度",
+            "unit": "kg/m^3",
+            "value": "1.0e3",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Height zin",
+            "holder": "请输入管道入口高度",
+            "unit": "m",
+            "value": "25.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Height zout",
+            "holder": "请输入管道出口高度",
+            "unit": "m",
+            "value": "0.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Local Resistance Loss Coefficient K_inside",
+            "holder": "请输入管内的局部阻力损失系数",
+            "unit": "",
+            "value": "10.8",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "离心泵"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "f0f287d0-8e69-11ed-28e5-bb4286fb30b8",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "CentrifugalPump",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Diameter D",
+            "holder": "请输入管径",
+            "unit": "m",
+            "value": "0.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Rotary Speed ω",
+            "holder": "请输入离心泵转速",
+            "unit": "r/min",
+            "value": "5000",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Parameter c_0",
+            "holder": "请输入H-Q特性曲线参数c_0",
+            "unit": "",
+            "value": "4.4e-4",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Parameter c_1",
+            "holder": "请输入H-Q特性曲线参数c_1",
+            "unit": "",
+            "value": "5.622",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Density ρ",
+            "holder": "请输入流体密度",
+            "unit": "kg/m^3",
+            "value": "1.0e3",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "压力源"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 15.0 100.0 0 115.0 15.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "f0fa9e20-8e69-11ed-3940-87797df8162d",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Source_P",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Diameter D",
+            "holder": "请输入管径",
+            "unit": "m",
+            "value": "0.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Height z",
+            "holder": "请输入高度",
+            "unit": "m",
+            "value": "25.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Density ρ",
+            "holder": "请输入流体密度",
+            "unit": "kg/m^3",
+            "value": "1.0e3",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Pressure Pa",
+            "holder": "请输入压力，默认值101325Pa",
+            "unit": "Pa",
+            "value": "101325",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Local Resistance Loss Coefficient K_inlet",
+            "holder": "请输入入口局部阻力损失系数，默认值0.5",
+            "unit": "",
+            "value": "0.5",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "弯管"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "f0fa9e20-8e69-11ed-34b5-b7cc682a2de0",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "ElbowPipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Diameter D",
+            "holder": "请输入管径",
+            "unit": "m",
+            "value": "0.15",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Local Resistance Loss Coefficient K",
+            "holder": "请输入弯管的局部阻力损失系数",
+            "unit": "",
+            "value": "0.9",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Density ρ",
+            "holder": "请输入流体密度",
+            "unit": "kg/m^3",
+            "value": "1.0e3",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Height zin",
+            "holder": "请输入弯管入口高度",
+            "unit": "m",
+            "value": "15.0",
+            "require": true,
+            "type": "number"
+          },
+          {
+            "name": "Height zout",
+            "holder": "请输入弯管出口高度",
+            "unit": "m",
+            "value": "15.0",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "储罐"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 15.0 100.0 0 115.0 15.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "f0fa9e20-8e69-11ed-1473-d3926ee78ef8",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Sink_P",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "Pressure Pa",
+            "holder": "请输入储罐压力，默认值101325Pa",
+            "unit": "Pa",
+            "value": "101325",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "任意过程"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "fa9a0580-8e71-11ed-13d2-f9c7da3131a5",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "ArbitraryProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "inter_state",
+            "holder": "给出一种已知状态",
+            "unit": "",
+            "value": "'P'",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "process",
+            "holder": "给出另一种状态",
+            "unit": "",
+            "value": "'T'",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "fluid",
+            "holder": "请输入流体种类",
+            "unit": "",
+            "value": "'Water'",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "等焓过程"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "faa21bd0-8e71-11ed-33e0-7d7ff8c169bf",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsoenthalpyProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "inter_state",
+            "holder": "给出除焓以外另一种已知状态",
+            "unit": "",
+            "value": "'P'",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "fluid",
+            "holder": "请输入流体种类",
+            "unit": "",
+            "value": "'Water'",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "等熵过程"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "faa1a6a0-8e71-11ed-3b36-b7660b7cb8fa",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsentropicProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "inter_state",
+            "holder": "给出除熵以外另一种已知状态",
+            "unit": "",
+            "value": "'P'",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "fluid",
+            "holder": "请输入流体种类",
+            "unit": "",
+            "value": "'Water'",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "等温过程"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "faa21bd0-8e71-11ed-2add-b75b086334d3",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsothermalProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "inter_state",
+            "holder": "给出除温度以外另一种已知状态",
+            "unit": "",
+            "value": "'Q_0'",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "fluid",
+            "holder": "请输入流体种类",
+            "unit": "",
+            "value": "'Water'",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "等压过程"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "faa21bd0-8e71-11ed-2148-7bf548347b89",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsobaricProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "inter_state",
+            "holder": "给出除压力以外另一种已知状态",
+            "unit": "",
+            "value": "'T'",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "fluid",
+            "holder": "请输入流体种类",
+            "unit": "",
+            "value": "'Water'",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "等容过程"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "start",
+              "innerHTML": "in"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "end",
+              "innerHTML": "out"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "faa21bd0-8e71-11ed-38b5-655171e42880",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsochoricProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "inter_state",
+            "holder": "给出除体积以外另一种已知状态",
+            "unit": "",
+            "value": "'T'",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "fluid",
+            "holder": "请输入流体种类",
+            "unit": "",
+            "value": "'Water'",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "black",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "热力学状态"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "85.0 0 100.0 15.0 115.0 0",
+              "stroke": "black",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "35.0",
+              "stroke": "black",
+              "text-anchor": "middle",
+              "innerHTML": "u"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "faa21bd0-8e71-11ed-2c39-7f08d54819f8",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "ThermalStates",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "state",
+            "holder": "给出一种已知状态",
+            "unit": "",
+            "value": "'P'",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "holder": "给出已知状态的值",
+            "unit": "Pa",
+            "value": "3.0E6",
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
       }
     }
   ]
