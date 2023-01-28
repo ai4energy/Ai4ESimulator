@@ -49,7 +49,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -61,7 +61,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电感"
             },
@@ -71,7 +71,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -82,7 +82,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -92,7 +92,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -103,7 +103,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -194,7 +194,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -206,7 +206,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电感"
             },
@@ -216,7 +216,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -227,7 +227,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -237,7 +237,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -248,7 +248,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -319,7 +319,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -331,7 +331,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "常数输入"
             },
@@ -341,7 +341,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 15.0 100.0 0 115.0 15.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -352,7 +352,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "u"
             },
@@ -410,7 +410,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -422,7 +422,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电解槽"
             },
@@ -432,7 +432,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -443,7 +443,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -453,7 +453,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -464,7 +464,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -559,7 +559,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -571,7 +571,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电子负载"
             },
@@ -581,7 +581,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -592,7 +592,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -602,7 +602,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -613,7 +613,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -623,7 +623,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 0 100.0 15.0 115.0 0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -634,7 +634,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "u"
             },
@@ -694,7 +694,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -706,7 +706,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电导"
             },
@@ -716,7 +716,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -727,7 +727,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -737,7 +737,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -748,7 +748,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -811,7 +811,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -823,7 +823,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "MPPT控制器"
             },
@@ -833,7 +833,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 51.66666666666667 15.0 66.66666666666667 0 81.66666666666667",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -844,7 +844,7 @@
             "attrs": {
               "x": "25.0",
               "y": "71.66666666666667",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p1"
             },
@@ -854,7 +854,7 @@
             "name": "polyline",
             "attrs": {
               "points": "15.0 118.33333333333334 0 133.33333333333334 15.0 148.33333333333334",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -865,7 +865,7 @@
             "attrs": {
               "x": "25.0",
               "y": "138.33333333333334",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "n1"
             },
@@ -875,7 +875,7 @@
             "name": "polyline",
             "attrs": {
               "points": "200.0 51.66666666666667 185.0 66.66666666666667 200.0 81.66666666666667",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -886,7 +886,7 @@
             "attrs": {
               "x": "175.0",
               "y": "71.66666666666667",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "p2"
             },
@@ -896,7 +896,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 118.33333333333334 200.0 133.33333333333334 185.0 148.33333333333334",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -907,7 +907,7 @@
             "attrs": {
               "x": "175.0",
               "y": "138.33333333333334",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n2"
             },
@@ -980,7 +980,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -992,7 +992,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电压源"
             },
@@ -1002,7 +1002,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1013,7 +1013,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "n"
             },
@@ -1023,7 +1023,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1034,7 +1034,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "p"
             },
@@ -1044,7 +1044,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 0 100.0 15.0 115.0 0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1055,7 +1055,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "u"
             },
@@ -1115,7 +1115,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -1127,7 +1127,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "变压器"
             },
@@ -1137,7 +1137,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 51.66666666666667 15.0 66.66666666666667 0 81.66666666666667",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1148,7 +1148,7 @@
             "attrs": {
               "x": "25.0",
               "y": "71.66666666666667",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p1"
             },
@@ -1158,7 +1158,7 @@
             "name": "polyline",
             "attrs": {
               "points": "15.0 118.33333333333334 0 133.33333333333334 15.0 148.33333333333334",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1169,7 +1169,7 @@
             "attrs": {
               "x": "25.0",
               "y": "138.33333333333334",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "n1"
             },
@@ -1179,7 +1179,7 @@
             "name": "polyline",
             "attrs": {
               "points": "200.0 51.66666666666667 185.0 66.66666666666667 200.0 81.66666666666667",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1190,7 +1190,7 @@
             "attrs": {
               "x": "175.0",
               "y": "71.66666666666667",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "p2"
             },
@@ -1200,7 +1200,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 118.33333333333334 200.0 133.33333333333334 185.0 148.33333333333334",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1211,7 +1211,7 @@
             "attrs": {
               "x": "175.0",
               "y": "138.33333333333334",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n2"
             },
@@ -1300,7 +1300,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -1312,7 +1312,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "光伏电池"
             },
@@ -1322,7 +1322,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1333,7 +1333,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -1343,7 +1343,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1354,7 +1354,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -1449,7 +1449,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -1461,7 +1461,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电阻"
             },
@@ -1471,7 +1471,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1482,7 +1482,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -1492,7 +1492,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1503,7 +1503,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -1600,7 +1600,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -1612,7 +1612,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电流源"
             },
@@ -1622,7 +1622,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1633,7 +1633,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "n"
             },
@@ -1643,7 +1643,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1654,7 +1654,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "p"
             },
@@ -1664,7 +1664,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 0 100.0 15.0 115.0 0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1675,7 +1675,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "u"
             },
@@ -1735,7 +1735,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -1747,7 +1747,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "充放电控制器"
             },
@@ -1757,7 +1757,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1768,7 +1768,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "n"
             },
@@ -1778,7 +1778,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1789,7 +1789,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "p"
             },
@@ -1860,7 +1860,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -1872,7 +1872,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "电容"
             },
@@ -1882,7 +1882,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1893,7 +1893,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -1903,7 +1903,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -1914,7 +1914,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -1985,7 +1985,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -1997,7 +1997,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "地线"
             },
@@ -2007,7 +2007,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 0 100.0 15.0 115.0 0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2018,7 +2018,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "u"
             },
@@ -2068,7 +2068,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -2080,7 +2080,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "超级电容器"
             },
@@ -2090,7 +2090,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2101,7 +2101,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "p"
             },
@@ -2111,7 +2111,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2122,7 +2122,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "n"
             },
@@ -2225,7 +2225,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -2237,7 +2237,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "压力源"
             },
@@ -2247,7 +2247,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 15.0 100.0 0 115.0 15.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2258,7 +2258,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "u"
             },
@@ -2324,7 +2324,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -2336,7 +2336,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "流量源"
             },
@@ -2346,7 +2346,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 15.0 100.0 0 115.0 15.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2357,7 +2357,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "u"
             },
@@ -2423,7 +2423,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -2435,7 +2435,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "简单管道"
             },
@@ -2445,7 +2445,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2456,7 +2456,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -2466,7 +2466,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2477,7 +2477,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -2548,7 +2548,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -2560,7 +2560,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "储气罐"
             },
@@ -2570,7 +2570,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2581,7 +2581,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -2591,7 +2591,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2602,7 +2602,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -2681,7 +2681,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -2693,7 +2693,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "过渡管道"
             },
@@ -2703,7 +2703,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2714,7 +2714,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -2724,7 +2724,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2735,7 +2735,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -2862,7 +2862,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -2874,7 +2874,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "阀"
             },
@@ -2884,7 +2884,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2895,7 +2895,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -2905,7 +2905,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -2916,7 +2916,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -2979,7 +2979,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -2991,7 +2991,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "净化元件"
             },
@@ -3001,7 +3001,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3012,7 +3012,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -3022,7 +3022,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3033,7 +3033,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -3112,7 +3112,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -3124,7 +3124,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "简化管道"
             },
@@ -3134,7 +3134,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3145,7 +3145,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -3155,7 +3155,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3166,7 +3166,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -3229,7 +3229,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -3241,7 +3241,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "直管道"
             },
@@ -3251,7 +3251,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3262,7 +3262,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -3272,7 +3272,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3283,7 +3283,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -3362,7 +3362,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -3374,7 +3374,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "简单管道"
             },
@@ -3384,7 +3384,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3395,7 +3395,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -3405,7 +3405,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3416,7 +3416,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -3487,7 +3487,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -3499,7 +3499,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "简化冷水机"
             },
@@ -3509,7 +3509,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3520,7 +3520,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in1"
             },
@@ -3530,7 +3530,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3541,7 +3541,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out1"
             },
@@ -3551,7 +3551,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 0 100.0 15.0 115.0 0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3562,7 +3562,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "in2"
             },
@@ -3572,7 +3572,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 185.0 100.0 200.0 115.0 185.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3583,7 +3583,7 @@
             "attrs": {
               "x": "100.0",
               "y": "180.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "out2"
             },
@@ -3664,7 +3664,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -3676,7 +3676,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "冷却塔"
             },
@@ -3686,7 +3686,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3697,7 +3697,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -3707,7 +3707,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3718,7 +3718,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -3789,7 +3789,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -3801,7 +3801,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "风机盘管"
             },
@@ -3811,7 +3811,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3822,7 +3822,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -3832,7 +3832,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3843,7 +3843,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -3946,7 +3946,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -3958,7 +3958,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "流量源"
             },
@@ -3968,7 +3968,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 15.0 100.0 0 115.0 15.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -3979,7 +3979,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "out"
             },
@@ -4053,7 +4053,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -4065,7 +4065,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "泵"
             },
@@ -4075,7 +4075,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4086,7 +4086,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -4096,7 +4096,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4107,7 +4107,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -4194,7 +4194,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -4206,7 +4206,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "简单管道"
             },
@@ -4216,7 +4216,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4227,7 +4227,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -4237,7 +4237,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4248,7 +4248,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -4359,7 +4359,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -4371,7 +4371,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "离心泵"
             },
@@ -4381,7 +4381,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4392,7 +4392,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -4402,7 +4402,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4413,7 +4413,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -4508,7 +4508,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -4520,7 +4520,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "压力源"
             },
@@ -4530,7 +4530,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 15.0 100.0 0 115.0 15.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4541,7 +4541,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "out"
             },
@@ -4631,7 +4631,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -4643,7 +4643,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "弯管"
             },
@@ -4653,7 +4653,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4664,7 +4664,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -4674,7 +4674,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4685,7 +4685,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -4780,7 +4780,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -4792,7 +4792,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "储罐"
             },
@@ -4802,7 +4802,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 15.0 100.0 0 115.0 15.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4813,7 +4813,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "out"
             },
@@ -4871,7 +4871,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -4883,7 +4883,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "任意过程"
             },
@@ -4893,7 +4893,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4904,7 +4904,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -4914,7 +4914,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -4925,7 +4925,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -5004,7 +5004,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -5016,7 +5016,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "等焓过程"
             },
@@ -5026,7 +5026,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5037,7 +5037,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -5047,7 +5047,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5058,7 +5058,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -5129,7 +5129,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -5141,7 +5141,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "等熵过程"
             },
@@ -5151,7 +5151,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5162,7 +5162,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -5172,7 +5172,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5183,7 +5183,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -5254,7 +5254,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -5266,7 +5266,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "等温过程"
             },
@@ -5276,7 +5276,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5287,7 +5287,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -5297,7 +5297,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5308,7 +5308,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -5379,7 +5379,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -5391,7 +5391,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "等压过程"
             },
@@ -5401,7 +5401,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5412,7 +5412,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -5422,7 +5422,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5433,7 +5433,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -5504,7 +5504,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -5516,7 +5516,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "等容过程"
             },
@@ -5526,7 +5526,7 @@
             "name": "polyline",
             "attrs": {
               "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5537,7 +5537,7 @@
             "attrs": {
               "x": "25.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "start",
               "innerHTML": "in"
             },
@@ -5547,7 +5547,7 @@
             "name": "polyline",
             "attrs": {
               "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5558,7 +5558,7 @@
             "attrs": {
               "x": "175.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "end",
               "innerHTML": "out"
             },
@@ -5629,7 +5629,7 @@
             "attrs": {
               "width": "200.0",
               "height": "200.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "5.0",
               "fill": "white",
               "fill-opacity": "0"
@@ -5641,7 +5641,7 @@
             "attrs": {
               "x": "100.0",
               "y": "105.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "热力学状态"
             },
@@ -5651,7 +5651,7 @@
             "name": "polyline",
             "attrs": {
               "points": "85.0 0 100.0 15.0 115.0 0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "stroke-width": "3.0",
               "fill-opacity": "0"
             },
@@ -5662,7 +5662,7 @@
             "attrs": {
               "x": "100.0",
               "y": "35.0",
-              "stroke": "black",
+              "stroke": "currentColor",
               "text-anchor": "middle",
               "innerHTML": "u"
             },

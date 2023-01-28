@@ -2,10 +2,22 @@
   <n-layout has-sider>
     <n-layout-sider bordered width="16em" :native-scrollbar="false">
       <n-collapse :default-expanded-names="[0]" accordion>
-        <n-collapse-item v-for="(item, index) in iconCategory" :key="index" :title="item.zhcn" :name="index">
-          <IconProvider v-for="(icon, index) in iconList.filter(
-            (e) => e.properties.category == item.guid
-          )" :key="index" :icon-id="icon.properties.name" :icon="[icon.icon]" :icon-size="4" :callback="startDrag" />
+        <n-collapse-item
+          v-for="(item, index) in iconCategory"
+          :key="index"
+          :title="item.zhcn"
+          :name="index"
+        >
+          <IconProvider
+            v-for="(icon, index) in iconList.filter(
+              (e) => e.properties.category == item.guid
+            )"
+            :key="index"
+            :icon-id="icon.properties.name"
+            :icon="[icon.icon]"
+            :icon-size="4"
+            :callback="startDrag"
+          />
         </n-collapse-item>
       </n-collapse>
     </n-layout-sider>
@@ -20,8 +32,13 @@
         <n-button v-on:click="simPropPop">仿真设置</n-button>
       </n-button-group>
     </n-layout-content>
-    <asm-prop-editor :open="propEditor" :comps="comps" :icon-attrs="selectedNodeAttrs" @closing="propEditor = false"
-      @updating="updateNode"></asm-prop-editor>
+    <asm-prop-editor
+      :open="propEditor"
+      :comps="comps"
+      :icon-attrs="selectedNodeAttrs"
+      @closing="propEditor = false"
+      @updating="updateProp"
+    ></asm-prop-editor>
   </n-layout>
 </template>
 
@@ -124,7 +141,7 @@ const simPropPop = () => {
   propEditor.value = true;
   selectedNodeAttrs.value = simProp;
 };
-const updateNode = (temp: { [key: string]: any } | null, comp: boolean) => {
+const updateProp = (temp: { [key: string]: any } | null, comp: boolean) => {
   propEditor.value = false;
   if (!temp) return;
   if (comp) {
