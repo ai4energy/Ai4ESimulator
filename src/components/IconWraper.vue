@@ -1,6 +1,9 @@
 <template>
   <div class="icon-wraper">
     <svg-render :eleList="icon" />
+    <p>
+      {{ props.attrs?.find((e) => e.name == "name")?.value }}
+    </p>
   </div>
 </template>
 
@@ -86,7 +89,9 @@ const SvgRender = (propsCom: { eleList: Array<ISvgJson> }) => {
 
 <style>
 .icon-wraper {
-  display: inline-block;
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
 }
 </style>

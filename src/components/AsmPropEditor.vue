@@ -40,20 +40,15 @@
           ></n-select>
           <n-input-group v-else-if="attr.type == 'multinum'">
             <n-input-number
-              v-model:value="(asmProps[attr.name] as Array<number>)[0]"
-              :placeholder="(attr.holder as string[])[0]"
+              v-for="(_ ,idx) in (attr.value as Array<number>).length"
+              v-model:value="(asmProps[attr.name] as Array<number>)[idx]"
+              :placeholder="(attr.holder as string[])[idx]"
+              :key="idx"
+              size="small"
               clearable
-            />
-            <n-input-number
-              v-model:value="(asmProps[attr.name] as Array<number>)[1]"
-              :placeholder="(attr.holder as string[])[1]"
-              clearable
-            />
-            <n-input-number
-              v-model:value="(asmProps[attr.name] as Array<number>)[2]"
-              :placeholder="(attr.holder as string[])[2]"
-              clearable
-            />
+            >
+              <template #suffix> {{ attr.unit }} </template>
+            </n-input-number>
           </n-input-group>
           <n-dynamic-tags
             v-else-if="attr.type == 'tags'"

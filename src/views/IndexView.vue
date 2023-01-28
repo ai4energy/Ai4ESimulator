@@ -146,11 +146,17 @@ const updateProp = (temp: { [key: string]: any } | null, comp: boolean) => {
   if (!temp) return;
   if (comp) {
     const node = graph?.getSelectedCells()[0];
-    let data = node?.getData();
+    const preData = node?.getData();
+    let data = preData;
     for (let prop of data.attrs) {
       if (temp[prop.name]) prop.value = temp[prop.name];
     }
     node?.setData(data);
+    node?.notify("change:data", {
+      cell: node,
+      current: data,
+      previous: preData,
+    });
   } else {
     for (let prop of simProp) {
       if (temp[prop.name]) prop.value = temp[prop.name];
@@ -398,6 +404,11 @@ const startDrag = (e: MouseEvent) => {
         },
       };
     }),
+    attrs: {
+      text: {
+        text: "hhh",
+      },
+    },
   });
   dnd.start(node, e);
 };
