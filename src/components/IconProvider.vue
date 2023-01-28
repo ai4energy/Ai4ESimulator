@@ -13,7 +13,7 @@ interface IIconProbviderProp {
 interface ISvgJson {
   name: string;
   attrs?: { [key: string]: any };
-  children?: Array<ISvgJson>;
+  children?: Array<ISvgJson> | null;
 }
 const propsO = defineProps<IIconProbviderProp>();
 

@@ -12,7 +12,7 @@ import { iconList } from "@/assets/assembly.json";
 interface IAttr {
   name: string;
   type: string;
-  value: number | string;
+  value: number | string | Array<number | string>;
   unit?: string;
   require: boolean;
   holder?: string;
@@ -20,7 +20,7 @@ interface IAttr {
 interface ISvgJson {
   name: string;
   attrs?: { [key: string]: any };
-  children?: Array<ISvgJson>;
+  children?: Array<ISvgJson> | null;
 }
 interface IProps {
   name: string;
