@@ -103,16 +103,16 @@ const options = [
   {
     label: "ModelingToolkit",
     value: "ModelingToolkit",
-    disabled: false,
+    disabled: true,
   },
   {
     label: "DifferentialEquations",
     value: "DifferentialEquations",
-    disabled: false,
+    disabled: true,
   },
   {
-    label: "Ai4EComponentLib.Electrochemistry",
-    value: "Ai4EComponentLib.Electrochemistry",
+    label: "Rosenbrock23",
+    value: "Rosenbrock23",
     disabled: false,
   },
 ];

@@ -2,22 +2,10 @@
   <n-layout has-sider>
     <n-layout-sider bordered width="16em" :native-scrollbar="false">
       <n-collapse :default-expanded-names="[0]" accordion>
-        <n-collapse-item
-          v-for="(item, index) in iconCategory"
-          :key="index"
-          :title="item.zhcn"
-          :name="index"
-        >
-          <IconProvider
-            v-for="(icon, index) in iconList.filter(
-              (e) => e.properties.category == item.guid
-            )"
-            :key="index"
-            :icon-id="icon.properties.name"
-            :icon="[icon.icon]"
-            :icon-size="4"
-            :callback="startDrag"
-          />
+        <n-collapse-item v-for="(item, index) in iconCategory" :key="index" :title="item.zhcn" :name="index">
+          <IconProvider v-for="(icon, index) in iconList.filter(
+            (e) => e.properties.category == item.guid
+          )" :key="index" :icon-id="icon.properties.name" :icon="[icon.icon]" :icon-size="4" :callback="startDrag" />
         </n-collapse-item>
       </n-collapse>
     </n-layout-sider>
@@ -32,13 +20,8 @@
         <n-button v-on:click="simPropPop">仿真设置</n-button>
       </n-button-group>
     </n-layout-content>
-    <asm-prop-editor
-      :open="propEditor"
-      :comps="comps"
-      :icon-attrs="selectedNodeAttrs"
-      @closing="propEditor = false"
-      @updating="updateNode"
-    ></asm-prop-editor>
+    <asm-prop-editor :open="propEditor" :comps="comps" :icon-attrs="selectedNodeAttrs" @closing="propEditor = false"
+      @updating="updateNode"></asm-prop-editor>
   </n-layout>
 </template>
 
@@ -106,18 +89,34 @@ const simProp = [
   {
     name: "name",
     type: "string",
-    value: "xxx",
+    value: "Project Name",
     unit: "",
     require: true,
-    holder: "请输入仿真名称",
+    holder: "请输入项目名称",
   },
   {
-    name: "pkgs",
+    name: "u0",
     type: "multiselection",
     value: [],
     unit: "",
     require: true,
-    holder: "请选择仿真包",
+    holder: "请输入初值条件",
+  },
+  {
+    name: "timespan",
+    type: "multiselection",
+    value: [],
+    unit: "",
+    require: true,
+    holder: "请输入求解时间域",
+  },
+  {
+    name: "solver",
+    type: "multiselection",
+    value: [],
+    unit: "",
+    require: true,
+    holder: "请选择求解器算法",
   },
 ];
 const simPropPop = () => {
@@ -401,6 +400,7 @@ visualViewport?.addEventListener("resize", () => {
 .n-layout {
   height: calc(100% - 3.34em - 1.5em - 2px - 1.6em);
 }
+
 .n-layout-content {
   height: 100%;
 }
