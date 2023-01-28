@@ -52,5 +52,6 @@ onMounted(() => {
 <style>
 .side-icon {
   cursor: move;
+  margin: 0.2rem;
 }
 </style>

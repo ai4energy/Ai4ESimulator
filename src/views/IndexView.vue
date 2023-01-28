@@ -1,6 +1,6 @@
 <template>
   <n-layout has-sider>
-    <n-layout-sider bordered width="16em" :native-scrollbar="false">
+    <n-layout-sider bordered width="16rem" :native-scrollbar="false">
       <n-collapse :default-expanded-names="[0]" accordion>
         <n-collapse-item
           v-for="(item, index) in iconCategory"
