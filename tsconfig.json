@@ -4,7 +4,9 @@
     "env.d.ts",
     "src/**/*.ts",
     "src/**/*.d.ts",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/*.vue",
+    "src/*.ts"
   ],
   "compilerOptions": {
     "baseUrl": ".",

@@ -52,13 +52,11 @@ onMounted(() => {
     props.category = node.getData().category;
     props.attrs = node.getData().attrs;
     node.on("change:data", ({ current }) => {
-      console.log("current");
       const { attrs } = current;
       props.attrs = attrs;
     });
     const temp = iconList.filter((e) => e.properties.name == props.name)?.[0]
       .icon;
-    console.log(temp);
     if (!icon.length && temp) icon.push(temp);
   }
 });
