@@ -67,8 +67,10 @@ const SvgRender = (propsCom: { eleList: Array<ISvgJson> }) => {
       if (ele.attrs) {
         ele.attrs["width"] = props.width;
         ele.attrs["height"] = props.height;
+        ele.attrs["class"] = undefined;
       } else {
         ele.attrs = {
+          class: undefined,
           width: props.width,
           height: props.height,
         };
@@ -84,9 +86,7 @@ const SvgRender = (propsCom: { eleList: Array<ISvgJson> }) => {
 
 <style>
 .icon-wraper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-block;
   font-size: 1.2rem;
 }
 </style>

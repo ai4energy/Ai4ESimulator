@@ -1,5 +1,5 @@
 <template>
-  <n-drawer :show="open" width="25em" @after-enter="refresh">
+  <n-drawer :show="open" width="30em" @vnode-before-update="refresh">
     <n-drawer-content :native-scrollbar="false">
       <template #header> {{ title }}属性编辑 </template>
       <n-form
@@ -19,7 +19,7 @@
           <n-input-number
             v-if="attr.type == 'number'"
             v-model:value="asmProps[attr.name]"
-            :placeholder="attr.holder"
+            :placeholder="(attr.holder as string)"
             :default-value="(attr.value as number)"
           >
             <template #suffix> {{ attr.unit }} </template>
@@ -27,7 +27,7 @@
           <n-input
             v-else-if="attr.type == 'string'"
             v-model:value="asmProps[attr.name]"
-            :placeholder="attr.holder"
+            :placeholder="(attr.holder as string)"
             :default-value="(attr.value as string)"
           ></n-input>
           <n-select
@@ -35,9 +35,30 @@
             v-model:value="asmProps[attr.name]"
             multiple
             :options="options"
-            :placeholder="attr.holder"
-            :default-value="(attr.value as string)"
+            :placeholder="(attr.holder as string)"
+            :default-value="(attr.holder as string)"
           ></n-select>
+          <n-input-group v-else-if="attr.type == 'multinum'">
+            <n-input-number
+              v-model:value="(asmProps[attr.name] as Array<number>)[0]"
+              :placeholder="(attr.holder as string[])[0]"
+              clearable
+            />
+            <n-input-number
+              v-model:value="(asmProps[attr.name] as Array<number>)[1]"
+              :placeholder="(attr.holder as string[])[1]"
+              clearable
+            />
+            <n-input-number
+              v-model:value="(asmProps[attr.name] as Array<number>)[2]"
+              :placeholder="(attr.holder as string[])[2]"
+              clearable
+            />
+          </n-input-group>
+          <n-dynamic-tags
+            v-else-if="attr.type == 'tags'"
+            v-model:value="asmProps[attr.name]"
+          ></n-dynamic-tags>
         </n-form-item>
         {{ asmProps }}
       </n-form>
@@ -69,6 +90,8 @@ import {
   NButton,
   NButtonGroup,
   NSelect,
+  NDynamicTags,
+  NInputGroup,
   type FormInst,
   NForm,
   NInput,
@@ -81,7 +104,7 @@ interface IAttr {
   value: number | string | Array<string | number>;
   unit?: string;
   require: boolean;
-  holder?: string;
+  holder?: string | Array<string>;
 }
 
 const props = defineProps<{

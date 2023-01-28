@@ -1,6 +1,6 @@
 <template>
   <n-layout has-sider>
-    <n-layout-sider bordered width="16em" :native-scrollbar="false">
+    <n-layout-sider bordered width="16rem" :native-scrollbar="false">
       <n-collapse :default-expanded-names="[0]" accordion>
         <n-collapse-item
           v-for="(item, index) in iconCategory"
@@ -76,7 +76,7 @@ interface IAttr {
   value: number | string | Array<number | string>;
   unit?: string;
   require: boolean;
-  holder?: string;
+  holder?: string | Array<string>;
 }
 // import { v4 as uuidv4 } from "uuid";
 
@@ -113,7 +113,7 @@ const simProp = [
   },
   {
     name: "u0",
-    type: "multiselection",
+    type: "tags",
     value: [],
     unit: "",
     require: true,
@@ -121,11 +121,11 @@ const simProp = [
   },
   {
     name: "timespan",
-    type: "multiselection",
-    value: [],
-    unit: "",
+    type: "multinum",
+    value: [0, 10, 1],
+    unit: "s",
     require: true,
-    holder: "请输入求解时间域",
+    holder: ["起始", "终止", "步长"],
   },
   {
     name: "solver",
