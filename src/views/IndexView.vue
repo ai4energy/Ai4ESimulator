@@ -25,19 +25,16 @@
       <n-card title="模型区">
         <div id="container" ref="container" class="sim-container"></div>
         <TeleportContainer />
-        <n-collapse>
-          <n-collapse-item title="仿真选项" name="1">
-            <div>待定</div>
-          </n-collapse-item>
-        </n-collapse>
       </n-card>
       <n-button-group>
-        <n-button v-on:click="testApi.healthTest()">Test</n-button>
-        <n-button v-on:click="propEditor = true">Show</n-button>
+        <n-button v-on:click="testApi.healthTest()">测试</n-button>
+        <n-button v-on:click="testApi.healthTest()">仿真</n-button>
+        <n-button v-on:click="simPropPop">仿真设置</n-button>
       </n-button-group>
     </n-layout-content>
     <asm-prop-editor
       :open="propEditor"
+      :comps="comps"
       :icon-attrs="selectedNodeAttrs"
       @closing="propEditor = false"
       @updating="updateNode"
@@ -76,7 +73,7 @@ import { iconList } from "@/assets/assembly.json";
 interface IAttr {
   name: string;
   type: string;
-  value: number | string;
+  value: number | string | Array<number | string>;
   unit?: string;
   require: boolean;
   holder?: string;
@@ -104,14 +101,45 @@ const portattr = {
     r: 5,
   },
 };
-const updateNode = (temp: { [key: string]: any }) => {
+const comps = ref(true);
+const simProp = [
+  {
+    name: "name",
+    type: "string",
+    value: "xxx",
+    unit: "",
+    require: true,
+    holder: "请输入仿真名称",
+  },
+  {
+    name: "pkgs",
+    type: "multiselection",
+    value: [],
+    unit: "",
+    require: true,
+    holder: "请选择仿真包",
+  },
+];
+const simPropPop = () => {
+  comps.value = false;
+  propEditor.value = true;
+  selectedNodeAttrs.value = simProp;
+};
+const updateNode = (temp: { [key: string]: any } | null, comp: boolean) => {
   propEditor.value = false;
-  const node = graph?.getSelectedCells()[0];
-  let data = node?.getData();
-  for (let prop of data.attrs) {
-    if (temp[prop.name]) prop.value = temp[prop.name];
+  if (!temp) return;
+  if (comp) {
+    const node = graph?.getSelectedCells()[0];
+    let data = node?.getData();
+    for (let prop of data.attrs) {
+      if (temp[prop.name]) prop.value = temp[prop.name];
+    }
+    node?.setData(data);
+  } else {
+    for (let prop of simProp) {
+      if (temp[prop.name]) prop.value = temp[prop.name];
+    }
   }
-  node?.setData(data);
 };
 onMounted(() => {
   let width: number = container.value?.clientWidth ?? 800;
@@ -323,6 +351,7 @@ onMounted(() => {
     },
   });
   graph.on("node:dblclick", ({ node }: { node: Node }) => {
+    comps.value = true;
     propEditor.value = true;
     selectedNodeAttrs.value = node.getData()?.attrs ?? [];
   });

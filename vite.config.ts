@@ -29,11 +29,12 @@ export default defineConfig({
     port: 9528,
     strictPort: false,
     https: false,
-    open: true,
+    open: false,
     proxy: {
       "/api": {
         target: "http://121.40.92.145:8081",
         changeOrigin: true,
+        secure: false,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
@@ -41,8 +42,8 @@ export default defineConfig({
   },
   build: {
     minify: true, // boolean | 'terser' | 'esbuild', defaut to terser
-    manifest: false, // whether maifest.json
-    sourcemap: false, // whether soucemap.json
+    manifest: true, // whether maifest.json
+    sourcemap: true, // whether soucemap.json
     outDir: "build", // output dir
   },
 });
