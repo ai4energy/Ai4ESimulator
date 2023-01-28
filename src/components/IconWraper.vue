@@ -2,13 +2,13 @@
   <div class="icon-wraper">
     <svg-render :eleList="icon" />
     <p>
-      {{ props.attrs?.find((e) => e.name == "name")?.value }}
+      {{ label }}
     </p>
   </div>
 </template>
 
 <script setup lang="ts">
-import { h, inject, onMounted, reactive, type VNode } from "vue";
+import { h, inject, onMounted, reactive, ref, type VNode } from "vue";
 import type { Node } from "@antv/x6";
 import { iconList } from "@/assets/assembly.json";
 
@@ -45,6 +45,8 @@ const props = reactive<IProps>({
 
 const icon = reactive<ISvgJson[]>([]);
 
+const label = ref("");
+
 onMounted(() => {
   if (getNode) {
     const node = getNode();
@@ -57,7 +59,11 @@ onMounted(() => {
     node.on("change:data", ({ current }) => {
       const { attrs } = current;
       props.attrs = attrs;
+      label.value =
+        (props.attrs?.find((e) => e.name == "name")?.value as string) ?? "";
     });
+    label.value =
+      (props.attrs?.find((e) => e.name == "name")?.value as string) ?? "";
     const temp = iconList.filter((e) => e.properties.name == props.name)?.[0]
       .icon;
     if (!icon.length && temp) icon.push(temp);
