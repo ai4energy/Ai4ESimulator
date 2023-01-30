@@ -178,7 +178,7 @@ onMounted(() => {
       modifiers: ["ctrl", "meta"],
     },
     connecting: {
-      router: "normal",
+      router: "metro",
       connector: "rounded",
       createEdge() {
         return this.createEdge({
