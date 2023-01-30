@@ -178,7 +178,7 @@ onMounted(() => {
       modifiers: ["ctrl", "meta"],
     },
     connecting: {
-      router: "orth",
+      router: "normal",
       connector: "rounded",
       createEdge() {
         return this.createEdge({
@@ -197,11 +197,11 @@ onMounted(() => {
       type: "doubleMesh",
       args: [
         {
-          color: "#545454a6", // 主网格线颜色
+          color: "#54545496", // 主网格线颜色
           thickness: 1, // 主网格线宽度
         },
         {
-          color: "#5454547a", // 次网格线颜色
+          color: "#5454545a", // 次网格线颜色
           thickness: 1, // 次网格线宽度
           factor: 4, // 主次网格线间隔
         },
@@ -243,7 +243,7 @@ onMounted(() => {
       rubberband: true,
       movable: true,
       showNodeSelectionBox: true,
-      showEdgeSelectionBox: true,
+      showEdgeSelectionBox: false,
     })
   );
   graph.use(
