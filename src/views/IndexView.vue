@@ -28,7 +28,7 @@
       </n-card>
       <n-button-group>
         <n-button v-on:click="testApi.healthTest()">测试</n-button>
-        <n-button v-on:click="testApi.healthTest()">仿真</n-button>
+        <n-button v-on:click="simulate">仿真</n-button>
         <n-button v-on:click="simPropPop">仿真设置</n-button>
       </n-button-group>
     </n-layout-content>
@@ -94,6 +94,7 @@ const container: Ref<HTMLDivElement | undefined> = ref();
 let graph: Graph | null = null;
 let dnd: Dnd | null = null;
 const selectedNodeAttrs: Ref<Array<IAttr>> = ref([]);
+let postResult: Ref<object> = ref({});
 const portattr = {
   circle: {
     magnet: true,
@@ -136,6 +137,53 @@ const simProp = [
     holder: "请选择求解器算法",
   },
 ];
+const simulate = () => {
+  let connections: Array<object> | null = [];
+  let components: Array<object> | null = [];
+  let simProps: Array<object> = [];
+  
+  let compAndCon: object = { connections, components };
+  
+  graph?.getNodes().forEach((element) => {
+    let asmProps: object = {};
+    element
+      .getData()
+      .attrs.forEach((ele: object) => (asmProps[ele.name] = ele.value));
+    components?.push(asmProps)
+  });
+  
+  graph?.getEdges().forEach((item) => {
+    let group: Array<string> | null = [];
+    const sourcePortId = item.getSourcePortId();
+    const targetPortId = item.getTargetPortId();
+    if (!sourcePortId || !targetPortId) return;
+    const sourcePort = item.getSourceNode()?.getPort(sourcePortId);
+    const targetPort = item.getTargetNode()?.getPort(targetPortId);
+    if (!sourcePort || !targetPort) return;
+    const sourcePortText = sourcePort?.attrs?.text.text;
+    const targetPortText = targetPort?.attrs?.text.text;
+    if (!sourcePort || !targetPort) return;
+    const sourceNodeName: string = item
+      .getSourceNode()
+      ?.getData()
+      .attrs.filter((item: any) => {
+        return item.name === "name";
+      })[0].value;
+    const targetNodeName: string = item
+      .getTargetNode()
+      ?.getData()
+      .attrs.filter((item: any) => {
+        return item.name === "name";
+      })[0].value;
+    const sourceInfo: string | null = sourceNodeName + "." + sourcePortText;
+    const targetInfo: string | null = targetNodeName + "." + targetPortText;
+    group.push(sourceInfo, targetInfo);
+    connections?.push(group)
+  });
+  simProp.forEach((ele: object) => (simProps[ele.name] = ele.value))
+  postResult.value = { ...compAndCon, ...simProps };
+  testApi.jobTest(JSON.stringify(postResult.value))
+};
 const simPropPop = () => {
   comps.value = false;
   propEditor.value = true;
