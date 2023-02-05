@@ -1,4 +1,4 @@
-{
+{  
   "iconCategory": [
     {
       "zhcn": "示例",
@@ -63,6 +63,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电感"
             },
             "children": null
@@ -84,6 +85,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -105,6 +107,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -156,6 +159,7 @@
             "value": "xxx",
             "unit": "",
             "require": true,
+            "disabled": false,
             "holder": "请输入组件名称"
           },
           {
@@ -164,6 +168,7 @@
             "value": 220,
             "unit": "V",
             "require": true,
+            "disabled": false,
             "holder": "请输入额定电压"
           },
           {
@@ -172,6 +177,7 @@
             "value": 100,
             "unit": "MW",
             "require": true,
+            "disabled": false,
             "holder": "请输入额定功率"
           }
         ]
@@ -208,6 +214,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电感"
             },
             "children": null
@@ -229,6 +236,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -250,6 +258,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -263,6 +272,16 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Inductor",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Inductor",
@@ -271,6 +290,7 @@
           },
           {
             "name": "L",
+            "disabled": false,
             "holder": "请输入电感值",
             "unit": "H",
             "value": "1e-5",
@@ -279,6 +299,7 @@
           },
           {
             "name": "i_start",
+            "disabled": false,
             "holder": "请输入初始电流",
             "unit": "A",
             "value": "0.0",
@@ -333,6 +354,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "常数输入"
             },
             "children": null
@@ -354,6 +376,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "u"
             },
             "children": null
@@ -367,6 +390,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Constant",
@@ -375,11 +399,13 @@
           },
           {
             "name": "U",
+            "disabled": false,
             "holder": "请输入恒压源的电压值",
             "unit": "V",
             "value": "0.0",
             "require": true,
-            "type": "number"
+            "type": "number",
+            "disabled": true
           }
         ],
         "ports": [
@@ -424,6 +450,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电解槽"
             },
             "children": null
@@ -445,6 +472,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -466,6 +494,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -479,6 +508,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "PEMElectrolyzer",
@@ -487,6 +517,7 @@
           },
           {
             "name": "τ",
+            "disabled": false,
             "holder": "请输入塔费尔斜率",
             "unit": "",
             "value": "0.1",
@@ -495,6 +526,7 @@
           },
           {
             "name": "I_0",
+            "disabled": false,
             "holder": "请输入交换电流密度",
             "unit": "A⋅m^-2",
             "value": "0.01",
@@ -503,6 +535,7 @@
           },
           {
             "name": "n",
+            "disabled": false,
             "holder": "请输入串联的电解槽数量",
             "unit": "",
             "value": "1",
@@ -511,6 +544,7 @@
           },
           {
             "name": "u_0",
+            "disabled": false,
             "holder": "请输入平衡电势",
             "unit": "",
             "value": "1.47",
@@ -519,6 +553,7 @@
           },
           {
             "name": "R_sol",
+            "disabled": false,
             "holder": "请输入槽内溶液电阻",
             "unit": "Ω",
             "value": "0.22",
@@ -573,6 +608,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电子负载"
             },
             "children": null
@@ -594,6 +630,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -615,6 +652,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -636,6 +674,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "u"
             },
             "children": null
@@ -649,6 +688,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "electronic_load",
@@ -708,6 +748,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电导"
             },
             "children": null
@@ -729,6 +770,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -750,6 +792,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -763,6 +806,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Conductor",
@@ -771,6 +815,7 @@
           },
           {
             "name": "G",
+            "disabled": false,
             "holder": "请输入电导值",
             "unit": "Ω^-1",
             "value": "1",
@@ -825,6 +870,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "MPPT控制器"
             },
             "children": null
@@ -846,6 +892,7 @@
               "y": "71.66666666666667",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p1"
             },
             "children": null
@@ -867,6 +914,7 @@
               "y": "138.33333333333334",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "n1"
             },
             "children": null
@@ -888,6 +936,7 @@
               "y": "71.66666666666667",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "p2"
             },
             "children": null
@@ -909,6 +958,7 @@
               "y": "138.33333333333334",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n2"
             },
             "children": null
@@ -922,6 +972,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "MPPT_Controller",
@@ -930,6 +981,7 @@
           },
           {
             "name": "Sampling_time",
+            "disabled": false,
             "holder": "请输入采样时间",
             "unit": "s",
             "value": "0.1",
@@ -994,6 +1046,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电压源"
             },
             "children": null
@@ -1015,6 +1068,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -1036,6 +1090,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -1057,6 +1112,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "u"
             },
             "children": null
@@ -1070,6 +1126,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Voltage_source",
@@ -1129,6 +1186,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "变压器"
             },
             "children": null
@@ -1150,6 +1208,7 @@
               "y": "71.66666666666667",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p1"
             },
             "children": null
@@ -1171,6 +1230,7 @@
               "y": "138.33333333333334",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "n1"
             },
             "children": null
@@ -1192,6 +1252,7 @@
               "y": "71.66666666666667",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "p2"
             },
             "children": null
@@ -1213,6 +1274,7 @@
               "y": "138.33333333333334",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n2"
             },
             "children": null
@@ -1226,6 +1288,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "DC2DC",
@@ -1234,6 +1297,7 @@
           },
           {
             "name": "n",
+            "disabled": false,
             "holder": "请输入能量的转化效率",
             "unit": "",
             "value": "0.98",
@@ -1242,6 +1306,7 @@
           },
           {
             "name": "type",
+            "disabled": false,
             "holder": "请输入能量转化类型",
             "unit": "voltage",
             "value": "0.98",
@@ -1250,6 +1315,7 @@
           },
           {
             "name": "value",
+            "disabled": false,
             "holder": "输出值",
             "unit": "relate to type",
             "value": "1.0",
@@ -1314,6 +1380,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "光伏电池"
             },
             "children": null
@@ -1335,6 +1402,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -1356,6 +1424,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -1369,6 +1438,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "PhotovoltaicCell",
@@ -1377,6 +1447,7 @@
           },
           {
             "name": "I_ph",
+            "disabled": false,
             "holder": "请输入光电流",
             "unit": "A",
             "value": "6.08",
@@ -1385,6 +1456,7 @@
           },
           {
             "name": "I_0",
+            "disabled": false,
             "holder": "请输入反向饱和电流",
             "unit": "A",
             "value": "6.88e-13",
@@ -1393,6 +1465,7 @@
           },
           {
             "name": "a",
+            "disabled": false,
             "holder": "请输入修正系数",
             "unit": "",
             "value": "2.3402",
@@ -1401,6 +1474,7 @@
           },
           {
             "name": "R_s",
+            "disabled": false,
             "holder": "请输入串联电阻值",
             "unit": "Ω",
             "value": "0.741",
@@ -1409,6 +1483,7 @@
           },
           {
             "name": "R_sh",
+            "disabled": false,
             "holder": "请输入Ohmic resistance",
             "unit": "Ω",
             "value": "457.17",
@@ -1463,6 +1538,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电阻"
             },
             "children": null
@@ -1484,6 +1560,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -1505,6 +1582,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -1518,6 +1596,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Resistor",
@@ -1526,6 +1605,7 @@
           },
           {
             "name": "R",
+            "disabled": false,
             "holder": "请输入电阻值",
             "unit": "Ω",
             "value": "1",
@@ -1555,6 +1635,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Current_source",
@@ -1614,6 +1695,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电流源"
             },
             "children": null
@@ -1635,6 +1717,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -1656,6 +1739,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -1677,6 +1761,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "u"
             },
             "children": null
@@ -1690,6 +1775,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Current_source",
@@ -1749,6 +1835,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "充放电控制器"
             },
             "children": null
@@ -1770,6 +1857,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -1791,6 +1879,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -1804,6 +1893,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "charge_controller",
@@ -1812,6 +1902,7 @@
           },
           {
             "name": "time",
+            "disabled": false,
             "holder": "经过多久后充电",
             "unit": "s",
             "value": "5.0",
@@ -1820,6 +1911,7 @@
           },
           {
             "name": "value",
+            "disabled": false,
             "holder": "充电电流大小",
             "unit": "A",
             "value": "1.0",
@@ -1874,6 +1966,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电容"
             },
             "children": null
@@ -1895,6 +1988,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -1916,6 +2010,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -1929,6 +2024,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Capacitor",
@@ -1937,6 +2033,7 @@
           },
           {
             "name": "Capacitance",
+            "disabled": false,
             "holder": "请输入电容值",
             "unit": "F",
             "value": "0.48e-6",
@@ -1945,6 +2042,7 @@
           },
           {
             "name": "v_start",
+            "disabled": false,
             "holder": "请输入初始电压",
             "unit": "V",
             "value": "0.0",
@@ -1999,6 +2097,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "地线"
             },
             "children": null
@@ -2020,6 +2119,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "u"
             },
             "children": null
@@ -2033,6 +2133,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Ground",
@@ -2082,6 +2183,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "超级电容器"
             },
             "children": null
@@ -2103,6 +2205,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "p"
             },
             "children": null
@@ -2124,6 +2227,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "n"
             },
             "children": null
@@ -2137,6 +2241,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Super_capacity",
@@ -2145,6 +2250,7 @@
           },
           {
             "name": "R_0",
+            "disabled": false,
             "holder": "请输入第一分支的串联电阻",
             "unit": "Ω",
             "value": "0.0100478",
@@ -2153,6 +2259,7 @@
           },
           {
             "name": "C_0",
+            "disabled": false,
             "holder": "请输入第一分支的电容",
             "unit": "H",
             "value": "89.03",
@@ -2161,6 +2268,7 @@
           },
           {
             "name": "K_v",
+            "disabled": false,
             "holder": "请输入第一分支的比例系数",
             "unit": "",
             "value": "29.1062",
@@ -2169,6 +2277,7 @@
           },
           {
             "name": "R_2",
+            "disabled": false,
             "holder": "请输入第二分支的串联电阻",
             "unit": "Ω",
             "value": "17.4976",
@@ -2177,6 +2286,7 @@
           },
           {
             "name": "C_2",
+            "disabled": false,
             "holder": "请输入第二分支的电容",
             "unit": "H",
             "value": "13.7162",
@@ -2185,6 +2295,7 @@
           },
           {
             "name": "R_EPR",
+            "disabled": false,
             "holder": "请输入自放电电阻",
             "unit": "Ω",
             "value": "5000.0",
@@ -2239,6 +2350,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "压力源"
             },
             "children": null
@@ -2260,6 +2372,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "u"
             },
             "children": null
@@ -2273,6 +2386,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "PressureSource",
@@ -2281,6 +2395,7 @@
           },
           {
             "name": "Pressure",
+            "disabled": false,
             "holder": "请输入压力",
             "unit": "Pa",
             "value": "1.013e5",
@@ -2289,6 +2404,7 @@
           },
           {
             "name": "Temperature",
+            "disabled": false,
             "holder": "请输入温度",
             "unit": "K",
             "value": "293.15",
@@ -2338,6 +2454,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "流量源"
             },
             "children": null
@@ -2359,6 +2476,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "u"
             },
             "children": null
@@ -2372,6 +2490,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "FlowSource",
@@ -2380,6 +2499,7 @@
           },
           {
             "name": "Mass Flow Rate",
+            "disabled": false,
             "holder": "请输入质量流量",
             "unit": "kg/s",
             "value": "0.0",
@@ -2388,6 +2508,7 @@
           },
           {
             "name": "Temperature",
+            "disabled": false,
             "holder": "请输入温度",
             "unit": "K",
             "value": "293.15",
@@ -2437,6 +2558,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "简单管道"
             },
             "children": null
@@ -2458,6 +2580,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -2479,6 +2602,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -2492,6 +2616,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "SimplePipe",
@@ -2500,6 +2625,7 @@
           },
           {
             "name": "Resistance Factor",
+            "disabled": false,
             "holder": "请输入阻力系数",
             "unit": "kg^-1⋅m^-1",
             "value": "1000",
@@ -2508,6 +2634,7 @@
           },
           {
             "name": "Temperature",
+            "disabled": false,
             "holder": "请输入温度",
             "unit": "K",
             "value": "293.15",
@@ -2562,6 +2689,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "储气罐"
             },
             "children": null
@@ -2583,6 +2711,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -2604,6 +2733,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -2617,6 +2747,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "AirStorageTank",
@@ -2625,6 +2756,7 @@
           },
           {
             "name": "Volum",
+            "disabled": false,
             "holder": "请输入储气罐体积",
             "unit": "m^3",
             "value": "20",
@@ -2633,6 +2765,7 @@
           },
           {
             "name": "Temperature",
+            "disabled": false,
             "holder": "请输入环境温度",
             "unit": "K",
             "value": "293.15",
@@ -2641,6 +2774,7 @@
           },
           {
             "name": "Initial Pressure",
+            "disabled": false,
             "holder": "请输入初始压力",
             "unit": "Pa",
             "value": "1e5",
@@ -2695,6 +2829,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "过渡管道"
             },
             "children": null
@@ -2716,6 +2851,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -2737,6 +2873,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -2750,6 +2887,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "TransitionPipe",
@@ -2758,6 +2896,7 @@
           },
           {
             "name": "λ1",
+            "disabled": false,
             "holder": "该系数取1即可",
             "unit": "",
             "value": "1.0",
@@ -2766,6 +2905,7 @@
           },
           {
             "name": "λ2",
+            "disabled": false,
             "holder": "该系数取1即可",
             "unit": "",
             "value": "1.0",
@@ -2774,6 +2914,7 @@
           },
           {
             "name": "λ3",
+            "disabled": false,
             "holder": "该系数取1即可",
             "unit": "",
             "value": "1.0",
@@ -2782,6 +2923,7 @@
           },
           {
             "name": "n",
+            "disabled": false,
             "holder": "管道分成的节点数",
             "unit": "",
             "value": "10",
@@ -2790,6 +2932,7 @@
           },
           {
             "name": "Friction Factor f",
+            "disabled": false,
             "holder": "管道的摩擦阻力系数",
             "unit": "",
             "value": "0.016",
@@ -2798,6 +2941,7 @@
           },
           {
             "name": "Diameter D",
+            "disabled": false,
             "holder": "管道的直径",
             "unit": "m",
             "value": "1.0",
@@ -2806,6 +2950,7 @@
           },
           {
             "name": "Length L",
+            "disabled": false,
             "holder": "管道的长度",
             "unit": "m",
             "value": "100",
@@ -2814,6 +2959,7 @@
           },
           {
             "name": "Inlet Pressure Pa",
+            "disabled": false,
             "holder": "管道的入口初始压力",
             "unit": "Pa",
             "value": "5.6e5",
@@ -2822,6 +2968,7 @@
           },
           {
             "name": "Outlet Pressure Pa",
+            "disabled": false,
             "holder": "管道的出口初始压力",
             "unit": "Pa",
             "value": "5.6e5",
@@ -2876,6 +3023,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "阀"
             },
             "children": null
@@ -2897,6 +3045,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -2918,6 +3067,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -2931,6 +3081,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "ConstantValve",
@@ -2939,6 +3090,7 @@
           },
           {
             "name": "Resistance Factor",
+            "disabled": false,
             "holder": "请输入储气罐体积",
             "unit": "kg^-1m^-1",
             "value": "100",
@@ -2993,6 +3145,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "净化元件"
             },
             "children": null
@@ -3014,6 +3167,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -3035,6 +3189,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -3048,6 +3203,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Purifier",
@@ -3056,6 +3212,7 @@
           },
           {
             "name": "c",
+            "disabled": false,
             "holder": "请输入净化系数",
             "unit": "",
             "value": "0.98",
@@ -3064,6 +3221,7 @@
           },
           {
             "name": "Δp",
+            "disabled": false,
             "holder": "请输入净化元件的压降",
             "unit": "Pa",
             "value": "300",
@@ -3072,6 +3230,7 @@
           },
           {
             "name": "T",
+            "disabled": false,
             "holder": "请输入环境温度",
             "unit": "K",
             "value": "293.15",
@@ -3126,6 +3285,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "简化管道"
             },
             "children": null
@@ -3147,6 +3307,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -3168,6 +3329,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -3181,6 +3343,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "SimplifiedPipe",
@@ -3189,6 +3352,7 @@
           },
           {
             "name": "Resistance Factor",
+            "disabled": false,
             "holder": "请输入储气罐体积",
             "unit": "kg^-1m^-1",
             "value": "100",
@@ -3243,6 +3407,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "直管道"
             },
             "children": null
@@ -3264,6 +3429,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -3285,6 +3451,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -3298,6 +3465,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "StraightPipe",
@@ -3306,6 +3474,7 @@
           },
           {
             "name": "D",
+            "disabled": false,
             "holder": "请输入管道直径",
             "unit": "m",
             "value": "1.0",
@@ -3314,6 +3483,7 @@
           },
           {
             "name": "L",
+            "disabled": false,
             "holder": "请输入管道长度",
             "unit": "m",
             "value": "1.0",
@@ -3322,6 +3492,7 @@
           },
           {
             "name": "ϵ",
+            "disabled": false,
             "holder": "请输入管道壁面粗糙度",
             "unit": "m",
             "value": "0.05e-3",
@@ -3376,6 +3547,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "简单管道"
             },
             "children": null
@@ -3397,6 +3569,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -3418,6 +3591,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -3431,6 +3605,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "SimplePipe",
@@ -3439,6 +3614,7 @@
           },
           {
             "name": "Friction Factor R",
+            "disabled": false,
             "holder": "请输入管道的摩擦阻力系数",
             "unit": "Pa·s/kg",
             "value": "100",
@@ -3447,6 +3623,7 @@
           },
           {
             "name": "Temperature T",
+            "disabled": false,
             "holder": "请输入管内流体温度",
             "unit": "K",
             "value": "300",
@@ -3501,6 +3678,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "简化冷水机"
             },
             "children": null
@@ -3522,6 +3700,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in1"
             },
             "children": null
@@ -3543,6 +3722,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out1"
             },
             "children": null
@@ -3564,6 +3744,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "in2"
             },
             "children": null
@@ -3585,6 +3766,7 @@
               "y": "180.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "out2"
             },
             "children": null
@@ -3598,6 +3780,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "WaterChiller",
@@ -3606,6 +3789,7 @@
           },
           {
             "name": "Coefficient D",
+            "disabled": false,
             "holder": "请输入系数",
             "unit": "",
             "value": "[22.08252111,-0.008374357,0.605004615,-0.544042021,-2.10E-07,7.04E-05,0.000299955,-0.028824777]",
@@ -3614,6 +3798,7 @@
           },
           {
             "name": "Cooling Capacity Qe0",
+            "disabled": false,
             "holder": "请输入PLR=1时的制冷量",
             "unit": "W",
             "value": "3000",
@@ -3678,6 +3863,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "冷却塔"
             },
             "children": null
@@ -3699,6 +3885,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -3720,6 +3907,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -3733,6 +3921,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "CoolingTower",
@@ -3741,6 +3930,7 @@
           },
           {
             "name": "Temperature Tw",
+            "disabled": false,
             "holder": "请输入环境湿球温度",
             "unit": "K",
             "value": "299.15",
@@ -3749,6 +3939,7 @@
           },
           {
             "name": "Temperature ΔTct",
+            "disabled": false,
             "holder": "请输入供水温度与湿球温度之间的温差",
             "unit": "K",
             "value": "5",
@@ -3803,6 +3994,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "风机盘管"
             },
             "children": null
@@ -3824,6 +4016,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -3845,6 +4038,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -3858,6 +4052,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "FanCoil",
@@ -3866,6 +4061,7 @@
           },
           {
             "name": "Coefficient D",
+            "disabled": false,
             "holder": "请输入系数",
             "unit": "",
             "value": "[1, 1.2, 1.2]",
@@ -3874,6 +4070,7 @@
           },
           {
             "name": "Rated Power Qf0",
+            "disabled": false,
             "holder": "请输入额定换热功率",
             "unit": "W",
             "value": "2500",
@@ -3882,6 +4079,7 @@
           },
           {
             "name": "Temperature Tai0",
+            "disabled": false,
             "holder": "请输入额定进风温度",
             "unit": "K",
             "value": "298.15",
@@ -3890,6 +4088,7 @@
           },
           {
             "name": "Temperature Twi0",
+            "disabled": false,
             "holder": "请输入额定进水温度",
             "unit": "K",
             "value": "280.15",
@@ -3898,6 +4097,7 @@
           },
           {
             "name": "Temperature Tai",
+            "disabled": false,
             "holder": "请输入实际进风温度",
             "unit": "K",
             "value": "298.15",
@@ -3906,6 +4106,7 @@
           },
           {
             "name": "Specific Heat cp",
+            "disabled": false,
             "holder": "请输入水的比热",
             "unit": "J/(kg·K)",
             "value": "4.18",
@@ -3960,6 +4161,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "流量源"
             },
             "children": null
@@ -3981,6 +4183,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -3994,6 +4197,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "source",
@@ -4002,6 +4206,7 @@
           },
           {
             "name": "Mass Flow Rate",
+            "disabled": false,
             "holder": "请输入质量流量",
             "unit": "kg/s",
             "value": "100",
@@ -4010,6 +4215,7 @@
           },
           {
             "name": "Pressure p",
+            "disabled": false,
             "holder": "请输入压力",
             "unit": "Pa",
             "value": "100",
@@ -4018,6 +4224,7 @@
           },
           {
             "name": "Temperature t0",
+            "disabled": false,
             "holder": "请输入温度",
             "unit": "K",
             "value": "303.15",
@@ -4067,6 +4274,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "泵"
             },
             "children": null
@@ -4088,6 +4296,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -4109,6 +4318,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -4122,6 +4332,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Pump",
@@ -4130,6 +4341,7 @@
           },
           {
             "name": "Coefficient D",
+            "disabled": false,
             "holder": "请输入系数",
             "unit": "",
             "value": "[120,-1500,-0.5,0.8,0.8,0.8]",
@@ -4138,6 +4350,7 @@
           },
           {
             "name": "Rated Speed n0",
+            "disabled": false,
             "holder": "请输入额定转速",
             "unit": "r/min",
             "value": "2000",
@@ -4146,6 +4359,7 @@
           },
           {
             "name": "Density ρ",
+            "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
             "value": "1.0e3",
@@ -4154,6 +4368,7 @@
           },
           {
             "name": "Gravitational Acceleration g",
+            "disabled": false,
             "holder": "请输入重力加速度",
             "unit": "m/s²",
             "value": "10.0",
@@ -4208,6 +4423,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "简单管道"
             },
             "children": null
@@ -4229,6 +4445,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -4250,6 +4467,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -4263,6 +4481,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "SimplePipe",
@@ -4271,6 +4490,7 @@
           },
           {
             "name": "Length L",
+            "disabled": false,
             "holder": "请输入管道长度",
             "unit": "m",
             "value": "30",
@@ -4279,6 +4499,7 @@
           },
           {
             "name": "Diameter D",
+            "disabled": false,
             "holder": "请输入管径",
             "unit": "m",
             "value": "0.15",
@@ -4287,6 +4508,7 @@
           },
           {
             "name": "Friction Factor f",
+            "disabled": false,
             "holder": "请输入管道的摩擦阻力系数",
             "unit": "",
             "value": "0.023",
@@ -4295,6 +4517,7 @@
           },
           {
             "name": "Density ρ",
+            "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
             "value": "1.0e3",
@@ -4303,6 +4526,7 @@
           },
           {
             "name": "Height zin",
+            "disabled": false,
             "holder": "请输入管道入口高度",
             "unit": "m",
             "value": "25.0",
@@ -4311,6 +4535,7 @@
           },
           {
             "name": "Height zout",
+            "disabled": false,
             "holder": "请输入管道出口高度",
             "unit": "m",
             "value": "0.0",
@@ -4319,6 +4544,7 @@
           },
           {
             "name": "Local Resistance Loss Coefficient K_inside",
+            "disabled": false,
             "holder": "请输入管内的局部阻力损失系数",
             "unit": "",
             "value": "10.8",
@@ -4373,6 +4599,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "离心泵"
             },
             "children": null
@@ -4394,6 +4621,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -4415,6 +4643,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -4428,6 +4657,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "CentrifugalPump",
@@ -4436,6 +4666,7 @@
           },
           {
             "name": "Diameter D",
+            "disabled": false,
             "holder": "请输入管径",
             "unit": "m",
             "value": "0.15",
@@ -4444,6 +4675,7 @@
           },
           {
             "name": "Rotary Speed ω",
+            "disabled": false,
             "holder": "请输入离心泵转速",
             "unit": "r/min",
             "value": "5000",
@@ -4452,6 +4684,7 @@
           },
           {
             "name": "Parameter c_0",
+            "disabled": false,
             "holder": "请输入H-Q特性曲线参数c_0",
             "unit": "",
             "value": "4.4e-4",
@@ -4460,6 +4693,7 @@
           },
           {
             "name": "Parameter c_1",
+            "disabled": false,
             "holder": "请输入H-Q特性曲线参数c_1",
             "unit": "",
             "value": "5.622",
@@ -4468,6 +4702,7 @@
           },
           {
             "name": "Density ρ",
+            "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
             "value": "1.0e3",
@@ -4522,6 +4757,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "压力源"
             },
             "children": null
@@ -4543,6 +4779,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -4556,6 +4793,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Source_P",
@@ -4564,6 +4802,7 @@
           },
           {
             "name": "Diameter D",
+            "disabled": false,
             "holder": "请输入管径",
             "unit": "m",
             "value": "0.15",
@@ -4572,6 +4811,7 @@
           },
           {
             "name": "Height z",
+            "disabled": false,
             "holder": "请输入高度",
             "unit": "m",
             "value": "25.0",
@@ -4580,6 +4820,7 @@
           },
           {
             "name": "Density ρ",
+            "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
             "value": "1.0e3",
@@ -4588,6 +4829,7 @@
           },
           {
             "name": "Pressure Pa",
+            "disabled": false,
             "holder": "请输入压力，默认值101325Pa",
             "unit": "Pa",
             "value": "101325",
@@ -4596,6 +4838,7 @@
           },
           {
             "name": "Local Resistance Loss Coefficient K_inlet",
+            "disabled": false,
             "holder": "请输入入口局部阻力损失系数，默认值0.5",
             "unit": "",
             "value": "0.5",
@@ -4645,6 +4888,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "弯管"
             },
             "children": null
@@ -4666,6 +4910,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -4687,6 +4932,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -4700,6 +4946,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "ElbowPipe",
@@ -4708,6 +4955,7 @@
           },
           {
             "name": "Diameter D",
+            "disabled": false,
             "holder": "请输入管径",
             "unit": "m",
             "value": "0.15",
@@ -4716,6 +4964,7 @@
           },
           {
             "name": "Local Resistance Loss Coefficient K",
+            "disabled": false,
             "holder": "请输入弯管的局部阻力损失系数",
             "unit": "",
             "value": "0.9",
@@ -4724,6 +4973,7 @@
           },
           {
             "name": "Density ρ",
+            "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
             "value": "1.0e3",
@@ -4732,6 +4982,7 @@
           },
           {
             "name": "Height zin",
+            "disabled": false,
             "holder": "请输入弯管入口高度",
             "unit": "m",
             "value": "15.0",
@@ -4740,6 +4991,7 @@
           },
           {
             "name": "Height zout",
+            "disabled": false,
             "holder": "请输入弯管出口高度",
             "unit": "m",
             "value": "15.0",
@@ -4794,6 +5046,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "储罐"
             },
             "children": null
@@ -4815,6 +5068,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -4828,6 +5082,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Sink_P",
@@ -4836,6 +5091,7 @@
           },
           {
             "name": "Pressure Pa",
+            "disabled": false,
             "holder": "请输入储罐压力，默认值101325Pa",
             "unit": "Pa",
             "value": "101325",
@@ -4885,6 +5141,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "任意过程"
             },
             "children": null
@@ -4906,6 +5163,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -4927,6 +5185,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -4940,6 +5199,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "ArbitraryProcess",
@@ -4948,6 +5208,7 @@
           },
           {
             "name": "inter_state",
+            "disabled": false,
             "holder": "给出一种已知状态",
             "unit": "",
             "value": "'P'",
@@ -4956,6 +5217,7 @@
           },
           {
             "name": "process",
+            "disabled": false,
             "holder": "给出另一种状态",
             "unit": "",
             "value": "'T'",
@@ -4964,6 +5226,7 @@
           },
           {
             "name": "fluid",
+            "disabled": false,
             "holder": "请输入流体种类",
             "unit": "",
             "value": "'Water'",
@@ -5018,6 +5281,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "等焓过程"
             },
             "children": null
@@ -5039,6 +5303,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -5060,6 +5325,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -5073,6 +5339,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "IsoenthalpyProcess",
@@ -5081,6 +5348,7 @@
           },
           {
             "name": "inter_state",
+            "disabled": false,
             "holder": "给出除焓以外另一种已知状态",
             "unit": "",
             "value": "'P'",
@@ -5089,6 +5357,7 @@
           },
           {
             "name": "fluid",
+            "disabled": false,
             "holder": "请输入流体种类",
             "unit": "",
             "value": "'Water'",
@@ -5143,6 +5412,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "等熵过程"
             },
             "children": null
@@ -5164,6 +5434,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -5185,6 +5456,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -5198,6 +5470,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "IsentropicProcess",
@@ -5206,6 +5479,7 @@
           },
           {
             "name": "inter_state",
+            "disabled": false,
             "holder": "给出除熵以外另一种已知状态",
             "unit": "",
             "value": "'P'",
@@ -5214,6 +5488,7 @@
           },
           {
             "name": "fluid",
+            "disabled": false,
             "holder": "请输入流体种类",
             "unit": "",
             "value": "'Water'",
@@ -5268,6 +5543,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "等温过程"
             },
             "children": null
@@ -5289,6 +5565,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -5310,6 +5587,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -5323,6 +5601,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "IsothermalProcess",
@@ -5331,6 +5610,7 @@
           },
           {
             "name": "inter_state",
+            "disabled": false,
             "holder": "给出除温度以外另一种已知状态",
             "unit": "",
             "value": "'Q_0'",
@@ -5339,6 +5619,7 @@
           },
           {
             "name": "fluid",
+            "disabled": false,
             "holder": "请输入流体种类",
             "unit": "",
             "value": "'Water'",
@@ -5393,6 +5674,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "等压过程"
             },
             "children": null
@@ -5414,6 +5696,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -5435,6 +5718,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -5448,6 +5732,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "IsobaricProcess",
@@ -5456,6 +5741,7 @@
           },
           {
             "name": "inter_state",
+            "disabled": false,
             "holder": "给出除压力以外另一种已知状态",
             "unit": "",
             "value": "'T'",
@@ -5464,6 +5750,7 @@
           },
           {
             "name": "fluid",
+            "disabled": false,
             "holder": "请输入流体种类",
             "unit": "",
             "value": "'Water'",
@@ -5518,6 +5805,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "等容过程"
             },
             "children": null
@@ -5539,6 +5827,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "start",
+              "font-size": 20,
               "innerHTML": "in"
             },
             "children": null
@@ -5560,6 +5849,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "end",
+              "font-size": 20,
               "innerHTML": "out"
             },
             "children": null
@@ -5573,6 +5863,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "IsochoricProcess",
@@ -5581,6 +5872,7 @@
           },
           {
             "name": "inter_state",
+            "disabled": false,
             "holder": "给出除体积以外另一种已知状态",
             "unit": "",
             "value": "'T'",
@@ -5589,6 +5881,7 @@
           },
           {
             "name": "fluid",
+            "disabled": false,
             "holder": "请输入流体种类",
             "unit": "",
             "value": "'Water'",
@@ -5643,6 +5936,7 @@
               "y": "105.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "热力学状态"
             },
             "children": null
@@ -5664,6 +5958,7 @@
               "y": "35.0",
               "stroke": "currentColor",
               "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "u"
             },
             "children": null
@@ -5677,6 +5972,7 @@
         "attrs": [
           {
             "name": "name",
+            "disabled": false,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "ThermalStates",
@@ -5685,6 +5981,7 @@
           },
           {
             "name": "state",
+            "disabled": false,
             "holder": "给出一种已知状态",
             "unit": "",
             "value": "'P'",
@@ -5693,6 +5990,7 @@
           },
           {
             "name": "value",
+            "disabled": false,
             "holder": "给出已知状态的值",
             "unit": "Pa",
             "value": "3.0E6",
