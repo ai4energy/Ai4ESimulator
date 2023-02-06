@@ -29,6 +29,7 @@
             v-model:value="asmProps[attr.name]"
             :placeholder="(attr.holder as string)"
             :default-value="(attr.value as string)"
+            :disabled="(attr.disabled as string)"
           ></n-input>
           <n-select
             v-else-if="attr.type == 'multiselection'"
