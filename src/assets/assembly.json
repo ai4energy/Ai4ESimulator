@@ -398,6 +398,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Constant",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "U",
             "disabled": false,
             "holder": "请输入恒压源的电压值",
@@ -509,6 +518,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "PEMElectrolyzer",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "PEMElectrolyzer",
@@ -694,6 +712,15 @@
             "value": "electronic_load",
             "require": true,
             "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "electronic_load",
+            "require": true,
+            "type": "string"
           }
         ],
         "ports": [
@@ -807,6 +834,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Conductor",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Conductor",
@@ -980,6 +1016,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "MPPT_Controller",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Sampling_time",
             "disabled": false,
             "holder": "请输入采样时间",
@@ -1127,6 +1172,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Voltage_source",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Voltage_source",
@@ -1296,6 +1350,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "DC2DC",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "n",
             "disabled": false,
             "holder": "请输入能量的转化效率",
@@ -1305,11 +1368,11 @@
             "type": "number"
           },
           {
-            "name": "type",
+            "name": "output_type",
             "disabled": false,
-            "holder": "请输入能量转化类型",
-            "unit": "voltage",
-            "value": "0.98",
+            "holder": "请输入恒定输出类型",
+            "unit": "voltage|current",
+            "value": "voltage",
             "require": true,
             "type": "string"
           },
@@ -1439,6 +1502,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "PhotovoltaicCell",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "PhotovoltaicCell",
@@ -1604,6 +1676,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Resistor",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "R",
             "disabled": false,
             "holder": "请输入电阻值",
@@ -1636,6 +1717,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Current_source",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Current_source",
@@ -1781,6 +1871,15 @@
             "value": "Current_source",
             "require": true,
             "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Current_source",
+            "require": true,
+            "type": "string"
           }
         ],
         "ports": [
@@ -1894,6 +1993,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "charge_controller",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "charge_controller",
@@ -2032,6 +2140,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Capacitor",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Capacitance",
             "disabled": false,
             "holder": "请输入电容值",
@@ -2134,6 +2251,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Ground",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Ground",
@@ -2242,6 +2368,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Super_capacity",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Super_capacity",
@@ -2394,6 +2529,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "PressureSource",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Pressure",
             "disabled": false,
             "holder": "请输入压力",
@@ -2491,6 +2635,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "FlowSource",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "FlowSource",
@@ -2624,6 +2777,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "SimplePipe",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Resistance Factor",
             "disabled": false,
             "holder": "请输入阻力系数",
@@ -2748,6 +2910,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "AirStorageTank",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "AirStorageTank",
@@ -2888,6 +3059,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "TransitionPipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "TransitionPipe",
@@ -3089,6 +3269,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "ConstantValve",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Resistance Factor",
             "disabled": false,
             "holder": "请输入储气罐体积",
@@ -3204,6 +3393,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Purifier",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Purifier",
@@ -3351,6 +3549,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "SimplifiedPipe",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Resistance Factor",
             "disabled": false,
             "holder": "请输入储气罐体积",
@@ -3466,6 +3673,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "StraightPipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "StraightPipe",
@@ -3606,6 +3822,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "SimplePipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "SimplePipe",
@@ -3788,6 +4013,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "WaterChiller",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Coefficient D",
             "disabled": false,
             "holder": "请输入系数",
@@ -3929,6 +4163,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "CoolingTower",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Temperature Tw",
             "disabled": false,
             "holder": "请输入环境湿球温度",
@@ -4053,6 +4296,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "FanCoil",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "FanCoil",
@@ -4205,6 +4457,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "source",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Mass Flow Rate",
             "disabled": false,
             "holder": "请输入质量流量",
@@ -4333,6 +4594,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Pump",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Pump",
@@ -4482,6 +4752,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "SimplePipe",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "SimplePipe",
@@ -4665,6 +4944,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "CentrifugalPump",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Diameter D",
             "disabled": false,
             "holder": "请输入管径",
@@ -4794,6 +5082,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Source_P",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "Source_P",
@@ -4954,6 +5251,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "ElbowPipe",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Diameter D",
             "disabled": false,
             "holder": "请输入管径",
@@ -5090,6 +5396,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Sink_P",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "Pressure Pa",
             "disabled": false,
             "holder": "请输入储罐压力，默认值101325Pa",
@@ -5200,6 +5515,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "ArbitraryProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "ArbitraryProcess",
@@ -5347,6 +5671,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsoenthalpyProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "inter_state",
             "disabled": false,
             "holder": "给出除焓以外另一种已知状态",
@@ -5471,6 +5804,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsentropicProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "IsentropicProcess",
@@ -5609,6 +5951,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsothermalProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "inter_state",
             "disabled": false,
             "holder": "给出除温度以外另一种已知状态",
@@ -5733,6 +6084,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsobaricProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "IsobaricProcess",
@@ -5871,6 +6231,15 @@
             "type": "string"
           },
           {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "IsochoricProcess",
+            "require": true,
+            "type": "string"
+          },
+          {
             "name": "inter_state",
             "disabled": false,
             "holder": "给出除体积以外另一种已知状态",
@@ -5973,6 +6342,15 @@
           {
             "name": "name",
             "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "ThermalStates",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
             "holder": "请输入组件名称",
             "unit": "",
             "value": "ThermalStates",
