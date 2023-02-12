@@ -141,17 +141,22 @@ const simulate = () => {
   let connections: Array<object> | null = [];
   let components: Array<object> | null = [];
   let simProps: Array<object> = [];
-  
+
   let compAndCon: object = { connections, components };
-  
+
   graph?.getNodes().forEach((element) => {
-    let asmProps: object = {};
-    element
-      .getData()
-      .attrs.forEach((ele: object) => (asmProps[ele.name] = ele.value));
-    components?.push(asmProps)
+    let asmProps: object = { name: "", type: "", args: {} };
+    console.log(element.getData().attrs);
+    element.getData().attrs.forEach((ele) => {
+      if (ele.name == "name" || ele.name == "type") {
+        asmProps[ele.name] = ele.value;
+      } else {
+        asmProps.args[ele.name] = ele.value;
+      }
+    });
+    components?.push(asmProps);
   });
-  
+
   graph?.getEdges().forEach((item) => {
     let group: Array<string> | null = [];
     const sourcePortId = item.getSourcePortId();
@@ -178,11 +183,12 @@ const simulate = () => {
     const sourceInfo: string | null = sourceNodeName + "." + sourcePortText;
     const targetInfo: string | null = targetNodeName + "." + targetPortText;
     group.push(sourceInfo, targetInfo);
-    connections?.push(group)
+    connections?.push(group);
   });
-  simProp.forEach((ele: object) => (simProps[ele.name] = ele.value))
+  simProp.forEach((ele: object) => (simProps[ele.name] = ele.value));
   postResult.value = { ...compAndCon, ...simProps };
-  testApi.jobTest(JSON.stringify(postResult.value))
+  testApi.jobTest(JSON.stringify(postResult.value));
+  console.log(JSON.stringify(postResult.value))
 };
 const simPropPop = () => {
   comps.value = false;
