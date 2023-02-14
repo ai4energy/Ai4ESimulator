@@ -123,32 +123,32 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "u1",
             "clr": "#919191"
           },
           {
             "gp": "stop",
-            "lb": "T port 2",
+            "lb": "u2",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n1",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 2",
+            "lb": "n2",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 3",
+            "lb": "n3",
             "clr": "#919191"
           },
           {
             "gp": "sleft",
-            "lb": "L port",
+            "lb": "p",
             "clr": "#919191"
           }
         ],
@@ -310,12 +310,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n",
             "clr": "#919191"
           }
         ],
@@ -420,7 +420,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "u",
             "clr": "#919191"
           }
         ],
@@ -582,12 +582,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n",
             "clr": "#919191"
           }
         ],
@@ -726,17 +726,17 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n",
             "clr": "#919191"
           },
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "u",
             "clr": "#919191"
           }
         ],
@@ -862,12 +862,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n",
             "clr": "#919191"
           }
         ],
@@ -1037,22 +1037,22 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p1",
             "clr": "#919191"
           },
           {
             "gp": "sleft",
-            "lb": "L port 2",
+            "lb": "n1",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "p2",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 2",
+            "lb": "n2",
             "clr": "#919191"
           }
         ],
@@ -1191,17 +1191,17 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "n",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "u",
             "clr": "#919191"
           }
         ],
@@ -1389,22 +1389,22 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p1",
             "clr": "#919191"
           },
           {
             "gp": "sleft",
-            "lb": "L port 2",
+            "lb": "n1",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "p2",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 2",
+            "lb": "n2",
             "clr": "#919191"
           }
         ],
@@ -1566,12 +1566,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n",
             "clr": "#919191"
           }
         ],
@@ -1697,12 +1697,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n",
             "clr": "#919191"
           }
         ],
@@ -1885,17 +1885,17 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "n",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "u",
             "clr": "#919191"
           }
         ],
@@ -2030,12 +2030,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "n",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "p",
             "clr": "#919191"
           }
         ],
@@ -2170,12 +2170,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n",
             "clr": "#919191"
           }
         ],
@@ -2270,7 +2270,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "u",
             "clr": "#919191"
           }
         ],
@@ -2441,12 +2441,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "n",
             "clr": "#919191"
           }
         ],
@@ -2559,7 +2559,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "t1",
+            "lb": "u",
             "clr": "#919191"
           }
         ],
@@ -2672,7 +2672,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "t1",
+            "lb": "u",
             "clr": "#919191"
           }
         ],
@@ -2807,12 +2807,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "r1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "l1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -2956,12 +2956,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "r1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "l1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -3159,12 +3159,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "r1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "l1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -3290,12 +3290,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -3439,12 +3439,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -3570,12 +3570,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -3719,12 +3719,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -4834,12 +4834,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -5001,12 +5001,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -5146,7 +5146,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -5308,12 +5308,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -5417,7 +5417,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -5561,12 +5561,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -5701,12 +5701,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -5841,12 +5841,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -5981,12 +5981,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -6121,12 +6121,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -6261,12 +6261,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "L port 1",
+            "lb": "in",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "R port 1",
+            "lb": "out",
             "clr": "#919191"
           }
         ],
@@ -6379,7 +6379,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "T port 1",
+            "lb": "u",
             "clr": "#919191"
           }
         ],
