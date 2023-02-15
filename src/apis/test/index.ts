@@ -1,3 +1,4 @@
+import axios, { Axios } from "axios";
 import { service } from "../apiConfig";
 
 export default {
@@ -11,6 +12,18 @@ export default {
   healthTest() {
     return service({
       url: "/health",
+      method: "get",
+    });
+  },
+  WebSocketsTest() {
+    return service({
+      url: "/foo/bar",
+      method: "get",
+    });
+  },
+  WebSocketsTest2() {
+    return service({
+      url: "/foo/car",
       method: "get",
     });
   },
