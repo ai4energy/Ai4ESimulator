@@ -1,188 +1,32 @@
 {  
   "iconCategory": [
     {
-      "zhcn": "示例",
-      "enus": "Example Icons",
-      "guid": "1f063fbc-2671-4640-957f-14b4623e9791"
-    },
-    {
-      "zhcn": "电化学",
+      "zhcn": "电化学系统",
       "enus": "Electrochemistry",
       "guid": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
     },
     {
-      "zhcn": "空气管道",
+      "zhcn": "空气管道系统",
       "enus": "AirPipeSim",
       "guid": "b00bd210-8e61-11ed-0fe3-63e365023c75"
     },
     {
-      "zhcn": "压缩空气管道",
+      "zhcn": "压缩空气系统",
       "enus": "CompressedAirSystem",
       "guid": "e7ee3070-91ad-11ed-3186-7910ad2785cd"
     },
     {
-      "zhcn": "不可压缩空气管道",
+      "zhcn": "水力管网系统",
       "enus": "IncompressiblePipe",
       "guid": "f0f17660-8e69-11ed-1cd9-4f1f96714eb1"
     },
     {
-      "zhcn": "热力循环",
+      "zhcn": "热力循环系统",
       "enus": "CompressedAirSystem",
       "guid": "fa98cd00-8e71-11ed-1179-97b4a6154a4a"
     }
   ],
   "iconList": [
-    {
-      "icon": {
-        "name": "svg",
-        "attrs": {
-          "version": "1.1",
-          "viewBox": "0 0 200.0 200.0",
-          "xmlns": "http://www.w3.org/2000/svg",
-          "xmlns:xlink": "http://www.w3.org/1999/xlink",
-          "width": "200.0",
-          "height": "200.0"
-        },
-        "children": [
-          {
-            "name": "rect",
-            "attrs": {
-              "width": "200.0",
-              "height": "200.0",
-              "stroke": "currentColor",
-              "stroke-width": "5.0",
-              "fill": "white",
-              "fill-opacity": "0"
-            },
-            "children": null
-          },
-          {
-            "name": "text",
-            "attrs": {
-              "x": "100.0",
-              "y": "105.0",
-              "stroke": "currentColor",
-              "text-anchor": "middle",
-              "font-size": 20,
-              "innerHTML": "电感"
-            },
-            "children": null
-          },
-          {
-            "name": "polyline",
-            "attrs": {
-              "points": "0 85.0 15.0 100.0 0 115.0",
-              "stroke": "currentColor",
-              "stroke-width": "3.0",
-              "fill-opacity": "0"
-            },
-            "children": null
-          },
-          {
-            "name": "text",
-            "attrs": {
-              "x": "25.0",
-              "y": "105.0",
-              "stroke": "currentColor",
-              "text-anchor": "start",
-              "font-size": 20,
-              "innerHTML": "p"
-            },
-            "children": null
-          },
-          {
-            "name": "polyline",
-            "attrs": {
-              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
-              "stroke": "currentColor",
-              "stroke-width": "3.0",
-              "fill-opacity": "0"
-            },
-            "children": null
-          },
-          {
-            "name": "text",
-            "attrs": {
-              "x": "175.0",
-              "y": "105.0",
-              "stroke": "currentColor",
-              "text-anchor": "end",
-              "font-size": 20,
-              "innerHTML": "n"
-            },
-            "children": null
-          }
-        ]
-      },
-      "properties": {
-        "name": "2239fc09-04dc-4e37-950b-00bbd50c66d2",
-        "label": "logo",
-        "category": "1f063fbc-2671-4640-957f-14b4623e9791",
-        "width": 100,
-        "height": 100,
-        "ports": [
-          {
-            "gp": "stop",
-            "lb": "u1",
-            "clr": "#919191"
-          },
-          {
-            "gp": "stop",
-            "lb": "u2",
-            "clr": "#919191"
-          },
-          {
-            "gp": "sright",
-            "lb": "n1",
-            "clr": "#919191"
-          },
-          {
-            "gp": "sright",
-            "lb": "n2",
-            "clr": "#919191"
-          },
-          {
-            "gp": "sright",
-            "lb": "n3",
-            "clr": "#919191"
-          },
-          {
-            "gp": "sleft",
-            "lb": "p",
-            "clr": "#919191"
-          }
-        ],
-        "attrs": [
-          {
-            "name": "name",
-            "type": "string",
-            "value": "xxx",
-            "unit": "",
-            "require": true,
-            "disabled": false,
-            "holder": "请输入组件名称"
-          },
-          {
-            "name": "voltge",
-            "type": "number",
-            "value": 220,
-            "unit": "V",
-            "require": true,
-            "disabled": false,
-            "holder": "请输入额定电压"
-          },
-          {
-            "name": "active power",
-            "type": "number",
-            "value": 100,
-            "unit": "MW",
-            "require": true,
-            "disabled": false,
-            "holder": "请输入额定功率"
-          }
-        ]
-      }
-    },
     {
       "icon": {
         "name": "svg",
@@ -2237,7 +2081,7 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
-              "innerHTML": "u"
+              "innerHTML": "g"
             },
             "children": null
           }
@@ -2270,7 +2114,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "u",
+            "lb": "g",
             "clr": "#919191"
           }
         ],
@@ -2508,7 +2352,7 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
-              "innerHTML": "u"
+              "innerHTML": "port"
             },
             "children": null
           }
@@ -2538,7 +2382,7 @@
             "type": "string"
           },
           {
-            "name": "Pressure",
+            "name": "p",
             "disabled": false,
             "holder": "请输入压力",
             "unit": "Pa",
@@ -2547,7 +2391,7 @@
             "type": "number"
           },
           {
-            "name": "Temperature",
+            "name": "T",
             "disabled": false,
             "holder": "请输入温度",
             "unit": "K",
@@ -2559,7 +2403,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "u",
+            "lb": "port",
             "clr": "#919191"
           }
         ],
@@ -2621,7 +2465,7 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
-              "innerHTML": "u"
+              "innerHTML": "port"
             },
             "children": null
           }
@@ -2651,7 +2495,7 @@
             "type": "string"
           },
           {
-            "name": "Mass Flow Rate",
+            "name": "qm",
             "disabled": false,
             "holder": "请输入质量流量",
             "unit": "kg/s",
@@ -2660,7 +2504,7 @@
             "type": "number"
           },
           {
-            "name": "Temperature",
+            "name": "T",
             "disabled": false,
             "holder": "请输入温度",
             "unit": "K",
@@ -2672,7 +2516,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "u",
+            "lb": "port",
             "clr": "#919191"
           }
         ],
@@ -2786,7 +2630,7 @@
             "type": "string"
           },
           {
-            "name": "Resistance Factor",
+            "name": "R",
             "disabled": false,
             "holder": "请输入阻力系数",
             "unit": "kg^-1⋅m^-1",
@@ -2795,7 +2639,7 @@
             "type": "number"
           },
           {
-            "name": "Temperature",
+            "name": "T",
             "disabled": false,
             "holder": "请输入温度",
             "unit": "K",
@@ -2926,7 +2770,7 @@
             "type": "string"
           },
           {
-            "name": "Volum",
+            "name": "V",
             "disabled": false,
             "holder": "请输入储气罐体积",
             "unit": "m^3",
@@ -2935,7 +2779,7 @@
             "type": "number"
           },
           {
-            "name": "Temperature",
+            "name": "T",
             "disabled": false,
             "holder": "请输入环境温度",
             "unit": "K",
@@ -2944,7 +2788,7 @@
             "type": "number"
           },
           {
-            "name": "Initial Pressure",
+            "name": "p0",
             "disabled": false,
             "holder": "请输入初始压力",
             "unit": "Pa",
@@ -3001,7 +2845,7 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
-              "innerHTML": "过渡管道"
+              "innerHTML": "动态管道"
             },
             "children": null
           },
@@ -3111,7 +2955,7 @@
             "type": "number"
           },
           {
-            "name": "Friction Factor f",
+            "name": "f",
             "disabled": false,
             "holder": "管道的摩擦阻力系数",
             "unit": "",
@@ -3120,7 +2964,7 @@
             "type": "number"
           },
           {
-            "name": "Diameter D",
+            "name": "D",
             "disabled": false,
             "holder": "管道的直径",
             "unit": "m",
@@ -3129,7 +2973,7 @@
             "type": "number"
           },
           {
-            "name": "Length L",
+            "name": "L",
             "disabled": false,
             "holder": "管道的长度",
             "unit": "m",
@@ -3138,20 +2982,20 @@
             "type": "number"
           },
           {
-            "name": "Inlet Pressure Pa",
+            "name": "pins",
             "disabled": false,
             "holder": "管道的入口初始压力",
             "unit": "Pa",
-            "value": "5.6e5",
+            "value": "560000",
             "require": true,
             "type": "number"
           },
           {
-            "name": "Outlet Pressure Pa",
+            "name": "pouts",
             "disabled": false,
             "holder": "管道的出口初始压力",
             "unit": "Pa",
-            "value": "5.6e5",
+            "value": "560000",
             "require": true,
             "type": "number"
           }
@@ -3838,7 +3682,7 @@
             "type": "string"
           },
           {
-            "name": "Friction Factor R",
+            "name": "R",
             "disabled": false,
             "holder": "请输入管道的摩擦阻力系数",
             "unit": "Pa·s/kg",
@@ -4466,7 +4310,7 @@
             "type": "string"
           },
           {
-            "name": "Mass Flow Rate",
+            "name": "qm",
             "disabled": false,
             "holder": "请输入质量流量",
             "unit": "kg/s",
@@ -4475,7 +4319,7 @@
             "type": "number"
           },
           {
-            "name": "Pressure p",
+            "name": "p",
             "disabled": false,
             "holder": "请输入压力",
             "unit": "Pa",
@@ -4628,7 +4472,7 @@
             "type": "number"
           },
           {
-            "name": "Density ρ",
+            "name": "ρ",
             "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
@@ -4768,7 +4612,7 @@
             "type": "string"
           },
           {
-            "name": "Length L",
+            "name": "L",
             "disabled": false,
             "holder": "请输入管道长度",
             "unit": "m",
@@ -4777,7 +4621,7 @@
             "type": "number"
           },
           {
-            "name": "Diameter D",
+            "name": "D",
             "disabled": false,
             "holder": "请输入管径",
             "unit": "m",
@@ -4786,7 +4630,7 @@
             "type": "number"
           },
           {
-            "name": "Friction Factor f",
+            "name": "f",
             "disabled": false,
             "holder": "请输入管道的摩擦阻力系数",
             "unit": "",
@@ -4795,7 +4639,7 @@
             "type": "number"
           },
           {
-            "name": "Density ρ",
+            "name": "ρ",
             "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
@@ -4804,7 +4648,7 @@
             "type": "number"
           },
           {
-            "name": "Height zin",
+            "name": "zin",
             "disabled": false,
             "holder": "请输入管道入口高度",
             "unit": "m",
@@ -4813,7 +4657,7 @@
             "type": "number"
           },
           {
-            "name": "Height zout",
+            "name": "zout",
             "disabled": false,
             "holder": "请输入管道出口高度",
             "unit": "m",
@@ -4822,7 +4666,7 @@
             "type": "number"
           },
           {
-            "name": "Local Resistance Loss Coefficient K_inside",
+            "name": "K_inside",
             "disabled": false,
             "holder": "请输入管内的局部阻力损失系数",
             "unit": "",
@@ -4953,7 +4797,7 @@
             "type": "string"
           },
           {
-            "name": "Diameter D",
+            "name": "D",
             "disabled": false,
             "holder": "请输入管径",
             "unit": "m",
@@ -4962,7 +4806,7 @@
             "type": "number"
           },
           {
-            "name": "Rotary Speed ω",
+            "name": "ω",
             "disabled": false,
             "holder": "请输入离心泵转速",
             "unit": "r/min",
@@ -4971,7 +4815,7 @@
             "type": "number"
           },
           {
-            "name": "Parameter c_0",
+            "name": "c_0",
             "disabled": false,
             "holder": "请输入H-Q特性曲线参数c_0",
             "unit": "",
@@ -4980,7 +4824,7 @@
             "type": "number"
           },
           {
-            "name": "Parameter c_1",
+            "name": "c_1",
             "disabled": false,
             "holder": "请输入H-Q特性曲线参数c_1",
             "unit": "",
@@ -4989,7 +4833,7 @@
             "type": "number"
           },
           {
-            "name": "Density ρ",
+            "name": "ρ",
             "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
@@ -5068,7 +4912,7 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
-              "innerHTML": "out"
+              "innerHTML": "port"
             },
             "children": null
           }
@@ -5098,7 +4942,7 @@
             "type": "string"
           },
           {
-            "name": "Diameter D",
+            "name": "D",
             "disabled": false,
             "holder": "请输入管径",
             "unit": "m",
@@ -5107,7 +4951,7 @@
             "type": "number"
           },
           {
-            "name": "Height z",
+            "name": "z",
             "disabled": false,
             "holder": "请输入高度",
             "unit": "m",
@@ -5116,7 +4960,7 @@
             "type": "number"
           },
           {
-            "name": "Density ρ",
+            "name": "ρ",
             "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
@@ -5125,7 +4969,7 @@
             "type": "number"
           },
           {
-            "name": "Pressure Pa",
+            "name": "p",
             "disabled": false,
             "holder": "请输入压力，默认值101325Pa",
             "unit": "Pa",
@@ -5134,7 +4978,7 @@
             "type": "number"
           },
           {
-            "name": "Local Resistance Loss Coefficient K_inlet",
+            "name": "K_inlet",
             "disabled": false,
             "holder": "请输入入口局部阻力损失系数，默认值0.5",
             "unit": "",
@@ -5146,7 +4990,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "out",
+            "lb": "port",
             "clr": "#919191"
           }
         ],
@@ -5260,7 +5104,7 @@
             "type": "string"
           },
           {
-            "name": "Diameter D",
+            "name": "D",
             "disabled": false,
             "holder": "请输入管径",
             "unit": "m",
@@ -5269,7 +5113,7 @@
             "type": "number"
           },
           {
-            "name": "Local Resistance Loss Coefficient K",
+            "name": "K",
             "disabled": false,
             "holder": "请输入弯管的局部阻力损失系数",
             "unit": "",
@@ -5278,7 +5122,7 @@
             "type": "number"
           },
           {
-            "name": "Density ρ",
+            "name": "ρ",
             "disabled": false,
             "holder": "请输入流体密度",
             "unit": "kg/m^3",
@@ -5287,7 +5131,7 @@
             "type": "number"
           },
           {
-            "name": "Height zin",
+            "name": "zin",
             "disabled": false,
             "holder": "请输入弯管入口高度",
             "unit": "m",
@@ -5296,7 +5140,7 @@
             "type": "number"
           },
           {
-            "name": "Height zout",
+            "name": "zout",
             "disabled": false,
             "holder": "请输入弯管出口高度",
             "unit": "m",
@@ -5353,7 +5197,7 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
-              "innerHTML": "储罐"
+              "innerHTML": "压力汇"
             },
             "children": null
           },
@@ -5375,7 +5219,7 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
-              "innerHTML": "out"
+              "innerHTML": "port"
             },
             "children": null
           }
@@ -5405,7 +5249,7 @@
             "type": "string"
           },
           {
-            "name": "Pressure Pa",
+            "name": "p",
             "disabled": false,
             "holder": "请输入储罐压力，默认值101325Pa",
             "unit": "Pa",
@@ -5417,7 +5261,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "out",
+            "lb": "port",
             "clr": "#919191"
           }
         ],
@@ -6328,7 +6172,7 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
-              "innerHTML": "u"
+              "innerHTML": "node"
             },
             "children": null
           }
@@ -6379,7 +6223,7 @@
         "ports": [
           {
             "gp": "stop",
-            "lb": "u",
+            "lb": "node",
             "clr": "#919191"
           }
         ],
