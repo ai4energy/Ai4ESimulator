@@ -10,7 +10,7 @@
         >
           <IconProvider
             v-for="(icon, index) in iconList.filter(
-              (e) => e.properties.category == item.guid
+            (e) => e.properties.category == item.guid
             )"
             :key="index"
             :icon-id="icon.properties.name"
@@ -26,11 +26,13 @@
         <div id="container" ref="container" class="sim-container"></div>
         <TeleportContainer />
       </n-card>
-      <n-button-group>
-        <n-button v-on:click="testApi.healthTest()">测试</n-button>
-        <n-button v-on:click="simulate">仿真</n-button>
-        <n-button v-on:click="simPropPop">仿真设置</n-button>
-      </n-button-group>
+        <websock />
+        <n-button-group>
+          <n-button v-on:click="testApi.healthTest()">测试</n-button>
+          <n-button v-on:click="testApi.WebSocketsTest2()">WebSockets+logger测试</n-button>
+          <n-button v-on:click="simulate">仿真</n-button>
+          <n-button v-on:click="simPropPop">仿真设置</n-button>
+        </n-button-group>
     </n-layout-content>
     <asm-prop-editor
       :open="propEditor"
@@ -68,6 +70,7 @@ import { Dnd } from "@antv/x6-plugin-dnd";
 // import { Transform } from "@antv/x6-plugin-transform";
 import { register, getTeleport } from "@antv/x6-vue-shape";
 import IconWraper from "@/components/IconWraper.vue";
+import websock from "@/components/websock.vue";
 import IconProvider from "@/components/IconProvider.vue";
 import { iconList } from "@/assets/assembly.json";
 interface IAttr {
