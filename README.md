@@ -1,54 +1,26 @@
-# frontend
+# Ai4ESimulator
 
-This template should help get you started developing with Vue 3 in Vite.
+## 简介
 
-## Recommended IDE Setup
+高可拓展的云架构流程系统仿真平台基于新一代开源科学计算编程语言Julia与Vue3前端框架，适用于复杂流程系统的云仿真平台。云仿真平台采用前后端分离技术：前端为Web界面；后端为集解析器、组件库、求解器三大模块为一体的仿引擎，各模块间通过接口协同工作。仿真平台具备高度可拓展性，后端参析器可嵌入参数辨识问题、优化问题、控制问题等多种问题的代码生成工具；**组件库具有广泛适用于能源、化工、机器、电气等多个领域的建模潜力**。
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## 开源技术架构
 
-## Type Support for `.vue` Imports in TS
+* 前端
+  * [VUE3](https://cn.vuejs.org/)——渐进式JavaScript 框架
+  * [Soybean-admin](https://github.com/honghuangdc/soybean-admin)——基于Vue3与NaiveUI的中后台模版
+* 后端
+  * [OptControl.jl](https://ai4energy.github.io/OptControl.jl/dev/)——最优控制拓展包。
+  * [Ai4EComponentLib.jl](https://ai4energy.github.io/Ai4EComponentLib.jl/dev/)——组件库
+  * [Ai4EMetaPSE.jl](https://ai4energy.github.io/Ai4EMetaPSE.jl/dev/)——解析器
+  * [Ai4Server](https://ai4energy.github.io/Ai4EServer/) 基于Genie.jl架构的后端服务框架。
+  * [ModelingToolkit.jl](https://github.com/SciML/ModelingToolkit.jl)——组件建模工具包
+  * [DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl)——微分方程求解引擎
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## 系统展示
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+![fig1](docs/src/assets/system_show.gif)
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## 项目文档
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
-
-## Generate new UUID
-
-Using current Powershell Terminal:
-
-```sh
-new-guid
-```
+[文档链接](https://ai4energy.github.io/Ai4ESimulator/dev/)

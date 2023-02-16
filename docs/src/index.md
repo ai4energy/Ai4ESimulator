@@ -25,6 +25,22 @@
 
 ## Quick Start
 
-* 本地开启后端服务
+### 本地开启后端服务
 
-* 本地开启前端服务
+切换到项目文件夹
+
+![fig1](assets/start_backend.gif)
+
+### 本地开启前端服务
+
+切换到项目文件夹，安装依赖
+
+```sh
+npm install
+```
+
+开启服务
+
+```sh
+npm run dev
+```
