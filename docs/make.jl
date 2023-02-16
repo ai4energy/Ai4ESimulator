@@ -1,7 +1,7 @@
 using Documenter
 
 examples_files = readdir(joinpath(@__DIR__, "src", "examples"))
-examples = map(file -> joinpath("examples", file), tutorial_files)
+examples = map(file -> joinpath("examples", file), examples_files)
 makedocs(
     sitename="Ai4ESimulator",
     pages=[
