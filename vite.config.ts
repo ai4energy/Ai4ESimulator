@@ -32,7 +32,7 @@ export default defineConfig({
     open: false,
     proxy: {
       "/api": {
-        target: "http://121.40.92.145:8081",
+        target: "http://127.0.0.1:8081",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, ""),

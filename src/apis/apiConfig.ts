@@ -3,7 +3,7 @@ import axios, { type AxiosInstance } from "axios";
 // 创建axios实例
 const service: AxiosInstance = axios.create({
   baseURL: import.meta.env.VITE_DEV_API,
-  timeout: 5000,
+  timeout: 50000,
 });
 
 service.interceptors.request.use(
