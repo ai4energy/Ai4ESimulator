@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 docs.svg 页-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="6.46811in" height="4.48243in"
+		viewBox="0 0 465.704 322.735" xml:space="preserve" color-interpolation-filters="sRGB" class="st7">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none}
+		.st2 {stroke:#3c63ac;stroke-width:3}
+		.st3 {fill:none;stroke:#3c63ac;stroke-width:3}
+		.st4 {fill:#cc0000;stroke:#c7c8c8;stroke-width:0.25}
+		.st5 {fill:#9933ff;stroke:#c7c8c8;stroke-width:0.25}
+		.st6 {fill:#538135;stroke:#c7c8c8;stroke-width:0.25}
+		.st7 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="group49-1" transform="translate(3,-3)" v:mID="49" v:groupContext="group">
+			<title>工作表.49</title>
+			<g id="group41-2" transform="translate(322.706,5.46496) rotate(89.9)" v:mID="41" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="ScrollDia" v:prompt="" v:val="VT0(0.14763779527559):24"/>
+					<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+					<v:ud v:nameU="ScrollDia" v:prompt="" v:val="VT0(0.44897597720494):1"/>
+				</v:userDefs>
+				<title>横卷形</title>
+				<g id="shape41-3" v:mID="41" v:groupContext="groupContent">
+					<path d="M32.33 290.41 L16.16 290.41 A16.1631 16.1631 -180 1 0 16.16 322.73 L268.99 322.73 A16.158 16.158 -180
+								 0 0 285.15 306.57 L285.15 -104.15 L301.32 -104.15 A16.1631 16.1631 -180 0 0 301.32 -136.47 L48.49
+								 -136.47 A16.158 16.158 -180 0 0 32.33 -120.31 L32.33 290.41 Z" class="st1"/>
+					<path d="M32.33 290.41 L16.16 290.41 A16.1631 16.1631 -180 1 0 16.16 322.73 L268.99 322.73 A16.158 16.158 -180
+								 0 0 285.15 306.57 L285.15 -104.15 L301.32 -104.15 A16.1631 16.1631 -180 0 0 301.32 -136.47 L48.49
+								 -136.47 A16.158 16.158 -180 0 0 32.33 -120.31 L32.33 290.41" class="st2"/>
+					<path d="M32.33 290.41 L32.33 306.57" class="st2"/>
+					<path d="M48.49 -104.15 L301.32 -104.15" class="st2"/>
+					<path d="M64.65 -120.31 A16.158 16.158 -180 0 0 48.49 -136.47" class="st2"/>
+				</g>
+				<g id="shape42-9" v:mID="42" v:groupContext="shape">
+					<title>工作表.42</title>
+					<v:userDefs>
+						<v:ud v:nameU="ScrollDia" v:prompt="" v:val="VT0(0.14763779527559):24"/>
+						<v:ud v:nameU="FillForegnd" v:prompt="" v:val="VT5(1)"/>
+						<v:ud v:nameU="ScrollDia" v:prompt="" v:val="VT0(0.44897597720494):1"/>
+						<v:ud v:nameU="FillForegnd" v:prompt="" v:val="VT5(#538135)"/>
+					</v:userDefs>
+					<path d="M32.33 306.57 L16.16 306.57 A8.08157 8.08157 -180 0 0 16.16 290.41 A16.1631 16.1631 -180 1 0 16.16 322.73
+								 A16.158 16.158 -180 0 0 32.33 306.57 ZM64.65 -120.31 L48.49 -120.31 A8.08157 8.08157 -180 0 0 48.49
+								 -104.15 A16.158 16.158 -180 0 0 64.65 -120.31 Z" class="st3"/>
+				</g>
+			</g>
+			<g id="shape43-11" v:mID="43" v:groupContext="shape" transform="translate(26.0588,-200.763)">
+				<title>矩形</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<rect x="0" y="300.058" width="340.157" height="22.6772" class="st4"/>
+			</g>
+			<g id="shape44-13" v:mID="44" v:groupContext="shape" transform="translate(42.4699,-144.071)">
+				<title>矩形.44</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<rect x="0" y="300.058" width="340.157" height="22.6772" class="st5"/>
+			</g>
+			<g id="shape45-15" v:mID="45" v:groupContext="shape" transform="translate(62.6108,-87.3776)">
+				<title>矩形.45</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<rect x="0" y="300.058" width="340.157" height="22.6772" class="st6"/>
+			</g>
+		</g>
+	</g>
+</svg>

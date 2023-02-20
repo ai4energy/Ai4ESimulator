@@ -1,5 +1,5 @@
 <template>
-  <svg-render :eleList="icon" />
+  <svg-render :eleList="icon"/>
 </template>
 
 <script setup lang="ts">
@@ -52,6 +52,7 @@ onMounted(() => {
 <style>
 .side-icon {
   cursor: move;
-  margin: 0.2rem;
+  display: inline-block;
+  margin: 0.3rem;
 }
 </style>
