@@ -17,7 +17,7 @@ const types: MessageType[] = [
 // Websoket连接成功事件
 const websocketonopen = (res: any) => {
       console.log("WebSocket连接成功", res);
-      window.$msg.success("服务器连接成功！") 
+      window.$message.success("服务器连接成功！") 
     };
     // Websoket接收消息事件
     const websocketonmessage = (res: any) => {
@@ -31,7 +31,7 @@ const websocketonopen = (res: any) => {
     // Websoket断开事件
     const websocketclose = (res: any) => {
       console.log("断开连接", res);
-      window.$msg.error("服务器断开连接")
+      window.$message.error("服务器断开连接")
       reconnect()
     };
     const websocketsend = (data:any) => {
@@ -62,9 +62,15 @@ const websocketonopen = (res: any) => {
       console.log("数据",res);
       
       if (res.status == "正在加载科学计算库！") {
-        msgReactive = window.$msg.loading(res.status, {
+        msgReactive = window.$message.loading(res.status, {
             duration: 0
           })  
+      } else if (res.status == "准备计算！") {
+        if (msgReactive) {
+          msgReactive = window.$message.loading(res.status, {
+            duration: 0
+          })  
+        }
       } else if (res.status == "正在计算!") {
         if (msgReactive) {
           //将小数点后面的数字转换为百分数，并保留两位小数
@@ -85,6 +91,10 @@ const websocketonopen = (res: any) => {
       } else {
         if (msgReactive) {
           msgReactive.content = res.status
+          setTimeout(() => {
+            msgReactive?.destroy();
+            msgReactive = null;
+          }, 3000);
         }
       }
     };

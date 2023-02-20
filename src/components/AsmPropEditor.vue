@@ -1,5 +1,5 @@
 <template>
-  <n-drawer :show="open" width="30em" @vnode-before-update="refresh">
+  <n-drawer :show="open" width="35em" @vnode-before-update="refresh">
     <n-drawer-content :native-scrollbar="false">
       <template #header> {{ title }}属性编辑 </template>
       <n-form
@@ -32,9 +32,8 @@
             :disabled="(attr.disabled as string)"
           ></n-input>
           <n-select
-            v-else-if="attr.type == 'multiselection'"
+            v-else-if="attr.type == 'selection'"
             v-model:value="asmProps[attr.name]"
-            multiple
             :options="options"
             :placeholder="(attr.holder as string)"
             :default-value="(attr.holder as string)"
@@ -120,18 +119,33 @@ const refresh = () => {
 };
 const options = [
   {
-    label: "ModelingToolkit",
-    value: "ModelingToolkit",
-    disabled: true,
+    label: "Euler",
+    value: "Euler",
+    disabled: false,
   },
   {
-    label: "DifferentialEquations",
-    value: "DifferentialEquations",
-    disabled: true,
+    label: "Tsit5",
+    value: "Tsit5",
+    disabled: false,
   },
   {
     label: "Rosenbrock23",
     value: "Rosenbrock23",
+    disabled: false,
+  },
+  {
+    label: "ImplicitEuler",
+    value: "ImplicitEuler",
+    disabled: false,
+  },
+  {
+    label: "ROCK2",
+    value: "ROCK2",
+    disabled: false,
+  },
+  {
+    label: "Rodas5",
+    value: "Rodas5",
     disabled: false,
   },
 ];

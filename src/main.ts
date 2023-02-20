@@ -1,14 +1,36 @@
-import { createApp } from "vue";
-import { createPinia } from "pinia";
+import { createApp } from 'vue';
+import App from './App.vue';
+import AppLoading from './components/common/AppLoading.vue';
+import { setupDirectives } from './directives';
+import { setupRouter } from './router';
+import { setupAssets } from './plugins';
+import { setupStore } from './store';
+import { setupI18n } from './locales';
 
-import App from "./App.vue";
-import router from "./router";
+async function setupApp() {
+  // import assets: js、css
+  setupAssets();
 
-import "./assets/main.css";
+  // app loading
+  const appLoading = createApp(AppLoading);
 
-const app = createApp(App);
+  appLoading.mount('#appLoading');
 
-app.use(createPinia());
-app.use(router);
+  const app = createApp(App);
 
-app.mount("#app");
+  // store plugin: pinia
+  setupStore(app);
+
+  // vue custom directives
+  setupDirectives(app);
+
+  // vue router
+  await setupRouter(app);
+
+  setupI18n(app);
+
+  // mount app
+  app.mount('#app');
+}
+
+setupApp();
