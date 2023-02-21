@@ -2831,12 +2831,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "in",
+            "lb": "inlet",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "out",
+            "lb": "outlet",
             "clr": "#919191"
           }
         ],
@@ -2980,12 +2980,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "in",
+            "lb": "inlet",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "out",
+            "lb": "outlet",
             "clr": "#919191"
           }
         ],
@@ -3183,12 +3183,12 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "in",
+            "lb": "inlet",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "out",
+            "lb": "outlet",
             "clr": "#919191"
           }
         ],
