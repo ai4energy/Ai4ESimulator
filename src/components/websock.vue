@@ -91,10 +91,6 @@ const websocketonopen = (res: any) => {
       } else {
         if (msgReactive) {
           msgReactive.content = res.status
-          setTimeout(() => {
-            msgReactive?.destroy();
-            msgReactive = null;
-          }, 3000);
         }
       }
     };
