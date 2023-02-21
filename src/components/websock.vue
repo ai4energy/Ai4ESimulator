@@ -61,16 +61,10 @@ const websocketonopen = (res: any) => {
     const handle_res = (res :any) => {
       console.log("数据",res);
       
-      if (res.status == "正在加载科学计算库！") {
+      if (res.status == "准备计算！") {
         msgReactive = window.$message.loading(res.status, {
             duration: 0
           })  
-      } else if (res.status == "准备计算！") {
-        if (msgReactive) {
-          msgReactive = window.$message.loading(res.status, {
-            duration: 0
-          })  
-        }
       } else if (res.status == "正在计算!") {
         if (msgReactive) {
           //将小数点后面的数字转换为百分数，并保留两位小数
@@ -81,6 +75,17 @@ const websocketonopen = (res: any) => {
         if (msgReactive) {
           msgReactive.content = res.status
           msgReactive.type = "success"
+          msgReactive.duration = 1000;
+          //三秒后销毁msgReactive组件
+          setTimeout(() => {
+            msgReactive?.destroy();
+            msgReactive = null;
+          }, 3000);
+        }
+      } else if (res.status == "计算出错！") {
+        if (msgReactive) {
+          msgReactive.content = res.status
+          msgReactive.type = "error"
           msgReactive.duration = 1000;
           //三秒后销毁msgReactive组件
           setTimeout(() => {
