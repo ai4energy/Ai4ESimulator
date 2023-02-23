@@ -768,7 +768,7 @@
               "stroke": "currentColor",
               "text-anchor": "start",
               "font-size": 20,
-              "innerHTML": "p1"
+              "innerHTML": "in.p"
             },
             "children": null
           },
@@ -790,7 +790,7 @@
               "stroke": "currentColor",
               "text-anchor": "start",
               "font-size": 20,
-              "innerHTML": "n1"
+              "innerHTML": "in.n"
             },
             "children": null
           },
@@ -812,7 +812,7 @@
               "stroke": "currentColor",
               "text-anchor": "end",
               "font-size": 20,
-              "innerHTML": "p2"
+              "innerHTML": "out.p"
             },
             "children": null
           },
@@ -834,7 +834,7 @@
               "stroke": "currentColor",
               "text-anchor": "end",
               "font-size": 20,
-              "innerHTML": "n2"
+              "innerHTML": "out.n"
             },
             "children": null
           }
@@ -876,22 +876,22 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "p1",
+            "lb": "in.p",
             "clr": "#919191"
           },
           {
             "gp": "sleft",
-            "lb": "n1",
+            "lb": "in.n",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "p2",
+            "lb": "out.p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "n2",
+            "lb": "out.n",
             "clr": "#919191"
           }
         ],
@@ -1102,7 +1102,7 @@
               "stroke": "currentColor",
               "text-anchor": "start",
               "font-size": 20,
-              "innerHTML": "p1"
+              "innerHTML": "in.p"
             },
             "children": null
           },
@@ -1124,7 +1124,7 @@
               "stroke": "currentColor",
               "text-anchor": "start",
               "font-size": 20,
-              "innerHTML": "n1"
+              "innerHTML": "in.n"
             },
             "children": null
           },
@@ -1146,7 +1146,7 @@
               "stroke": "currentColor",
               "text-anchor": "end",
               "font-size": 20,
-              "innerHTML": "p2"
+              "innerHTML": "out.p"
             },
             "children": null
           },
@@ -1168,7 +1168,7 @@
               "stroke": "currentColor",
               "text-anchor": "end",
               "font-size": 20,
-              "innerHTML": "n2"
+              "innerHTML": "out.n"
             },
             "children": null
           }
@@ -1228,22 +1228,22 @@
         "ports": [
           {
             "gp": "sleft",
-            "lb": "p1",
+            "lb": "in.p",
             "clr": "#919191"
           },
           {
             "gp": "sleft",
-            "lb": "n1",
+            "lb": "in.n",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "p2",
+            "lb": "out.p",
             "clr": "#919191"
           },
           {
             "gp": "sright",
-            "lb": "n2",
+            "lb": "out.n",
             "clr": "#919191"
           }
         ],

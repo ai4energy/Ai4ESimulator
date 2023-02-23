@@ -4,6 +4,7 @@ import { ref ,onBeforeUnmount ,onMounted} from 'vue'
 let socket :any = null
 let lockReconnect = false;
 let reconnectData : any = null;
+let destroy_msg : any = null;
 let testdata = {"tesst":"test"};
 let teststr = "test";
 const types: MessageType[] = [
@@ -62,9 +63,16 @@ const websocketonopen = (res: any) => {
       console.log("数据",res);
       
       if (res.status == "准备计算！") {
-        msgReactive = window.$message.loading(res.status, {
+        if (msgReactive) {
+          clearTimeout(destroy_msg);
+          msgReactive.content = res.status
+          msgReactive.type = "loading"
+        }
+        else{
+          msgReactive = window.$message.loading(res.status, {
             duration: 0
           })  
+        }
       } else if (res.status == "正在计算!") {
         if (msgReactive) {
           //将小数点后面的数字转换为百分数，并保留两位小数
@@ -77,7 +85,7 @@ const websocketonopen = (res: any) => {
           msgReactive.type = "success"
           msgReactive.duration = 1000;
           //三秒后销毁msgReactive组件
-          setTimeout(() => {
+          destroy_msg = setTimeout(() => {
             msgReactive?.destroy();
             msgReactive = null;
           }, 3000);
@@ -88,7 +96,7 @@ const websocketonopen = (res: any) => {
           msgReactive.type = "error"
           msgReactive.duration = 1000;
           //三秒后销毁msgReactive组件
-          setTimeout(() => {
+          destroy_msg = setTimeout(() => {
             msgReactive?.destroy();
             msgReactive = null;
           }, 3000);
