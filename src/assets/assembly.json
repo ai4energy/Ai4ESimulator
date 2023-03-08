@@ -1810,6 +1810,181 @@
               "stroke": "currentColor",
               "text-anchor": "middle",
               "font-size": 20,
+              "innerHTML": "变阻值电阻"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "0 85.0 15.0 100.0 0 115.0",
+              "stroke": "currentColor",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "25.0",
+              "y": "105.0",
+              "stroke": "currentColor",
+              "text-anchor": "start",
+              "font-size": 20,
+              "innerHTML": "p"
+            },
+            "children": null
+          },
+          {
+            "name": "polyline",
+            "attrs": {
+              "points": "185.0 85.0 200.0 100.0 185.0 115.0",
+              "stroke": "currentColor",
+              "stroke-width": "3.0",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "175.0",
+              "y": "105.0",
+              "stroke": "currentColor",
+              "text-anchor": "end",
+              "font-size": 20,
+              "innerHTML": "n"
+            },
+            "children": null
+          }
+        ]
+      },
+      "properties": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-0a77-a59ab8be6e8e",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "vari_Resistor",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "vari_Resistor",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "R",
+            "disabled": false,
+            "holder": "请输入电阻值",
+            "unit": "Ω",
+            "value": 1,
+            "require": true,
+            "type": "number"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "p",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "n",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      },
+      "Current_source": {
+        "label": "logo",
+        "name": "ea401710-91aa-11ed-25d1-fdffb751ace2",
+        "height": 100,
+        "attrs": [
+          {
+            "name": "name",
+            "disabled": false,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Current_source",
+            "require": true,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "disabled": true,
+            "holder": "请输入组件名称",
+            "unit": "",
+            "value": "Current_source",
+            "require": true,
+            "type": "string"
+          }
+        ],
+        "ports": [
+          {
+            "gp": "sleft",
+            "lb": "L port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "sright",
+            "lb": "R port 1",
+            "clr": "#919191"
+          },
+          {
+            "gp": "stop",
+            "lb": "T port 1",
+            "clr": "#919191"
+          }
+        ],
+        "width": 100,
+        "category": "ea3ede90-91aa-11ed-1d4c-d76f719a1e6f"
+      }
+    },
+    {
+      "icon": {
+        "name": "svg",
+        "attrs": {
+          "version": "1.1",
+          "viewBox": "0 0 200.0 200.0",
+          "xmlns": "http://www.w3.org/2000/svg",
+          "xmlns:xlink": "http://www.w3.org/1999/xlink",
+          "width": "200.0",
+          "height": "200.0"
+        },
+        "children": [
+          {
+            "name": "rect",
+            "attrs": {
+              "width": "200.0",
+              "height": "200.0",
+              "stroke": "currentColor",
+              "stroke-width": "5.0",
+              "fill": "white",
+              "fill-opacity": "0"
+            },
+            "children": null
+          },
+          {
+            "name": "text",
+            "attrs": {
+              "x": "100.0",
+              "y": "105.0",
+              "stroke": "currentColor",
+              "text-anchor": "middle",
+              "font-size": 20,
               "innerHTML": "电流源"
             },
             "children": null
