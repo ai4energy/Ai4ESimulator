@@ -4,8 +4,8 @@ type ServiceEnv = Record<ServiceEnvType, ServiceEnvConfig>;
 /** 不同请求服务的环境配置 */
 const serviceEnv: ServiceEnv = {
   dev: {
-    url: 'http://10.180.72.144:8081',
-    urlPattern: '/api',
+    url: 'http://10.180.232.98:8081',
+    urlPattern: '/API',
     secondUrl: 'http://localhost:8081',
     secondUrlPattern: '/second-url-pattern'
   },
