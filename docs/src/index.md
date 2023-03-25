@@ -6,22 +6,30 @@
 
 ## 开源技术架构
 
-* 前端
-  * [VUE3](https://cn.vuejs.org/)——渐进式JavaScript 框架
-  * [Soybean-admin](https://github.com/honghuangdc/soybean-admin)——基于Vue3与NaiveUI的中后台模版
-* 后端
-  * [OptControl.jl](https://ai4energy.github.io/OptControl.jl/dev/)——最优控制拓展包。
-  * [Ai4EComponentLib.jl](https://ai4energy.github.io/Ai4EComponentLib.jl/dev/)——组件库
-  * [Ai4EMetaPSE.jl](https://ai4energy.github.io/Ai4EMetaPSE.jl/dev/)——解析器
-  * [Ai4Server](https://ai4energy.github.io/Ai4EServer/) 基于Genie.jl架构的后端服务框架。
-  * [ModelingToolkit.jl](https://github.com/SciML/ModelingToolkit.jl)——组件建模工具包
-  * [DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl)——微分方程求解引擎
+|模块|链接|内容|
+|---|---|---|
+|前端|[VUE3](https://cn.vuejs.org/)|渐进式JavaScript 框架|
+|前端|[Soybean-admin](https://github.com/honghuangdc/soybean-admin)|基于NaiveUI的中后台模版|
+|后端|[OptControl.jl](https://ai4energy.github.io/OptControl.jl/dev/)|最优控制拓展包|
+|后端|[Ai4EComponentLib.jl](https://ai4energy.github.io/Ai4EComponentLib.jl/dev/)|组件库|
+|后端|[Ai4EMetaPSE.jl](https://ai4energy.github.io/Ai4EMetaPSE.jl/dev/)|解析器|
+|后端|[Ai4Server](https://ai4energy.github.io/Ai4EServer/)|后端服务框架|
+|后端|[ModelingToolkit.jl](https://github.com/SciML/ModelingToolkit.jl)|组件建模工具包|
+|后端|[DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl)|微分方程求解引擎|
 
 ![图 1](assets/index-16-26-49.png)
 
 ## 系统展示
 
 ![fig1](assets/system_show.gif)
+
+## 案例展示
+
+* [热力循环](examples/Exam_ThermodynamicCycle.md)
+* [空气管道](examples/Exam_AirPipeSim.md)
+* [锂电池](examples/Exam_Li_battery.md)
+* [电解槽](examples/Exam_PEMElectrolyzer.md)
+* [水力管网](examples/Exam_IncompressiblePipe.md)
 
 ## Quick Start
 
