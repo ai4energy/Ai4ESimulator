@@ -1,8 +1,8 @@
 # 空气管道系统
 
-![Fig 1.1](../assets/CompressedAirSystem-1-1.jpg)
+![Fig 1.1](../../assets/CompressedAirSystem-1-1.jpg)
 
-![](../assets/空气管道.gif)
+![](../../assets/空气管道.gif)
 
 ```julia
 # Define components
