@@ -2,9 +2,9 @@
 
 简单朗肯循环：
 
-![图 2](../../assets/ThermodynamicCycle-13-56-35.png) 
+![图 2](../assets/ThermodynamicCycle-13-56-35.png) 
 
-![](../../assets/热力系统.gif)
+![](../assets/热力系统.gif)
 
 ```julia
 @info "Running ThermodynamicCycle..."
