@@ -7,7 +7,7 @@
 ## 开源技术架构
 
 |模块|链接|内容|
-|---|---|---|
+|:---|:---|:---|
 |前端|[VUE3](https://cn.vuejs.org/)|渐进式JavaScript 框架|
 |前端|[Soybean-admin](https://github.com/honghuangdc/soybean-admin)|基于NaiveUI的中后台模版|
 |后端|[OptControl.jl](https://ai4energy.github.io/OptControl.jl/dev/)|最优控制拓展包|
@@ -62,7 +62,7 @@ npm run dev
 鸣谢：
 
 |年份|贡献者|
-|---|---|
+|:---|:---|
 |2023——第34届腾飞杯|![图 1](assets/index-19_10_40.png)|
 |2024——第35届腾飞杯|期待你的加入！|
 |2025......|......|
