@@ -16,6 +16,8 @@
 |后端|[Ai4Server](https://ai4energy.github.io/Ai4EServer/)|后端服务框架|
 |后端|[ModelingToolkit.jl](https://github.com/SciML/ModelingToolkit.jl)|组件建模工具包|
 |后端|[DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl)|微分方程求解引擎|
+|文档|[Ai4EDocs](https://ai4energy.github.io/Ai4EDocs/dev/)|教程文档、设计文档|
+|组织|[Ai4Energy](https://github.com/ai4energy)|开源组织主页|
 
 ![图 1](assets/index-16-26-49.png)
 
@@ -52,3 +54,15 @@ npm install
 ```sh
 npm run dev
 ```
+
+## 欢迎加入
+
+指导老师：李明涛（mingtao@mail.xjtu.edu.cn）
+
+鸣谢：
+
+|年份|贡献者|
+|---|---|
+|2023——第34届腾飞杯|<a href="https://github.com/ai4energy/Ai4ESimulator/graphs/contributors"><img src="https://contrib.rocks/image?repo=ai4energy/Ai4ESimulator"/></a>|
+|2024——第35届腾飞杯|期待你的加入！|
+|2025......|......|
