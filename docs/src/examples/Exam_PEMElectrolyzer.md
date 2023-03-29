@@ -2,7 +2,7 @@
 
 使用光伏电池驱动电解槽：
 
-![](../assets/电解槽.gif)
+![](../../assets/电解槽.gif)
 
 ```julia
 using ModelingToolkit, DifferentialEquations

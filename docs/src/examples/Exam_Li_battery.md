@@ -2,7 +2,7 @@
 
 使用光伏电池给锂电池充电：
 
-![](../assets/锂电池.gif)
+![](../../assets/锂电池.gif)
 
 ```julia
 using ModelingToolkit, DifferentialEquations

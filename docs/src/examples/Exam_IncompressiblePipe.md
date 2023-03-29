@@ -1,8 +1,8 @@
 # 水力管网系统
 
-![图 1](../assets/model-1.png)
+![图 1](../../assets/model-1.png)
 
-![](../assets/水力管网.gif)
+![](../../assets/水力管网.gif)
 
 ```julia
 @info "Running IncompressiblePipe..."
