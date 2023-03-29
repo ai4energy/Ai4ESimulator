@@ -19,11 +19,11 @@
 |文档|[Ai4EDocs](https://ai4energy.github.io/Ai4EDocs/dev/)|教程文档、设计文档|
 |组织|[Ai4Energy](https://github.com/ai4energy)|开源组织主页|
 
-![图 1](../assets/index-16-26-49.png)
+![图 1](assets/index-16-26-49.png)
 
 ## 系统展示
 
-![fig1](../assets/system_show.gif)
+![fig1](assets/system_show.gif)
 
 ## 案例展示
 
@@ -39,7 +39,7 @@
 
 切换到项目文件夹
 
-![fig1](../assets/start_backend.gif)
+![fig1](assets/start_backend.gif)
 
 ### 本地开启前端服务
 
@@ -63,6 +63,6 @@ npm run dev
 
 |年份|贡献者|
 |---|---|
-|2023——第34届腾飞杯|![图 1](../assets/index-19_10_40.png)|
+|2023——第34届腾飞杯|![图 1](assets/index-19_10_40.png)|
 |2024——第35届腾飞杯|期待你的加入！|
 |2025......|......|
