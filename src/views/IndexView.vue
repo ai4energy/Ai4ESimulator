@@ -28,10 +28,10 @@
       </n-card>
         <websock />
         <n-button-group>
-          <n-button v-on:click="testApi.healthTest()">测试</n-button>
+          <!-- <n-button v-on:click="testApi.healthTest()">测试</n-button>
           <n-button v-on:click="testApi.WebSocketsTest2()">WebSockets+logger测试</n-button>
           <n-button v-on:click="simulate">仿真</n-button>
-          <n-button v-on:click="simPropPop">仿真设置</n-button>
+          <n-button v-on:click="simPropPop">仿真设置</n-button> -->
         </n-button-group>
     </n-layout-content>
     <asm-prop-editor
