@@ -24,8 +24,8 @@
       <n-card :bordered="true" class="rounded-16px shadow-sm p-2px">
         <n-space vertical>
           <n-cascader v-model:value="rFigValueX" clearable placeholder="变量关系散点图：选择横轴变量" max-tag-count="responsive"
-            expand-trigger="hover" :options="solInfo.options" :show-path="false" cascade check-strategy="child"
-            filterable clear-filter-after-select />
+            expand-trigger="hover" :options="solInfo.options" :show-path="false" cascade check-strategy="child" filterable
+            clear-filter-after-select />
         </n-space>
       </n-card>
     </n-grid-item>
@@ -33,8 +33,8 @@
       <n-card :bordered="true" class="rounded-16px shadow-sm p-2px">
         <n-space vertical>
           <n-cascader v-model:value="rFigValueY" clearable placeholder="变量关系散点图：选择纵轴变量" max-tag-count="responsive"
-            expand-trigger="hover" :options="solInfo.options" :show-path="false" cascade check-strategy="child"
-            filterable clear-filter-after-select />
+            expand-trigger="hover" :options="solInfo.options" :show-path="false" cascade check-strategy="child" filterable
+            clear-filter-after-select />
         </n-space>
       </n-card>
     </n-grid-item>
@@ -358,7 +358,6 @@ const getSolutionInfo = () => {
       console.log('@@@Error:', error.message)
     });
 };
-
 const col: string[] = [
   '#5470c6',
   '#91cc75',
@@ -372,16 +371,17 @@ const col: string[] = [
 ];
 
 watch(value, newvalue => {
-  const value: string[] = newvalue === null ? [] : newvalue;
+  
+  const v: string[] = newvalue === null ? [] : newvalue;
   const colors: string[] = [];
-  for (let i = 0; i < floor(value.length / 9 + 1); ++i) {
+  for (let i = 0; i < floor(v.length / 9 + 1); ++i) {
     colors.push(...col);
   }
   const series: object[] = [];
-  for (let i = 0; i < value.length; i++) {
+  for (let i = 0; i < v.length; i++) {
     series.push({
       color: colors[i],
-      name: value[i],
+      name: v[i],
       type: 'line',
       smooth: true,
       showSymbol: false,
@@ -408,14 +408,13 @@ watch(value, newvalue => {
       emphasis: {
         focus: 'series'
       },
-      data: solInfo.sol[value[i]]
+      data: solInfo.sol[newvalue[i]]
     });
   }
   lineOptions.value.series = series;
-  // console.log(lineOptions.value.series);
-  lineOptions.value.legend.data = value;
+  lineOptions.value.legend.data = v;
   lineOptions.value.xAxis[0].data = solInfo.t;
-});
+}, { deep: true });
 
 // watch([rFigValueX, rFigValueY], newvalue => {
 //   // 
@@ -467,6 +466,4 @@ function handleUpdateValue(value: string[], options: CascaderOption[]) {
 // toRefs(options)
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

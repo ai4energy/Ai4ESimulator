@@ -6,22 +6,32 @@
 
 ## 开源技术架构
 
-* 前端
-  * [VUE3](https://cn.vuejs.org/)——渐进式JavaScript 框架
-  * [Soybean-admin](https://github.com/honghuangdc/soybean-admin)——基于Vue3与NaiveUI的中后台模版
-* 后端
-  * [OptControl.jl](https://ai4energy.github.io/OptControl.jl/dev/)——最优控制拓展包。
-  * [Ai4EComponentLib.jl](https://ai4energy.github.io/Ai4EComponentLib.jl/dev/)——组件库
-  * [Ai4EMetaPSE.jl](https://ai4energy.github.io/Ai4EMetaPSE.jl/dev/)——解析器
-  * [Ai4Server](https://ai4energy.github.io/Ai4EServer/) 基于Genie.jl架构的后端服务框架。
-  * [ModelingToolkit.jl](https://github.com/SciML/ModelingToolkit.jl)——组件建模工具包
-  * [DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl)——微分方程求解引擎
+|模块|链接|内容|
+|:---|:---|:---|
+|前端|[VUE3](https://cn.vuejs.org/)|渐进式JavaScript 框架|
+|前端|[Soybean-admin](https://github.com/honghuangdc/soybean-admin)|基于NaiveUI的中后台模版|
+|后端|[OptControl.jl](https://ai4energy.github.io/OptControl.jl/dev/)|最优控制拓展包|
+|后端|[Ai4EComponentLib.jl](https://ai4energy.github.io/Ai4EComponentLib.jl/dev/)|组件库|
+|后端|[Ai4EMetaPSE.jl](https://ai4energy.github.io/Ai4EMetaPSE.jl/dev/)|解析器|
+|后端|[Ai4Server](https://ai4energy.github.io/Ai4EServer/)|后端服务框架|
+|后端|[ModelingToolkit.jl](https://github.com/SciML/ModelingToolkit.jl)|组件建模工具包|
+|后端|[DifferentialEquations.jl](https://github.com/SciML/DifferentialEquations.jl)|微分方程求解引擎|
+|文档|[Ai4EDocs](https://ai4energy.github.io/Ai4EDocs/dev/)|教程文档、设计文档|
+|组织|[Ai4Energy](https://github.com/ai4energy)|开源组织主页|
 
 ![图 1](assets/index-16-26-49.png)
 
 ## 系统展示
 
 ![fig1](assets/system_show.gif)
+
+## 案例展示
+
+* [热力循环](examples/Exam_ThermodynamicCycle.md)
+* [空气管道](examples/Exam_AirPipeSim.md)
+* [锂电池](examples/Exam_Li_battery.md)
+* [电解槽](examples/Exam_PEMElectrolyzer.md)
+* [水力管网](examples/Exam_IncompressiblePipe.md)
 
 ## Quick Start
 
@@ -44,3 +54,15 @@ npm install
 ```sh
 npm run dev
 ```
+
+## 欢迎加入
+
+指导老师：李明涛（mingtao@mail.xjtu.edu.cn）
+
+鸣谢：
+
+|年份|贡献者|
+|:---|:---|
+|2023——第34届腾飞杯|![图 1](assets/index-19_10_40.png)|
+|2024——第35届腾飞杯|期待你的加入！|
+|2025......|......|
