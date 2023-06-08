@@ -580,7 +580,7 @@
                     "type": "string"
                 },
                 {
-                    "name": "Capacitance",
+                    "name": "C",
                     "holder": "请输入电容值",
                     "unit": "F",
                     "value": "0.48e-6",

@@ -95,7 +95,7 @@ Capacitor = Dict(
         Dict(zip(
             argProperties,
             [
-                "Capacitance"
+                "C"
                 "number"
                 "0.48e-6"
                 "F"
