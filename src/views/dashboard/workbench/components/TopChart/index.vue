@@ -346,7 +346,8 @@ const rFigValueY = ref(null);
 
 const solInfo = reactive(new SolutionInfo());
 const getSolutionInfo = () => {
-  axios.get(import.meta.env.VITE_DEV_API_URL + '/api/getResult').then(
+  axios.get('http://123.60.88.27:8081/api/getResult').then(
+  // axios.get('https://www.fastmock.site/mock/c1520107474435ccf66bdaa7781568a8/api/getResult').then(
     res => {
       solInfo.options = getOptionsFromJson(res.data.data.varinfo);
       solInfo.sol = res.data.data.sol;
@@ -370,7 +371,7 @@ const col: string[] = [
 ];
 
 watch(value, newvalue => {
-  
+
   const v: string[] = newvalue === null ? [] : newvalue;
   const colors: string[] = [];
   for (let i = 0; i < floor(v.length / 9 + 1); ++i) {
@@ -416,7 +417,7 @@ watch(value, newvalue => {
 }, { deep: true });
 
 // watch([rFigValueX, rFigValueY], newvalue => {
-//   // 
+//   //
 //   if (newvalue[0] !== null && newvalue[1] !== null) {
 //     var xdata: Array<number> = solInfo.sol[newvalue[0]];
 //     var ydata: Array<number> = solInfo.sol[newvalue[1]];
@@ -437,7 +438,7 @@ watch(value, newvalue => {
 // });
 
 watch([rFigValueX, rFigValueY], newvalue => {
-  // 
+  //
   if (newvalue[0] !== null && newvalue[1] !== null) {
     var xdata: Array<number> = solInfo.sol[newvalue[0]];
     var ydata: Array<number> = solInfo.sol[newvalue[1]];

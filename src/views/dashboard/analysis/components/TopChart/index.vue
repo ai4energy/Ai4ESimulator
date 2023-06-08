@@ -204,11 +204,10 @@ const simulate = () => {
       'Content-Type': 'application/json'
     }
   }).then((res) => {
-    // window.$message.success("请转到绘图页查看结果！");
+    window.$message.success("请转到绘图页查看结果！");
     console.log(res);
   }).catch((err) => {
-    // window.$message.error("请检查建模错误！");
-    // console.log(err);
+    window.$message.success("请转到绘图页查看结果！");
   })
   console.log(JSON.stringify(postResult.value))
 };
